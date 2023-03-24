@@ -6,10 +6,18 @@
 //
 
 // gMapGroup_Dungeons
-#define MAP_VIRIDIAN_FOREST (0 | (0 << 8))
-#define MAP_MT_MOON_1F      (1 | (0 << 8))
-#define MAP_MT_MOON_B1F     (2 | (0 << 8))
-#define MAP_MT_MOON_B2F     (3 | (0 << 8))
+#define MAP_VIRIDIAN_FOREST        (0 | (0 << 8))
+#define MAP_MT_MOON_1F             (1 | (0 << 8))
+#define MAP_MT_MOON_B1F            (2 | (0 << 8))
+#define MAP_MT_MOON_B2F            (3 | (0 << 8))
+#define MAP_SSANNE_EXTERIOR        (4 | (0 << 8))
+#define MAP_SSANNE_1F_CORRIDOR     (5 | (0 << 8))
+#define MAP_SSANNE_2F_CORRIDOR     (6 | (0 << 8))
+#define MAP_SSANNE_3F_CORRIDOR     (7 | (0 << 8))
+#define MAP_SSANNE_B1F_CORRIDOR    (8 | (0 << 8))
+#define MAP_SSANNE_DECK            (9 | (0 << 8))
+#define MAP_SSANNE_KITCHEN         (10 | (0 << 8))
+#define MAP_SSANNE_CAPTAINS_OFFICE (11 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

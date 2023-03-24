@@ -7,7 +7,15 @@
     "ViridianForest",
     "MtMoon_1F",
     "MtMoon_B1F",
-    "MtMoon_B2F"
+    "MtMoon_B2F",
+    "SSAnne_Exterior",
+    "SSAnne_1F_Corridor",
+    "SSAnne_2F_Corridor",
+    "SSAnne_3F_Corridor",
+    "SSAnne_B1F_Corridor",
+    "SSAnne_Deck",
+    "SSAnne_Kitchen",
+    "SSAnne_CaptainsOffice"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

@@ -1063,3 +1063,19 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtMoon_B1F/scripts.inc"
 
 	.include "data/maps/MtMoon_B2F/scripts.inc"
+
+	.include "data/maps/SSAnne_Exterior/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Corridor/scripts.inc"
+
+	.include "data/maps/SSAnne_2F_Corridor/scripts.inc"
+
+	.include "data/maps/SSAnne_3F_Corridor/scripts.inc"
+
+	.include "data/maps/SSAnne_B1F_Corridor/scripts.inc"
+
+	.include "data/maps/SSAnne_Deck/scripts.inc"
+
+	.include "data/maps/SSAnne_Kitchen/scripts.inc"
+
+	.include "data/maps/SSAnne_CaptainsOffice/scripts.inc"
