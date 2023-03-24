@@ -231,3 +231,6 @@ const u16 gMetatileAttributes_cerulean_gym[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_cinnabar_gym[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym/metatiles.bin");
 const u16 gMetatileAttributes_cinnabar_gym[] = INCBIN_U16("data/tilesets/secondary/cinnabar_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_cinnabar_island[] = INCBIN_U16("data/tilesets/secondary/cinnabar_island/metatiles.bin");
+const u16 gMetatileAttributes_cinnabar_island[] = INCBIN_U16("data/tilesets/secondary/cinnabar_island/metatile_attributes.bin");
