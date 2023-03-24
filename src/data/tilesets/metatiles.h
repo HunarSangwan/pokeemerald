@@ -279,3 +279,6 @@ const u16 gMetatileAttributes_museum[] = INCBIN_U16("data/tilesets/secondary/mus
 
 const u16 gMetatiles_pallet_town[] = INCBIN_U16("data/tilesets/secondary/pallet_town/metatiles.bin");
 const u16 gMetatileAttributes_pallet_town[] = INCBIN_U16("data/tilesets/secondary/pallet_town/metatile_attributes.bin");
+
+const u16 gMetatiles_pewter_city[] = INCBIN_U16("data/tilesets/secondary/pewter_city/metatiles.bin");
+const u16 gMetatileAttributes_pewter_city[] = INCBIN_U16("data/tilesets/secondary/pewter_city/metatile_attributes.bin");
