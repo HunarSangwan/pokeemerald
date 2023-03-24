@@ -990,3 +990,14 @@ const struct Tileset gTileset_fuchsia_gym =
     .metatileAttributes = gMetatileAttributes_fuchsia_gym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_game_corner =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_game_corner,
+    .palettes = gTilesetPalettes_game_corner,
+    .metatiles = gMetatiles_game_corner,
+    .metatileAttributes = gMetatileAttributes_game_corner,
+    .callback = NULL,
+};

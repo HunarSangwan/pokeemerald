@@ -1919,3 +1919,22 @@ const u16 gTilesetPalettes_fuchsia_gym[][16] =
 };
 
 const u32 gTilesetTiles_fuchsia_gym[] = INCBIN_U32("data/tilesets/secondary/fuchsia_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_game_corner[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/game_corner/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_game_corner[] = INCBIN_U32("data/tilesets/secondary/game_corner/tiles.4bpp.lz");

@@ -252,3 +252,6 @@ const u16 gMetatileAttributes_fuchsia_city[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_fuchsia_gym[] = INCBIN_U16("data/tilesets/secondary/fuchsia_gym/metatiles.bin");
 const u16 gMetatileAttributes_fuchsia_gym[] = INCBIN_U16("data/tilesets/secondary/fuchsia_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_game_corner[] = INCBIN_U16("data/tilesets/secondary/game_corner/metatiles.bin");
+const u16 gMetatileAttributes_game_corner[] = INCBIN_U16("data/tilesets/secondary/game_corner/metatile_attributes.bin");
