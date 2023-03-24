@@ -306,3 +306,6 @@ const u16 gMetatileAttributes_rock_tunnel[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_safari_zone_building[] = INCBIN_U16("data/tilesets/secondary/safari_zone_building/metatiles.bin");
 const u16 gMetatileAttributes_safari_zone_building[] = INCBIN_U16("data/tilesets/secondary/safari_zone_building/metatile_attributes.bin");
+
+const u16 gMetatiles_saffron_city[] = INCBIN_U16("data/tilesets/secondary/saffron_city/metatiles.bin");
+const u16 gMetatileAttributes_saffron_city[] = INCBIN_U16("data/tilesets/secondary/saffron_city/metatile_attributes.bin");

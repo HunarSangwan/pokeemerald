@@ -1188,3 +1188,14 @@ const struct Tileset gTileset_safari_zone_building =
     .metatileAttributes = gMetatileAttributes_safari_zone_building,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_saffron_city =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_saffron_city,
+    .palettes = gTilesetPalettes_saffron_city,
+    .metatiles = gMetatiles_saffron_city,
+    .metatileAttributes = gMetatileAttributes_saffron_city,
+    .callback = NULL,
+};
