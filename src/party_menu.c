@@ -5584,7 +5584,7 @@ static u8 GetPartySlotEntryStatus(s8 slot)
 
 static bool8 GetBattleEntryEligibility(struct Pokemon *mon)
 {
-    u16 i = 0;
+    /*u16 i = 0;
     u16 species;
 
     if (GetMonData(mon, MON_DATA_IS_EGG)
@@ -5612,7 +5612,7 @@ static bool8 GetBattleEntryEligibility(struct Pokemon *mon)
                 return FALSE;
         }
         return TRUE;
-    }
+    }*/
 }
 
 static u8 CheckBattleEntriesAndGetMessage(void)

@@ -264,14 +264,14 @@ u16 GetRecordedCyclingRoadResults(void)
 
 void UpdateCyclingRoadState(void)
 {
-    if (gLastUsedWarp.mapNum == MAP_NUM(ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE) && gLastUsedWarp.mapGroup == MAP_GROUP(ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE))
+    /*if (gLastUsedWarp.mapNum == MAP_NUM(ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE) && gLastUsedWarp.mapGroup == MAP_GROUP(ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE))
         return;
 
     if (VarGet(VAR_CYCLING_CHALLENGE_STATE) == 2 || VarGet(VAR_CYCLING_CHALLENGE_STATE) == 3)
     {
         VarSet(VAR_CYCLING_CHALLENGE_STATE, 0);
         Overworld_SetSavedMusic(MUS_DUMMY);
-    }
+    }*/
 }
 
 void SetSSTidalFlag(void)
@@ -1398,7 +1398,7 @@ bool8 Special_AreLeadMonEVsMaxedOut(void)
 
 u8 TryUpdateRusturfTunnelState(void)
 {
-    if (!FlagGet(FLAG_RUSTURF_TUNNEL_OPENED)
+    /*if (!FlagGet(FLAG_RUSTURF_TUNNEL_OPENED)
         && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(RUSTURF_TUNNEL)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(RUSTURF_TUNNEL))
     {
@@ -1412,7 +1412,7 @@ u8 TryUpdateRusturfTunnelState(void)
             VarSet(VAR_RUSTURF_TUNNEL_STATE, 5);
             return TRUE;
         }
-    }
+    }*/
     return FALSE;
 }
 
@@ -1663,10 +1663,10 @@ bool8 IsBadEggInParty(void)
 
 bool8 InMultiPartnerRoom(void)
 {
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM)
+  /*if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM) &&
         VarGet(VAR_FRONTIER_BATTLE_MODE) == FRONTIER_MODE_MULTIS)
-        return TRUE;
+        return TRUE;*/
     return FALSE;
 }
 
@@ -1747,7 +1747,7 @@ static const u16 sElevatorWindowTiles_Descending[ELEVATOR_WINDOW_HEIGHT][ELEVATO
 
 void SetDeptStoreFloor(void)
 {
-    u8 deptStoreFloor;
+/*  u8 deptStoreFloor;
     switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
     {
     case MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_1F):
@@ -1772,12 +1772,12 @@ void SetDeptStoreFloor(void)
         deptStoreFloor = DEPT_STORE_FLOORNUM_1F;
         break;
     }
-    VarSet(VAR_DEPT_STORE_FLOOR, deptStoreFloor);
+    VarSet(VAR_DEPT_STORE_FLOOR, deptStoreFloor); */
 }
 
 u16 GetDeptStoreDefaultFloorChoice(void)
 {
-    sLilycoveDeptStore_NeverRead = 0;
+    /*sLilycoveDeptStore_NeverRead = 0;
     sLilycoveDeptStore_DefaultFloorChoice = 0;
 
     if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_1F))
@@ -1807,7 +1807,7 @@ u16 GetDeptStoreDefaultFloorChoice(void)
         }
     }
 
-    return sLilycoveDeptStore_DefaultFloorChoice;
+    return sLilycoveDeptStore_DefaultFloorChoice;*/
 }
 
 // Task data for Task_MoveElevator
@@ -2045,8 +2045,8 @@ bool8 UsedPokemonCenterWarp(void)
 
 bool32 PlayerNotAtTrainerHillEntrance(void)
 {
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
-        return FALSE;
+    /*if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
+        return FALSE;*/
 
     return TRUE;
 }
@@ -3377,14 +3377,14 @@ static void WaitForDeoxysRockMovement(u8 taskId)
 void IncrementBirthIslandRockStepCount(void)
 {
     u16 var = VarGet(VAR_DEOXYS_ROCK_STEP_COUNT);
-    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_EXTERIOR) && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_EXTERIOR))
+    /*if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(BIRTH_ISLAND_EXTERIOR) && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BIRTH_ISLAND_EXTERIOR))
     {
         var++;
         if (var > 99)
             VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, 0);
         else
             VarSet(VAR_DEOXYS_ROCK_STEP_COUNT, var);
-    }
+    }*/
 }
 
 void SetDeoxysRockPalette(void)

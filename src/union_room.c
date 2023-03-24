@@ -4306,9 +4306,9 @@ static bool32 PollPartnerYesNoResponse(struct WirelessLink_URoom *data)
 
 bool32 InUnionRoom(void)
 {
-    return gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNION_ROOM)
+    /*return gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(UNION_ROOM)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(UNION_ROOM)
-        ? TRUE : FALSE;
+        ? TRUE : FALSE;*/
 }
 
 static bool32 HasAtLeastTwoMonsOfLevel30OrLower(void)

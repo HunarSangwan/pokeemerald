@@ -1630,7 +1630,7 @@ static u8 MapNumToFrontierFacilityId(u16 mapNum) // id + 1, zero means not a fro
 
 static void InitFrontierMapSprites(void)
 {
-    struct SpriteTemplate sprite;
+    /*struct SpriteTemplate sprite;
     u8 spriteId;
     u8 id;
     s16 x = 0, y;
@@ -1709,7 +1709,7 @@ static void InitFrontierMapSprites(void)
         sMapData->playerHeadSprite->oam.priority = 0;
         if (gSaveBlock2Ptr->playerGender != MALE)
             StartSpriteAnim(sMapData->playerHeadSprite, 1);
-    }
+    }*/
 }
 
 static void PrintOnFrontierMap(void)

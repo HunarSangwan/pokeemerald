@@ -166,7 +166,7 @@ static void Task_SealedChamberShakingEffect(u8 taskId)
 
 bool8 ShouldDoBrailleRegirockEffect(void)
 {
-    if (!FlagGet(FLAG_SYS_REGIROCK_PUZZLE_COMPLETED)
+    /*if (!FlagGet(FLAG_SYS_REGIROCK_PUZZLE_COMPLETED)
         && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(DESERT_RUINS)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(DESERT_RUINS))
     {
@@ -185,7 +185,7 @@ bool8 ShouldDoBrailleRegirockEffect(void)
             sIsRegisteelPuzzle = FALSE;
             return TRUE;
         }
-    }
+    }*/
 
     return FALSE;
 }

@@ -441,7 +441,7 @@ gSpecials::
 	def_special IsDodrioInParty
 	def_special ShowDodrioBerryPickingRecords
 	def_special OffsetCameraForBattle
-	def_special GetDeptStoreDefaultFloorChoice
+	@@def_special GetDeptStoreDefaultFloorChoice
 	def_special BufferVarsForIVRater
 	def_special LinkContestWaitForConnection
 	def_special GetWirelessCommType

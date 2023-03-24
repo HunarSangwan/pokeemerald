@@ -103,10 +103,10 @@ $(TILESETGFXDIR)/secondary/shop/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 502 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/pokemon_center/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 478 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 384 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/cave/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 425 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 256 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/pokemon_school/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 278 -Wnum_tiles
@@ -181,7 +181,7 @@ $(TILESETGFXDIR)/secondary/lilycove_museum/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 431 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/lab/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 500 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 112 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/underwater/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 500 -Wnum_tiles
@@ -241,13 +241,13 @@ $(TILESETGFXDIR)/secondary/mossdeep_game_corner/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 95 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/island_harbor/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 503 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 176 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/trainer_hill/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 374 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/navel_rock/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 420 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 288 -Wnum_tiles
 
 $(TILESETGFXDIR)/secondary/battle_frontier_ranking_hall/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 136 -Wnum_tiles

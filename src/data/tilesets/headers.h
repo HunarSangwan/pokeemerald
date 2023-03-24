@@ -1281,8 +1281,8 @@ const struct Tileset gTileset_silph_co =
 {
     .isCompressed = TRUE,
     .isSecondary = TRUE,
-    .tiles = gTilesetTiles_silph_co,
-    .palettes = gTilesetPalettes_silph_co,
+    .tiles = gTilesetTiles_condominiums,
+    .palettes = gTilesetPalettes_condominiums,
     .metatiles = gMetatiles_silph_co,
     .metatileAttributes = gMetatileAttributes_silph_co,
     .callback = NULL,

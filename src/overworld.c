@@ -1070,7 +1070,7 @@ static bool16 IsInfiltratedWeatherInstitute(struct WarpData *warp)
 
 static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
 {
-    if (VarGet(VAR_MOSSDEEP_CITY_STATE) == 0)
+    /*if (VarGet(VAR_MOSSDEEP_CITY_STATE) == 0)
         return FALSE;
     else if (VarGet(VAR_MOSSDEEP_CITY_STATE) > 2)
         return FALSE;
@@ -1079,7 +1079,7 @@ static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
     else if (warp->mapNum == MAP_NUM(MOSSDEEP_CITY_SPACE_CENTER_1F)
      || warp->mapNum == MAP_NUM(MOSSDEEP_CITY_SPACE_CENTER_2F))
         return TRUE;
-    return FALSE;
+    return FALSE;*/
 }
 
 u16 GetLocationMusic(struct WarpData *warp)

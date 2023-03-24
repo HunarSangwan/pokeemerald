@@ -241,7 +241,7 @@ static bool8 DrawAreaGlow(void)
 
 static void FindMapsWithMon(u16 species)
 {
-    u16 i;
+    /*u16 i;
     struct Roamer *roamer;
 
     sPokedexAreaScreen->alteringCaveCounter = 0;
@@ -316,7 +316,7 @@ static void FindMapsWithMon(u16 species)
         {
             sPokedexAreaScreen->numOverworldAreas = 0;
         }
-    }
+    }*/
 }
 
 static void SetAreaHasMon(u16 mapGroup, u16 mapNum)

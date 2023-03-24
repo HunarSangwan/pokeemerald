@@ -1,7 +1,7 @@
 {
-  "id": "MAP_VICTORY_ROAD_1F",
-  "name": "VictoryRoad_1f",
-  "layout": "LAYOUT_VICTORY_ROAD_1F",
+  "id": "MAP_VICTORY_ROAD_1FF",
+  "name": "VictoryRoad_1FF",
+  "layout": "LAYOUT_VICTORY_ROAD_1FF",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_VICTORY_ROAD",
   "requires_flash": false,

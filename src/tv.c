@@ -826,7 +826,7 @@ u8 FindAnyTVShowOnTheAir(void)
 
 void UpdateTVScreensOnMap(int width, int height)
 {
-    FlagSet(FLAG_SYS_TV_WATCH);
+    /*FlagSet(FLAG_SYS_TV_WATCH);
     switch (CheckForPlayersHouseNews())
     {
     case PLAYERS_HOUSE_TV_LATI:
@@ -849,7 +849,7 @@ void UpdateTVScreensOnMap(int width, int height)
             SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
         }
         break;
-    }
+    }*/
 }
 
 static void SetTVMetatilesOnMap(int width, int height, u16 metatileId)
@@ -1504,7 +1504,7 @@ static void InterviewAfter_BravoTrainerBattleTowerProfile(void)
 
 void TryPutSmartShopperOnAir(void)
 {
-    TVShow *show;
+    /*TVShow *show;
     u8 i;
 
     if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
@@ -1532,7 +1532,7 @@ void TryPutSmartShopperOnAir(void)
                 show->smartshopperShow.language = gGameLanguage;
             }
         }
-    }
+    }*/
 }
 
 void PutNameRaterShowOnTheAir(void)
@@ -2679,7 +2679,7 @@ bool8 IsPokeNewsActive(u8 newsKind)
 // For any other type of PokeNews this is always TRUE.
 static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
 {
-    switch (newsKind)
+    /*switch (newsKind)
     {
     case POKENEWS_SLATEPORT:
         if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLATEPORT_CITY)
@@ -2693,7 +2693,7 @@ static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
             return TRUE;
         return FALSE;
     }
-    return TRUE;
+    return TRUE;*/
 }
 
 static bool8 IsAddingPokeNewsDisallowed(u8 newsKind)

@@ -1134,7 +1134,7 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/DiglettsCave_SouthEntrance/scripts.inc"
 
-	.include "data/maps/VictoryRoad_1f/scripts.inc"
+	.include "data/maps/VictoryRoad_1FF/scripts.inc"
 
 	.include "data/maps/VictoryRoad_2F/scripts.inc"
 

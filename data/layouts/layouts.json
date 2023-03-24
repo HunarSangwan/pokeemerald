@@ -1947,15 +1947,15 @@
     },
     {
       "id": "LAYOUT_VICTORY_ROAD_1F",
-      "name": "VictoryRoad_1f_Layout",
+      "name": "VictoryRoad_1F_Layout",
       "width": 48,
       "height": 22,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/VictoryRoad_1f/border.bin",
-      "blockdata_filepath": "data/layouts/VictoryRoad_1f/map.bin"
+      "border_filepath": "data/layouts/VictoryRoad_1F/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_1F/map.bin"
     },
     {
       "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
@@ -5844,6 +5844,18 @@
       "secondary_tileset": "gTileset_silph_co",
       "border_filepath": "data/layouts/RocketHideout_Elevator/border.bin",
       "blockdata_filepath": "data/layouts/RocketHideout_Elevator/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_1FF",
+      "name": "VictoryRoad_1FF_Layout",
+      "width": 48,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_1FF/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_1FF/map.bin"
     }
   ]
 }

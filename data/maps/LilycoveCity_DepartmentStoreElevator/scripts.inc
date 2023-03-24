@@ -11,7 +11,7 @@ LilycoveCity_DepartmentStoreElevator_EventScript_Attendant::
 	message gText_WhichFloorWouldYouLike
 	waitmessage
 	setvar VAR_0x8004, 0
-	specialvar VAR_RESULT, GetDeptStoreDefaultFloorChoice
+	@@specialvar VAR_RESULT, GetDeptStoreDefaultFloorChoice
 	switch VAR_RESULT
 	case 0, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom5th
 	case 1, LilycoveCity_DepartmentStoreElevator_EventScript_ChooseFloorFrom4th
