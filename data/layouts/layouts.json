@@ -5724,6 +5724,42 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/UndergroundPath_EastEntrance/border.bin",
       "blockdata_filepath": "data/layouts/UndergroundPath_EastEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETTS_CAVE_NORTH_ENTRANCE",
+      "name": "DiglettsCave_NorthEntrance_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_digletts_cave",
+      "border_filepath": "data/layouts/DiglettsCave_NorthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave_NorthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETTS_CAVE_B1F",
+      "name": "DiglettsCave_B1F_Layout",
+      "width": 85,
+      "height": 80,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_digletts_cave",
+      "border_filepath": "data/layouts/DiglettsCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DIGLETTS_CAVE_SOUTH_ENTRANCE",
+      "name": "DiglettsCave_SouthEntrance_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_digletts_cave",
+      "border_filepath": "data/layouts/DiglettsCave_SouthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/DiglettsCave_SouthEntrance/map.bin"
     }
   ]
 }

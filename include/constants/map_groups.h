@@ -42,6 +42,9 @@
 #define MAP_UNDERGROUND_PATH_WEST_ENTRANCE      (33 | (0 << 8))
 #define MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL   (34 | (0 << 8))
 #define MAP_UNDERGROUND_PATH_EAST_ENTRANCE      (35 | (0 << 8))
+#define MAP_DIGLETTS_CAVE_NORTH_ENTRANCE        (36 | (0 << 8))
+#define MAP_DIGLETTS_CAVE_B1F                   (37 | (0 << 8))
+#define MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE        (38 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
