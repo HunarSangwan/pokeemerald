@@ -1122,3 +1122,14 @@ const struct Tileset gTileset_pokemon_league =
     .metatileAttributes = gMetatileAttributes_pokemon_league,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_pokemon_mansion =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_pokemon_mansion,
+    .palettes = gTilesetPalettes_pokemon_mansion,
+    .metatiles = gMetatiles_pokemon_mansion,
+    .metatileAttributes = gMetatileAttributes_pokemon_mansion,
+    .callback = NULL,
+};
