@@ -318,3 +318,6 @@ const u16 gMetatileAttributes_school[] = INCBIN_U16("data/tilesets/secondary/sch
 
 const u16 gMetatiles_sea_cottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatiles.bin");
 const u16 gMetatileAttributes_sea_cottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatile_attributes.bin");
+
+const u16 gMetatiles_seafoam_islands[] = INCBIN_U16("data/tilesets/secondary/seafoam_islands/metatiles.bin");
+const u16 gMetatileAttributes_seafoam_islands[] = INCBIN_U16("data/tilesets/secondary/seafoam_islands/metatile_attributes.bin");

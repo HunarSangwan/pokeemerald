@@ -1232,3 +1232,14 @@ const struct Tileset gTileset_sea_cottage =
     .metatileAttributes = gMetatileAttributes_sea_cottage,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_seafoam_islands =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_seafoam_islands,
+    .palettes = gTilesetPalettes_seafoam_islands,
+    .metatiles = gMetatiles_seafoam_islands,
+    .metatileAttributes = gMetatileAttributes_seafoam_islands,
+    .callback = NULL,
+};
