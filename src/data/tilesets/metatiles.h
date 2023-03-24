@@ -345,3 +345,6 @@ const u16 gMetatileAttributes_trainer_tower[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_underground_path[] = INCBIN_U16("data/tilesets/secondary/underground_path/metatiles.bin");
 const u16 gMetatileAttributes_underground_path[] = INCBIN_U16("data/tilesets/secondary/underground_path/metatile_attributes.bin");
+
+const u16 gMetatiles_vermilion_city[] = INCBIN_U16("data/tilesets/secondary/vermilion_city/metatiles.bin");
+const u16 gMetatileAttributes_vermilion_city[] = INCBIN_U16("data/tilesets/secondary/vermilion_city/metatile_attributes.bin");

@@ -1331,3 +1331,14 @@ const struct Tileset gTileset_underground_path =
     .metatileAttributes = gMetatileAttributes_underground_path,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_vermilion_city =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_vermilion_city,
+    .palettes = gTilesetPalettes_vermilion_city,
+    .metatiles = gMetatiles_vermilion_city,
+    .metatileAttributes = gMetatileAttributes_vermilion_city,
+    .callback = NULL,
+};
