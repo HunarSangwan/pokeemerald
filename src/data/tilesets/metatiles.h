@@ -291,3 +291,6 @@ const u16 gMetatileAttributes_pokemon_league[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_pokemon_mansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion/metatiles.bin");
 const u16 gMetatileAttributes_pokemon_mansion[] = INCBIN_U16("data/tilesets/secondary/pokemon_mansion/metatile_attributes.bin");
+
+const u16 gMetatiles_pokemon_tower[] = INCBIN_U16("data/tilesets/secondary/pokemon_tower/metatiles.bin");
+const u16 gMetatileAttributes_pokemon_tower[] = INCBIN_U16("data/tilesets/secondary/pokemon_tower/metatile_attributes.bin");
