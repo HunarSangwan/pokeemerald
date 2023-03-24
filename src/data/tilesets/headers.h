@@ -1100,3 +1100,14 @@ const struct Tileset gTileset_pewter_city =
     .metatileAttributes = gMetatileAttributes_pewter_city,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_pewter_gym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_pewter_gym,
+    .palettes = gTilesetPalettes_pewter_gym,
+    .metatiles = gMetatiles_pewter_gym,
+    .metatileAttributes = gMetatileAttributes_pewter_gym,
+    .callback = NULL,
+};
