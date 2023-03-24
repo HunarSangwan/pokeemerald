@@ -4,7 +4,10 @@
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Dungeons": [
-    "ViridianForest"
+    "ViridianForest",
+    "MtMoon_1F",
+    "MtMoon_B1F",
+    "MtMoon_B2F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

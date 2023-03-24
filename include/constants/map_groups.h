@@ -7,6 +7,9 @@
 
 // gMapGroup_Dungeons
 #define MAP_VIRIDIAN_FOREST (0 | (0 << 8))
+#define MAP_MT_MOON_1F      (1 | (0 << 8))
+#define MAP_MT_MOON_B1F     (2 | (0 << 8))
+#define MAP_MT_MOON_B2F     (3 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
