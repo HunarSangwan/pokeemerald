@@ -210,3 +210,6 @@ const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_berry_forest[] = INCBIN_U16("data/tilesets/secondary/berry_forest/metatiles.bin");
 const u16 gMetatileAttributes_berry_forest[] = INCBIN_U16("data/tilesets/secondary/berry_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_burgled_house[] = INCBIN_U16("data/tilesets/secondary/burgled_house/metatiles.bin");
+const u16 gMetatileAttributes_burgled_house[] = INCBIN_U16("data/tilesets/secondary/burgled_house/metatile_attributes.bin");

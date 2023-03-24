@@ -897,7 +897,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_BikeShop",
+      "secondary_tileset": "gTileset_burgled_house",
       "border_filepath": "data/layouts/MauvilleCity_BikeShop/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity_BikeShop/map.bin"
     },
