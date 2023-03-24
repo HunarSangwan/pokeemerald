@@ -1309,3 +1309,14 @@ const struct Tileset gTileset_tanoby_ruins =
     .metatileAttributes = gMetatileAttributes_tanoby_ruins,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_trainer_tower =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_trainer_tower,
+    .palettes = gTilesetPalettes_trainer_tower,
+    .metatiles = gMetatiles_trainer_tower,
+    .metatileAttributes = gMetatileAttributes_trainer_tower,
+    .callback = NULL,
+};
