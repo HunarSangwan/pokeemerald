@@ -1364,3 +1364,14 @@ const struct Tileset gTileset_viridian_city =
     .metatileAttributes = gMetatileAttributes_viridian_city,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_viridian_forest =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_viridian_forest,
+    .palettes = gTilesetPalettes_viridian_forest,
+    .metatiles = gMetatiles_viridian_forest,
+    .metatileAttributes = gMetatileAttributes_viridian_forest,
+    .callback = NULL,
+};
