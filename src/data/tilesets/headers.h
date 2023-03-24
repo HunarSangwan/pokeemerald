@@ -968,3 +968,14 @@ const struct Tileset gTileset_fan_club_daycare =
     .metatileAttributes = gMetatileAttributes_fan_club_daycare,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_fuchsia_city =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_fuchsia_city,
+    .palettes = gTilesetPalettes_fuchsia_city,
+    .metatiles = gMetatiles_fuchsia_city,
+    .metatileAttributes = gMetatileAttributes_fuchsia_city,
+    .callback = NULL,
+};
