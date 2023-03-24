@@ -1177,3 +1177,14 @@ const struct Tileset gTileset_rock_tunnel =
     .metatileAttributes = gMetatileAttributes_rock_tunnel,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_safari_zone_building =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_safari_zone_building,
+    .palettes = gTilesetPalettes_safari_zone_building,
+    .metatiles = gMetatiles_safari_zone_building,
+    .metatileAttributes = gMetatileAttributes_safari_zone_building,
+    .callback = NULL,
+};
