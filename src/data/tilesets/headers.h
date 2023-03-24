@@ -1342,3 +1342,14 @@ const struct Tileset gTileset_vermilion_city =
     .metatileAttributes = gMetatileAttributes_vermilion_city,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_vermilion_gym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_vermilion_gym,
+    .palettes = gTilesetPalettes_vermilion_gym,
+    .metatiles = gMetatiles_vermilion_gym,
+    .metatileAttributes = gMetatileAttributes_vermilion_gym,
+    .callback = NULL,
+};

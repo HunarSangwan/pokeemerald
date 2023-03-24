@@ -348,3 +348,6 @@ const u16 gMetatileAttributes_underground_path[] = INCBIN_U16("data/tilesets/sec
 
 const u16 gMetatiles_vermilion_city[] = INCBIN_U16("data/tilesets/secondary/vermilion_city/metatiles.bin");
 const u16 gMetatileAttributes_vermilion_city[] = INCBIN_U16("data/tilesets/secondary/vermilion_city/metatile_attributes.bin");
+
+const u16 gMetatiles_vermilion_gym[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/metatiles.bin");
+const u16 gMetatileAttributes_vermilion_gym[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/metatile_attributes.bin");
