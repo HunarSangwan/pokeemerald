@@ -957,3 +957,14 @@ const struct Tileset gTileset_digletts_cave =
     .metatileAttributes = gMetatileAttributes_digletts_cave,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_fan_club_daycare =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_fan_club_daycare,
+    .palettes = gTilesetPalettes_fan_club_daycare,
+    .metatiles = gMetatiles_fan_club_daycare,
+    .metatileAttributes = gMetatileAttributes_fan_club_daycare,
+    .callback = NULL,
+};
