@@ -255,3 +255,9 @@ const u16 gMetatileAttributes_fuchsia_gym[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_game_corner[] = INCBIN_U16("data/tilesets/secondary/game_corner/metatiles.bin");
 const u16 gMetatileAttributes_game_corner[] = INCBIN_U16("data/tilesets/secondary/game_corner/metatile_attributes.bin");
+
+const u16 gMetatiles_generic_building_1[] = INCBIN_U16("data/tilesets/secondary/generic_building_1/metatiles.bin");
+const u16 gMetatileAttributes_generic_building_1[] = INCBIN_U16("data/tilesets/secondary/generic_building_1/metatile_attributes.bin");
+
+const u16 gMetatiles_generic_building_2[] = INCBIN_U16("data/tilesets/secondary/generic_building_2/metatiles.bin");
+const u16 gMetatileAttributes_generic_building_2[] = INCBIN_U16("data/tilesets/secondary/generic_building_2/metatile_attributes.bin");

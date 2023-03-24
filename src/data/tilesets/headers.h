@@ -1001,3 +1001,25 @@ const struct Tileset gTileset_game_corner =
     .metatileAttributes = gMetatileAttributes_game_corner,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_generic_building_1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_generic_building_1,
+    .palettes = gTilesetPalettes_generic_building_1,
+    .metatiles = gMetatiles_generic_building_1,
+    .metatileAttributes = gMetatileAttributes_generic_building_1,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_generic_building_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_generic_building_2,
+    .palettes = gTilesetPalettes_generic_building_2,
+    .metatiles = gMetatiles_generic_building_2,
+    .metatileAttributes = gMetatileAttributes_generic_building_2,
+    .callback = NULL,
+};
