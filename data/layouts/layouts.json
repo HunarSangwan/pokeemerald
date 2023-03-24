@@ -896,7 +896,7 @@
       "name": "MauvilleCity_BikeShop_Layout",
       "width": 12,
       "height": 9,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/MauvilleCity_BikeShop/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity_BikeShop/map.bin"
