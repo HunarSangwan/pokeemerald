@@ -321,3 +321,12 @@ const u16 gMetatileAttributes_sea_cottage[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_seafoam_islands[] = INCBIN_U16("data/tilesets/secondary/seafoam_islands/metatiles.bin");
 const u16 gMetatileAttributes_seafoam_islands[] = INCBIN_U16("data/tilesets/secondary/seafoam_islands/metatile_attributes.bin");
+
+const u16 gMetatiles_sevii_islands_45[] = INCBIN_U16("data/tilesets/secondary/sevii_islands_45/metatiles.bin");
+const u16 gMetatileAttributes_sevii_islands_45[] = INCBIN_U16("data/tilesets/secondary/sevii_islands_45/metatile_attributes.bin");
+
+const u16 gMetatiles_sevii_islands_67[] = INCBIN_U16("data/tilesets/secondary/sevii_islands_67/metatiles.bin");
+const u16 gMetatileAttributes_sevii_islands_67[] = INCBIN_U16("data/tilesets/secondary/sevii_islands_67/metatile_attributes.bin");
+
+const u16 gMetatiles_sevii_islands_123[] = INCBIN_U16("data/tilesets/secondary/sevii_islands_123/metatiles.bin");
+const u16 gMetatileAttributes_sevii_islands_123[] = INCBIN_U16("data/tilesets/secondary/sevii_islands_123/metatile_attributes.bin");

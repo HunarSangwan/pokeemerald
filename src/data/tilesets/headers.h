@@ -1243,3 +1243,36 @@ const struct Tileset gTileset_seafoam_islands =
     .metatileAttributes = gMetatileAttributes_seafoam_islands,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_sevii_islands_45 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_sevii_islands_45,
+    .palettes = gTilesetPalettes_sevii_islands_45,
+    .metatiles = gMetatiles_sevii_islands_45,
+    .metatileAttributes = gMetatileAttributes_sevii_islands_45,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_sevii_islands_67 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_sevii_islands_67,
+    .palettes = gTilesetPalettes_sevii_islands_67,
+    .metatiles = gMetatiles_sevii_islands_67,
+    .metatileAttributes = gMetatileAttributes_sevii_islands_67,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_sevii_islands_123 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_sevii_islands_123,
+    .palettes = gTilesetPalettes_sevii_islands_123,
+    .metatiles = gMetatiles_sevii_islands_123,
+    .metatileAttributes = gMetatileAttributes_sevii_islands_123,
+    .callback = NULL,
+};
