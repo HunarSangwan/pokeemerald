@@ -1276,3 +1276,14 @@ const struct Tileset gTileset_sevii_islands_123 =
     .metatileAttributes = gMetatileAttributes_sevii_islands_123,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_silph_co =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_silph_co,
+    .palettes = gTilesetPalettes_silph_co,
+    .metatiles = gMetatiles_silph_co,
+    .metatileAttributes = gMetatileAttributes_silph_co,
+    .callback = NULL,
+};
