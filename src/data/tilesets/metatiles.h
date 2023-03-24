@@ -249,3 +249,6 @@ const u16 gMetatileAttributes_fan_club_daycare[] = INCBIN_U16("data/tilesets/sec
 
 const u16 gMetatiles_fuchsia_city[] = INCBIN_U16("data/tilesets/secondary/fuchsia_city/metatiles.bin");
 const u16 gMetatileAttributes_fuchsia_city[] = INCBIN_U16("data/tilesets/secondary/fuchsia_city/metatile_attributes.bin");
+
+const u16 gMetatiles_fuchsia_gym[] = INCBIN_U16("data/tilesets/secondary/fuchsia_gym/metatiles.bin");
+const u16 gMetatileAttributes_fuchsia_gym[] = INCBIN_U16("data/tilesets/secondary/fuchsia_gym/metatile_attributes.bin");
