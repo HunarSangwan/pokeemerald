@@ -1298,3 +1298,14 @@ const struct Tileset gTileset_ss_anne =
     .metatileAttributes = gMetatileAttributes_ss_anne,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_tanoby_ruins =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_tanoby_ruins,
+    .palettes = gTilesetPalettes_tanoby_ruins,
+    .metatiles = gMetatiles_tanoby_ruins,
+    .metatileAttributes = gMetatileAttributes_tanoby_ruins,
+    .callback = NULL,
+};

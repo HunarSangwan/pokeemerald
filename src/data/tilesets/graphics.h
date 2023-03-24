@@ -2451,3 +2451,22 @@ const u16 gTilesetPalettes_ss_anne[][16] =
 };
 
 const u32 gTilesetTiles_ss_anne[] = INCBIN_U32("data/tilesets/secondary/ss_anne/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_tanoby_ruins[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/tanoby_ruins/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_tanoby_ruins[] = INCBIN_U32("data/tilesets/secondary/tanoby_ruins/tiles.4bpp.lz");

@@ -336,3 +336,6 @@ const u16 gMetatileAttributes_silph_co[] = INCBIN_U16("data/tilesets/secondary/s
 
 const u16 gMetatiles_ss_anne[] = INCBIN_U16("data/tilesets/secondary/ss_anne/metatiles.bin");
 const u16 gMetatileAttributes_ss_anne[] = INCBIN_U16("data/tilesets/secondary/ss_anne/metatile_attributes.bin");
+
+const u16 gMetatiles_tanoby_ruins[] = INCBIN_U16("data/tilesets/secondary/tanoby_ruins/metatiles.bin");
+const u16 gMetatileAttributes_tanoby_ruins[] = INCBIN_U16("data/tilesets/secondary/tanoby_ruins/metatile_attributes.bin");
