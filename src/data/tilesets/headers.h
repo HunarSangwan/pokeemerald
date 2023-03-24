@@ -1078,3 +1078,14 @@ const struct Tileset gTileset_museum =
     .metatileAttributes = gMetatileAttributes_museum,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_pallet_town =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_pallet_town,
+    .palettes = gTilesetPalettes_pallet_town,
+    .metatiles = gMetatiles_pallet_town,
+    .metatileAttributes = gMetatileAttributes_pallet_town,
+    .callback = NULL,
+};
