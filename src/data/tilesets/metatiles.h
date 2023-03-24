@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_berry_forest[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_burgled_house[] = INCBIN_U16("data/tilesets/secondary/burgled_house/metatiles.bin");
 const u16 gMetatileAttributes_burgled_house[] = INCBIN_U16("data/tilesets/secondary/burgled_house/metatile_attributes.bin");
+
+const u16 gMetatiles_celadon_city[] = INCBIN_U16("data/tilesets/secondary/celadon_city/metatiles.bin");
+const u16 gMetatileAttributes_celadon_city[] = INCBIN_U16("data/tilesets/secondary/celadon_city/metatile_attributes.bin");
