@@ -300,3 +300,6 @@ const u16 gMetatileAttributes_power_plant[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_restaurant_hotel[] = INCBIN_U16("data/tilesets/secondary/restaurant_hotel/metatiles.bin");
 const u16 gMetatileAttributes_restaurant_hotel[] = INCBIN_U16("data/tilesets/secondary/restaurant_hotel/metatile_attributes.bin");
+
+const u16 gMetatiles_rock_tunnel[] = INCBIN_U16("data/tilesets/secondary/rock_tunnel/metatiles.bin");
+const u16 gMetatileAttributes_rock_tunnel[] = INCBIN_U16("data/tilesets/secondary/rock_tunnel/metatile_attributes.bin");

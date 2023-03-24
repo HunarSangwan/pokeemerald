@@ -1166,3 +1166,14 @@ const struct Tileset gTileset_restaurant_hotel =
     .metatileAttributes = gMetatileAttributes_restaurant_hotel,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_rock_tunnel =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_rock_tunnel,
+    .palettes = gTilesetPalettes_rock_tunnel,
+    .metatiles = gMetatiles_rock_tunnel,
+    .metatileAttributes = gMetatileAttributes_rock_tunnel,
+    .callback = NULL,
+};
