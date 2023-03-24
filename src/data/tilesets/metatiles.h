@@ -333,3 +333,6 @@ const u16 gMetatileAttributes_sevii_islands_123[] = INCBIN_U16("data/tilesets/se
 
 const u16 gMetatiles_silph_co[] = INCBIN_U16("data/tilesets/secondary/silph_co/metatiles.bin");
 const u16 gMetatileAttributes_silph_co[] = INCBIN_U16("data/tilesets/secondary/silph_co/metatile_attributes.bin");
+
+const u16 gMetatiles_ss_anne[] = INCBIN_U16("data/tilesets/secondary/ss_anne/metatiles.bin");
+const u16 gMetatileAttributes_ss_anne[] = INCBIN_U16("data/tilesets/secondary/ss_anne/metatile_attributes.bin");

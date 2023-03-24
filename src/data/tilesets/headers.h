@@ -1287,3 +1287,14 @@ const struct Tileset gTileset_silph_co =
     .metatileAttributes = gMetatileAttributes_silph_co,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_ss_anne =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_ss_anne,
+    .palettes = gTilesetPalettes_ss_anne,
+    .metatiles = gMetatiles_ss_anne,
+    .metatileAttributes = gMetatileAttributes_ss_anne,
+    .callback = NULL,
+};
