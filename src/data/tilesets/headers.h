@@ -924,3 +924,14 @@ const struct Tileset gTileset_cinnabar_island =
     .metatileAttributes = gMetatileAttributes_cinnabar_island,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_condominiums =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_condominiums,
+    .palettes = gTilesetPalettes_condominiums,
+    .metatiles = gMetatiles_condominiums,
+    .metatileAttributes = gMetatileAttributes_condominiums,
+    .callback = NULL,
+};

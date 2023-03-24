@@ -1805,3 +1805,22 @@ const u16 gTilesetPalettes_cinnabar_island[][16] =
 };
 
 const u32 gTilesetTiles_cinnabar_island[] = INCBIN_U32("data/tilesets/secondary/cinnabar_island/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_condominiums[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/condominiums/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_condominiums[] = INCBIN_U32("data/tilesets/secondary/condominiums/tiles.4bpp.lz");

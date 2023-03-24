@@ -234,3 +234,6 @@ const u16 gMetatileAttributes_cinnabar_gym[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_cinnabar_island[] = INCBIN_U16("data/tilesets/secondary/cinnabar_island/metatiles.bin");
 const u16 gMetatileAttributes_cinnabar_island[] = INCBIN_U16("data/tilesets/secondary/cinnabar_island/metatile_attributes.bin");
+
+const u16 gMetatiles_condominiums[] = INCBIN_U16("data/tilesets/secondary/condominiums/metatiles.bin");
+const u16 gMetatileAttributes_condominiums[] = INCBIN_U16("data/tilesets/secondary/condominiums/metatile_attributes.bin");
