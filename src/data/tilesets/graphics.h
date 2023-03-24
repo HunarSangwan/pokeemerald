@@ -2128,3 +2128,22 @@ const u16 gTilesetPalettes_pewter_gym[][16] =
 };
 
 const u32 gTilesetTiles_pewter_gym[] = INCBIN_U32("data/tilesets/secondary/pewter_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_pokemon_league[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_league/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_pokemon_league[] = INCBIN_U32("data/tilesets/secondary/pokemon_league/tiles.4bpp.lz");

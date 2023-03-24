@@ -1111,3 +1111,14 @@ const struct Tileset gTileset_pewter_gym =
     .metatileAttributes = gMetatileAttributes_pewter_gym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_pokemon_league =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_pokemon_league,
+    .palettes = gTilesetPalettes_pokemon_league,
+    .metatiles = gMetatiles_pokemon_league,
+    .metatileAttributes = gMetatileAttributes_pokemon_league,
+    .callback = NULL,
+};

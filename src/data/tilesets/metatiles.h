@@ -285,3 +285,6 @@ const u16 gMetatileAttributes_pewter_city[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_pewter_gym[] = INCBIN_U16("data/tilesets/secondary/pewter_gym/metatiles.bin");
 const u16 gMetatileAttributes_pewter_gym[] = INCBIN_U16("data/tilesets/secondary/pewter_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_pokemon_league[] = INCBIN_U16("data/tilesets/secondary/pokemon_league/metatiles.bin");
+const u16 gMetatileAttributes_pokemon_league[] = INCBIN_U16("data/tilesets/secondary/pokemon_league/metatile_attributes.bin");
