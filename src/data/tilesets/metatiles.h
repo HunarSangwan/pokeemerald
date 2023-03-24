@@ -261,3 +261,6 @@ const u16 gMetatileAttributes_generic_building_1[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_generic_building_2[] = INCBIN_U16("data/tilesets/secondary/generic_building_2/metatiles.bin");
 const u16 gMetatileAttributes_generic_building_2[] = INCBIN_U16("data/tilesets/secondary/generic_building_2/metatile_attributes.bin");
+
+const u16 gMetatiles_hall_of_fame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame/metatiles.bin");
+const u16 gMetatileAttributes_hall_of_fame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame/metatile_attributes.bin");
