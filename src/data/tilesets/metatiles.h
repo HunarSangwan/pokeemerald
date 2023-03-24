@@ -270,3 +270,6 @@ const u16 gMetatileAttributes_indigo_plateau[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_mart[] = INCBIN_U16("data/tilesets/secondary/mart/metatiles.bin");
 const u16 gMetatileAttributes_mart[] = INCBIN_U16("data/tilesets/secondary/mart/metatile_attributes.bin");
+
+const u16 gMetatiles_mt_ember[] = INCBIN_U16("data/tilesets/secondary/mt_ember/metatiles.bin");
+const u16 gMetatileAttributes_mt_ember[] = INCBIN_U16("data/tilesets/secondary/mt_ember/metatile_attributes.bin");
