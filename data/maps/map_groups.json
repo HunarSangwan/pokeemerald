@@ -1,6 +1,10 @@
 {
   "group_order": [
+    "gMapGroup_Dungeons",
     "gMapGroup_Emerald"
+  ],
+  "gMapGroup_Dungeons": [
+    "ViridianForest"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
