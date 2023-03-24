@@ -309,3 +309,6 @@ const u16 gMetatileAttributes_safari_zone_building[] = INCBIN_U16("data/tilesets
 
 const u16 gMetatiles_saffron_city[] = INCBIN_U16("data/tilesets/secondary/saffron_city/metatiles.bin");
 const u16 gMetatileAttributes_saffron_city[] = INCBIN_U16("data/tilesets/secondary/saffron_city/metatile_attributes.bin");
+
+const u16 gMetatiles_saffron_gym[] = INCBIN_U16("data/tilesets/secondary/saffron_gym/metatiles.bin");
+const u16 gMetatileAttributes_saffron_gym[] = INCBIN_U16("data/tilesets/secondary/saffron_gym/metatile_attributes.bin");

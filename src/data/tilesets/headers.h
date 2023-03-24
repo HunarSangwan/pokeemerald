@@ -1199,3 +1199,14 @@ const struct Tileset gTileset_saffron_city =
     .metatileAttributes = gMetatileAttributes_saffron_city,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_saffron_gym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_saffron_gym,
+    .palettes = gTilesetPalettes_saffron_gym,
+    .metatiles = gMetatiles_saffron_gym,
+    .metatileAttributes = gMetatileAttributes_saffron_gym,
+    .callback = NULL,
+};
