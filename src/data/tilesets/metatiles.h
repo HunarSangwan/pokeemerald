@@ -273,3 +273,6 @@ const u16 gMetatileAttributes_mart[] = INCBIN_U16("data/tilesets/secondary/mart/
 
 const u16 gMetatiles_mt_ember[] = INCBIN_U16("data/tilesets/secondary/mt_ember/metatiles.bin");
 const u16 gMetatileAttributes_mt_ember[] = INCBIN_U16("data/tilesets/secondary/mt_ember/metatile_attributes.bin");
+
+const u16 gMetatiles_museum[] = INCBIN_U16("data/tilesets/secondary/museum/metatiles.bin");
+const u16 gMetatileAttributes_museum[] = INCBIN_U16("data/tilesets/secondary/museum/metatile_attributes.bin");
