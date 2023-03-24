@@ -1320,3 +1320,14 @@ const struct Tileset gTileset_trainer_tower =
     .metatileAttributes = gMetatileAttributes_trainer_tower,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_underground_path =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_underground_path,
+    .palettes = gTilesetPalettes_underground_path,
+    .metatiles = gMetatiles_underground_path,
+    .metatileAttributes = gMetatileAttributes_underground_path,
+    .callback = NULL,
+};

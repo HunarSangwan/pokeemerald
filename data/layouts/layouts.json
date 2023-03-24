@@ -7,7 +7,7 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_pallet_town",
+      "secondary_tileset": "gTileset_underground_path",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
     },
@@ -897,7 +897,7 @@
       "width": 12,
       "height": 9,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_silph_co",
+      "secondary_tileset": "gTileset_trainer_tower",
       "border_filepath": "data/layouts/MauvilleCity_BikeShop/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity_BikeShop/map.bin"
     },
