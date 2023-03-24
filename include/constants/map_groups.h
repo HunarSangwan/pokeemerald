@@ -18,6 +18,12 @@
 #define MAP_SSANNE_DECK            (9 | (0 << 8))
 #define MAP_SSANNE_KITCHEN         (10 | (0 << 8))
 #define MAP_SSANNE_CAPTAINS_OFFICE (11 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM1        (12 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM2        (13 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM3        (14 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM4        (15 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM5        (16 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM7        (17 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

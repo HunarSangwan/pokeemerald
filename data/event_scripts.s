@@ -1079,3 +1079,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SSAnne_Kitchen/scripts.inc"
 
 	.include "data/maps/SSAnne_CaptainsOffice/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Room1/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Room2/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Room3/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Room4/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Room5/scripts.inc"
+
+	.include "data/maps/SSAnne_1F_Room7/scripts.inc"
