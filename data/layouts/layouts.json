@@ -5652,6 +5652,78 @@
       "secondary_tileset": "gTileset_ss_anne",
       "border_filepath": "data/layouts/SSAnne_1F_Room6/border.bin",
       "blockdata_filepath": "data/layouts/SSAnne_1F_Room6/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERGROUND_PATH_NORTH_ENTRANCE",
+      "name": "UndergroundPath_NorthEntrance_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/UndergroundPath_NorthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/UndergroundPath_NorthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL",
+      "name": "UndergroundPath_NorthSouthTunnel_Layout",
+      "width": 8,
+      "height": 63,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_underground_path",
+      "border_filepath": "data/layouts/UndergroundPath_NorthSouthTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/UndergroundPath_NorthSouthTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERGROUND_PATH_SOUTH_ENTRANCE",
+      "name": "UndergroundPath_SouthEntrance_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/UndergroundPath_SouthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/UndergroundPath_SouthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERGROUND_PATH_WEST_ENTRANCE",
+      "name": "UndergroundPath_WestEntrance_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/UndergroundPath_WestEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/UndergroundPath_WestEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERGROUND_PATH_EAST_WEST_TUNNEL",
+      "name": "UndergroundPath_EastWestTunnel_Layout",
+      "width": 80,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_underground_path",
+      "border_filepath": "data/layouts/UndergroundPath_EastWestTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/UndergroundPath_EastWestTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERGROUND_PATH_EAST_ENTRANCE",
+      "name": "UndergroundPath_EastEntrance_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/UndergroundPath_EastEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/UndergroundPath_EastEntrance/map.bin"
     }
   ]
 }

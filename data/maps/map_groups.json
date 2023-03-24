@@ -33,7 +33,13 @@
     "SSAnne_B1F_Room3",
     "SSAnne_B1F_Room4",
     "SSAnne_B1F_Room5",
-    "SSAnne_1F_Room6"
+    "SSAnne_1F_Room6",
+    "UndergroundPath_NorthEntrance",
+    "UndergroundPath_NorthSouthTunnel",
+    "UndergroundPath_SouthEntrance",
+    "UndergroundPath_WestEntrance",
+    "UndergroundPath_EastWestTunnel",
+    "UndergroundPath_EastEntrance"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
