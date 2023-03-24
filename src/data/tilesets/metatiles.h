@@ -267,3 +267,6 @@ const u16 gMetatileAttributes_hall_of_fame[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_indigo_plateau[] = INCBIN_U16("data/tilesets/secondary/indigo_plateau/metatiles.bin");
 const u16 gMetatileAttributes_indigo_plateau[] = INCBIN_U16("data/tilesets/secondary/indigo_plateau/metatile_attributes.bin");
+
+const u16 gMetatiles_mart[] = INCBIN_U16("data/tilesets/secondary/mart/metatiles.bin");
+const u16 gMetatileAttributes_mart[] = INCBIN_U16("data/tilesets/secondary/mart/metatile_attributes.bin");

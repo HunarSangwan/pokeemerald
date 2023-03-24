@@ -1045,3 +1045,14 @@ const struct Tileset gTileset_indigo_plateau =
     .metatileAttributes = gMetatileAttributes_indigo_plateau,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_mart =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_mart,
+    .palettes = gTilesetPalettes_mart,
+    .metatiles = gMetatiles_mart,
+    .metatileAttributes = gMetatileAttributes_mart,
+    .callback = NULL,
+};
