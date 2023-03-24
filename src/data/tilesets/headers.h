@@ -1210,3 +1210,14 @@ const struct Tileset gTileset_saffron_gym =
     .metatileAttributes = gMetatileAttributes_saffron_gym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_school =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_school,
+    .palettes = gTilesetPalettes_school,
+    .metatiles = gMetatiles_school,
+    .metatileAttributes = gMetatileAttributes_school,
+    .callback = NULL,
+};
