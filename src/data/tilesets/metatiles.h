@@ -222,3 +222,6 @@ const u16 gMetatileAttributes_celadon_gym[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_cerulean_cave[] = INCBIN_U16("data/tilesets/secondary/cerulean_cave/metatiles.bin");
 const u16 gMetatileAttributes_cerulean_cave[] = INCBIN_U16("data/tilesets/secondary/cerulean_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_cerulean_city[] = INCBIN_U16("data/tilesets/secondary/cerulean_city/metatiles.bin");
+const u16 gMetatileAttributes_cerulean_city[] = INCBIN_U16("data/tilesets/secondary/cerulean_city/metatile_attributes.bin");
