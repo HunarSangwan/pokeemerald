@@ -45,6 +45,14 @@
 #define MAP_DIGLETTS_CAVE_NORTH_ENTRANCE        (36 | (0 << 8))
 #define MAP_DIGLETTS_CAVE_B1F                   (37 | (0 << 8))
 #define MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE        (38 | (0 << 8))
+#define MAP_VICTORY_ROAD_1F                     (39 | (0 << 8))
+#define MAP_VICTORY_ROAD_2F                     (40 | (0 << 8))
+#define MAP_VICTORY_ROAD_3F                     (41 | (0 << 8))
+#define MAP_ROCKET_HIDEOUT_B1F                  (42 | (0 << 8))
+#define MAP_ROCKET_HIDEOUT_B2F                  (43 | (0 << 8))
+#define MAP_ROCKET_HIDEOUT_B3F                  (44 | (0 << 8))
+#define MAP_ROCKET_HIDEOUT_B4F                  (45 | (0 << 8))
+#define MAP_ROCKET_HIDEOUT_ELEVATOR             (46 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

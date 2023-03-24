@@ -1947,15 +1947,15 @@
     },
     {
       "id": "LAYOUT_VICTORY_ROAD_1F",
-      "name": "VictoryRoad_1F_Layout",
-      "width": 46,
-      "height": 45,
+      "name": "VictoryRoad_1f_Layout",
+      "width": 48,
+      "height": 22,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/VictoryRoad_1F/border.bin",
-      "blockdata_filepath": "data/layouts/VictoryRoad_1F/map.bin"
+      "border_filepath": "data/layouts/VictoryRoad_1f/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_1f/map.bin"
     },
     {
       "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
@@ -5760,6 +5760,90 @@
       "secondary_tileset": "gTileset_digletts_cave",
       "border_filepath": "data/layouts/DiglettsCave_SouthEntrance/border.bin",
       "blockdata_filepath": "data/layouts/DiglettsCave_SouthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_2F",
+      "name": "VictoryRoad_2F_Layout",
+      "width": 51,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_2F/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VICTORY_ROAD_3F",
+      "name": "VictoryRoad_3F_Layout",
+      "width": 45,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/VictoryRoad_3F/border.bin",
+      "blockdata_filepath": "data/layouts/VictoryRoad_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT_B1F",
+      "name": "RocketHideout_B1F_Layout",
+      "width": 28,
+      "height": 34,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_silph_co",
+      "border_filepath": "data/layouts/RocketHideout_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT_B2F",
+      "name": "RocketHideout_B2F_Layout",
+      "width": 32,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_silph_co",
+      "border_filepath": "data/layouts/RocketHideout_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT_B3F",
+      "name": "RocketHideout_B3F_Layout",
+      "width": 22,
+      "height": 27,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_silph_co",
+      "border_filepath": "data/layouts/RocketHideout_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT_B4F",
+      "name": "RocketHideout_B4F_Layout",
+      "width": 24,
+      "height": 26,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_silph_co",
+      "border_filepath": "data/layouts/RocketHideout_B4F/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT_ELEVATOR",
+      "name": "RocketHideout_Elevator_Layout",
+      "width": 5,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_silph_co",
+      "border_filepath": "data/layouts/RocketHideout_Elevator/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout_Elevator/map.bin"
     }
   ]
 }
