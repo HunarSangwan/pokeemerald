@@ -315,3 +315,6 @@ const u16 gMetatileAttributes_saffron_gym[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_school[] = INCBIN_U16("data/tilesets/secondary/school/metatiles.bin");
 const u16 gMetatileAttributes_school[] = INCBIN_U16("data/tilesets/secondary/school/metatile_attributes.bin");
+
+const u16 gMetatiles_sea_cottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatiles.bin");
+const u16 gMetatileAttributes_sea_cottage[] = INCBIN_U16("data/tilesets/secondary/sea_cottage/metatile_attributes.bin");

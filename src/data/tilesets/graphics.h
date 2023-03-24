@@ -2318,3 +2318,22 @@ const u16 gTilesetPalettes_school[][16] =
 };
 
 const u32 gTilesetTiles_school[] = INCBIN_U32("data/tilesets/secondary/school/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_sea_cottage[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sea_cottage/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_sea_cottage[] = INCBIN_U32("data/tilesets/secondary/sea_cottage/tiles.4bpp.lz");

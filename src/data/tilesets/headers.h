@@ -1221,3 +1221,14 @@ const struct Tileset gTileset_school =
     .metatileAttributes = gMetatileAttributes_school,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_sea_cottage =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_sea_cottage,
+    .palettes = gTilesetPalettes_sea_cottage,
+    .metatiles = gMetatiles_sea_cottage,
+    .metatileAttributes = gMetatileAttributes_sea_cottage,
+    .callback = NULL,
+};
