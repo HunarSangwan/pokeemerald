@@ -240,3 +240,6 @@ const u16 gMetatileAttributes_condominiums[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_department_store[] = INCBIN_U16("data/tilesets/secondary/department_store/metatiles.bin");
 const u16 gMetatileAttributes_department_store[] = INCBIN_U16("data/tilesets/secondary/department_store/metatile_attributes.bin");
+
+const u16 gMetatiles_digletts_cave[] = INCBIN_U16("data/tilesets/secondary/digletts_cave/metatiles.bin");
+const u16 gMetatileAttributes_digletts_cave[] = INCBIN_U16("data/tilesets/secondary/digletts_cave/metatile_attributes.bin");

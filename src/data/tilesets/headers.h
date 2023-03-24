@@ -946,3 +946,14 @@ const struct Tileset gTileset_department_store =
     .metatileAttributes = gMetatileAttributes_department_store,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_digletts_cave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_digletts_cave,
+    .palettes = gTilesetPalettes_digletts_cave,
+    .metatiles = gMetatiles_digletts_cave,
+    .metatileAttributes = gMetatileAttributes_digletts_cave,
+    .callback = NULL,
+};
