@@ -24,6 +24,18 @@
 #define MAP_SSANNE_1F_ROOM4        (15 | (0 << 8))
 #define MAP_SSANNE_1F_ROOM5        (16 | (0 << 8))
 #define MAP_SSANNE_1F_ROOM7        (17 | (0 << 8))
+#define MAP_SSANNE_2F_ROOM1        (18 | (0 << 8))
+#define MAP_SSANNE_2F_ROOM2        (19 | (0 << 8))
+#define MAP_SSANNE_2F_ROOM3        (20 | (0 << 8))
+#define MAP_SSANNE_2F_ROOM4        (21 | (0 << 8))
+#define MAP_SSANNE_2F_ROOM5        (22 | (0 << 8))
+#define MAP_SSANNE_2F_ROOM6        (23 | (0 << 8))
+#define MAP_SSANNE_B1F_ROOM1       (24 | (0 << 8))
+#define MAP_SSANNE_B1F_ROOM2       (25 | (0 << 8))
+#define MAP_SSANNE_B1F_ROOM3       (26 | (0 << 8))
+#define MAP_SSANNE_B1F_ROOM4       (27 | (0 << 8))
+#define MAP_SSANNE_B1F_ROOM5       (28 | (0 << 8))
+#define MAP_SSANNE_1F_ROOM6        (29 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
