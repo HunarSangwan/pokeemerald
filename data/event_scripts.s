@@ -1275,3 +1275,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtEmber_RubyPath_B2F_Stairs/scripts.inc"
 
 	.include "data/maps/ThreeIsland_BerryForest/scripts.inc"
+
+	.include "data/maps/FourIsland_IcefallCave_Entrance/scripts.inc"
+
+	.include "data/maps/FourIsland_IcefallCave_1F/scripts.inc"
+
+	.include "data/maps/FourIsland_IcefallCave_B1F/scripts.inc"
+
+	.include "data/maps/FourIsland_IcefallCave_Back/scripts.inc"
