@@ -1283,3 +1283,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FourIsland_IcefallCave_B1F/scripts.inc"
 
 	.include "data/maps/FourIsland_IcefallCave_Back/scripts.inc"
+
+	.include "data/maps/FiveIsland_RocketWarehouse/scripts.inc"

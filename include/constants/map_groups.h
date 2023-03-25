@@ -120,6 +120,7 @@
 #define MAP_FOUR_ISLAND_ICEFALL_CAVE_1F         (111 | (0 << 8))
 #define MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F        (112 | (0 << 8))
 #define MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK       (113 | (0 << 8))
+#define MAP_FIVE_ISLAND_ROCKET_WAREHOUSE        (114 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

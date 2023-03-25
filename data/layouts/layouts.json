@@ -6660,6 +6660,18 @@
       "secondary_tileset": "gTileset_seafoam_islands",
       "border_filepath": "data/layouts/FourIsland_IcefallCave_Back/border.bin",
       "blockdata_filepath": "data/layouts/FourIsland_IcefallCave_Back/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLAND_ROCKET_WAREHOUSE",
+      "name": "FiveIsland_RocketWarehouse_Layout",
+      "width": 29,
+      "height": 27,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_silph_co",
+      "border_filepath": "data/layouts/FiveIsland_RocketWarehouse/border.bin",
+      "blockdata_filepath": "data/layouts/FiveIsland_RocketWarehouse/map.bin"
     }
   ]
 }
