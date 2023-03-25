@@ -75,7 +75,10 @@
     "SafariZone_East_RestHouse",
     "SafariZone_North_RestHouse",
     "SafariZone_West_RestHouse",
-    "SafariZone_SecretHouse"
+    "SafariZone_SecretHouse",
+    "CeruleanCave_1F",
+    "CeruleanCave_2F",
+    "CeruleanCave_B1F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

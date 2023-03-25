@@ -78,6 +78,9 @@
 #define MAP_SAFARI_ZONE_NORTH_REST_HOUSE        (69 | (0 << 8))
 #define MAP_SAFARI_ZONE_WEST_REST_HOUSE         (70 | (0 << 8))
 #define MAP_SAFARI_ZONE_SECRET_HOUSE            (71 | (0 << 8))
+#define MAP_CERULEAN_CAVE_1F                    (72 | (0 << 8))
+#define MAP_CERULEAN_CAVE_2F                    (73 | (0 << 8))
+#define MAP_CERULEAN_CAVE_B1F                   (74 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

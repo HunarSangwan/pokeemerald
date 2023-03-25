@@ -1199,3 +1199,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SafariZone_West_RestHouse/scripts.inc"
 
 	.include "data/maps/SafariZone_SecretHouse/scripts.inc"
+
+	.include "data/maps/CeruleanCave_1F/scripts.inc"
+
+	.include "data/maps/CeruleanCave_2F/scripts.inc"
+
+	.include "data/maps/CeruleanCave_B1F/scripts.inc"
