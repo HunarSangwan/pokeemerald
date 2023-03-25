@@ -1217,3 +1217,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PokemonLeague_ChampionsRoom/scripts.inc"
 
 	.include "data/maps/PokemonLeague_HallOfFame/scripts.inc"
+
+	.include "data/maps/RockTunnel_1F/scripts.inc"
+
+	.include "data/maps/RockTunnel_B1F/scripts.inc"

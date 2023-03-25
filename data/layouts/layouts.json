@@ -6264,6 +6264,30 @@
       "secondary_tileset": "gTileset_hall_of_fame",
       "border_filepath": "data/layouts/PokemonLeague_HallOfFame/border.bin",
       "blockdata_filepath": "data/layouts/PokemonLeague_HallOfFame/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCK_TUNNEL_1F",
+      "name": "RockTunnel_1F_Layout",
+      "width": 48,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_rock_tunnel",
+      "border_filepath": "data/layouts/RockTunnel_1F/border.bin",
+      "blockdata_filepath": "data/layouts/RockTunnel_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCK_TUNNEL_B1F",
+      "name": "RockTunnel_B1F_Layout",
+      "width": 48,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_rock_tunnel",
+      "border_filepath": "data/layouts/RockTunnel_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/RockTunnel_B1F/map.bin"
     }
   ]
 }

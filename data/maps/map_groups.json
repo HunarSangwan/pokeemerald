@@ -84,7 +84,9 @@
     "PokemonLeague_AgathasRoom",
     "PokemonLeague_LancesRoom",
     "PokemonLeague_ChampionsRoom",
-    "PokemonLeague_HallOfFame"
+    "PokemonLeague_HallOfFame",
+    "RockTunnel_1F",
+    "RockTunnel_B1F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
