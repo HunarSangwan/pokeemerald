@@ -163,6 +163,7 @@
 #define MAP_SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER  (29 | (1 << 8))
 #define MAP_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER (30 | (1 << 8))
 #define MAP_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER  (31 | (1 << 8))
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER    (32 | (1 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (2 << 8))

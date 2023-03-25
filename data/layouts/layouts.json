@@ -7152,6 +7152,18 @@
       "secondary_tileset": "gTileset_tanoby_ruins",
       "border_filepath": "data/layouts/SevenIsland_TanobyRuins_ScufibChamber/border.bin",
       "blockdata_filepath": "data/layouts/SevenIsland_TanobyRuins_ScufibChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER",
+      "name": "SevenIsland_TanobyRuins_RixyChamber_Layout",
+      "width": 23,
+      "height": 17,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_tanoby_ruins",
+      "border_filepath": "data/layouts/SevenIsland_TanobyRuins_RixyChamber/border.bin",
+      "blockdata_filepath": "data/layouts/SevenIsland_TanobyRuins_RixyChamber/map.bin"
     }
   ]
 }
