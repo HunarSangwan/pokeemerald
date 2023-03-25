@@ -1301,3 +1301,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SixIsland_PatternBush/scripts.inc"
 
 	.include "data/maps/SixIsland_AlteringCave/scripts.inc"
+
+	.include "data/maps/FRLG_NavelRock_Exterior/scripts.inc"

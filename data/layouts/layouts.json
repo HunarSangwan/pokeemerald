@@ -6768,6 +6768,18 @@
       "secondary_tileset": "gTileset_rock_tunnel",
       "border_filepath": "data/layouts/SixIsland_AlteringCave/border.bin",
       "blockdata_filepath": "data/layouts/SixIsland_AlteringCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_NAVEL_ROCK_EXTERIOR",
+      "name": "FRLG_NavelRock_Exterior_Layout",
+      "width": 20,
+      "height": 23,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_123",
+      "border_filepath": "data/layouts/FRLG_NavelRock_Exterior/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_NavelRock_Exterior/map.bin"
     }
   ]
 }

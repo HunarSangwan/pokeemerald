@@ -1,6 +1,7 @@
 {
   "group_order": [
     "gMapGroup_Dungeons",
+    "gMapGroup_SpecialArea",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Dungeons": [
@@ -127,6 +128,9 @@
     "SixIsland_DottedHole_SapphireRoom",
     "SixIsland_PatternBush",
     "SixIsland_AlteringCave"
+  ],
+  "gMapGroup_SpecialArea": [
+    "FRLG_NavelRock_Exterior"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
