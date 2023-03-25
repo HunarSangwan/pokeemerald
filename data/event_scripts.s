@@ -1359,3 +1359,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SevenIsland_TanobyRuins_MoneanChamber/scripts.inc"
 
 	.include "data/maps/SevenIsland_TanobyRuins_LiptooChamber/scripts.inc"
+
+	.include "data/maps/SevenIsland_TanobyRuins_WeepthChamber/scripts.inc"

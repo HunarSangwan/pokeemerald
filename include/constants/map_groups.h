@@ -160,6 +160,7 @@
 #define MAP_FIVE_ISLAND_LOST_CAVE_ROOM14             (26 | (1 << 8))
 #define MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER (27 | (1 << 8))
 #define MAP_SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER (28 | (1 << 8))
+#define MAP_SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER (29 | (1 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (2 << 8))
