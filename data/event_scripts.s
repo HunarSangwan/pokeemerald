@@ -1303,3 +1303,25 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SixIsland_AlteringCave/scripts.inc"
 
 	.include "data/maps/FRLG_NavelRock_Exterior/scripts.inc"
+
+	.include "data/maps/TrainerTower_1F/scripts.inc"
+
+	.include "data/maps/TrainerTower_2F/scripts.inc"
+
+	.include "data/maps/TrainerTower_3F/scripts.inc"
+
+	.include "data/maps/TrainerTower_4F/scripts.inc"
+
+	.include "data/maps/TrainerTower_5F/scripts.inc"
+
+	.include "data/maps/TrainerTower_6F/scripts.inc"
+
+	.include "data/maps/TrainerTower_7F/scripts.inc"
+
+	.include "data/maps/TrainerTower_8F/scripts.inc"
+
+	.include "data/maps/TrainerTower_Roof/scripts.inc"
+
+	.include "data/maps/TrainerTower_Lobby/scripts.inc"
+
+	.include "data/maps/TrainerTower_Elevator/scripts.inc"

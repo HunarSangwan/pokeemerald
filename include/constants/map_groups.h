@@ -132,6 +132,17 @@
 
 // gMapGroup_SpecialArea
 #define MAP_FRLG_NAVEL_ROCK_EXTERIOR (0 | (1 << 8))
+#define MAP_TRAINER_TOWER_1F         (1 | (1 << 8))
+#define MAP_TRAINER_TOWER_2F         (2 | (1 << 8))
+#define MAP_TRAINER_TOWER_3F         (3 | (1 << 8))
+#define MAP_TRAINER_TOWER_4F         (4 | (1 << 8))
+#define MAP_TRAINER_TOWER_5F         (5 | (1 << 8))
+#define MAP_TRAINER_TOWER_6F         (6 | (1 << 8))
+#define MAP_TRAINER_TOWER_7F         (7 | (1 << 8))
+#define MAP_TRAINER_TOWER_8F         (8 | (1 << 8))
+#define MAP_TRAINER_TOWER_ROOF       (9 | (1 << 8))
+#define MAP_TRAINER_TOWER_LOBBY      (10 | (1 << 8))
+#define MAP_TRAINER_TOWER_ELEVATOR   (11 | (1 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (2 << 8))

@@ -130,7 +130,18 @@
     "SixIsland_AlteringCave"
   ],
   "gMapGroup_SpecialArea": [
-    "FRLG_NavelRock_Exterior"
+    "FRLG_NavelRock_Exterior",
+    "TrainerTower_1F",
+    "TrainerTower_2F",
+    "TrainerTower_3F",
+    "TrainerTower_4F",
+    "TrainerTower_5F",
+    "TrainerTower_6F",
+    "TrainerTower_7F",
+    "TrainerTower_8F",
+    "TrainerTower_Roof",
+    "TrainerTower_Lobby",
+    "TrainerTower_Elevator"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
