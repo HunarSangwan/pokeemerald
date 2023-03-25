@@ -1247,3 +1247,29 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PokemonTower_7F/scripts.inc"
 
 	.include "data/maps/PowerPlant/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B4F/scripts.inc"
+
+	.include "data/maps/MtEmber_Exterior/scripts.inc"
+
+	.include "data/maps/MtEmber_SummitPath_1F/scripts.inc"
+
+	.include "data/maps/MtEmber_SummitPath_2F/scripts.inc"
+
+	.include "data/maps/MtEmber_SummitPath_3F/scripts.inc"
+
+	.include "data/maps/MtEmber_Summit/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B5F/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_1F/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B1F/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B2F/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B3F/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B1F_Stairs/scripts.inc"
+
+	.include "data/maps/MtEmber_RubyPath_B2F_Stairs/scripts.inc"
