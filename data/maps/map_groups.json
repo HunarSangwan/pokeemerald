@@ -141,7 +141,22 @@
     "TrainerTower_8F",
     "TrainerTower_Roof",
     "TrainerTower_Lobby",
-    "TrainerTower_Elevator"
+    "TrainerTower_Elevator",
+    "FiveIsland_LostCave_Entrance",
+    "FiveIsland_LostCave_Room1",
+    "FiveIsland_LostCave_Room2",
+    "FiveIsland_LostCave_Room3",
+    "FiveIsland_LostCave_Room4",
+    "FiveIsland_LostCave_Room5",
+    "FiveIsland_LostCave_Room6",
+    "FiveIsland_LostCave_Room7",
+    "FiveIsland_LostCave_Room8",
+    "FiveIsland_LostCave_Room9",
+    "FiveIsland_LostCave_Room10",
+    "FiveIsland_LostCave_Room11",
+    "FiveIsland_LostCave_Room12",
+    "FiveIsland_LostCave_Room13",
+    "FiveIsland_LostCave_Room14"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

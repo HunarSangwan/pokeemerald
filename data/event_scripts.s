@@ -1325,3 +1325,33 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TrainerTower_Lobby/scripts.inc"
 
 	.include "data/maps/TrainerTower_Elevator/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Entrance/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room1/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room2/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room3/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room4/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room5/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room6/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room7/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room8/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room9/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room10/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room11/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room12/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room13/scripts.inc"
+
+	.include "data/maps/FiveIsland_LostCave_Room14/scripts.inc"
