@@ -188,7 +188,8 @@
     "FRLG_NavelRock_Fork",
     "FRLG_BirthIsland_Exterior",
     "OneIsland_KindleRoad_EmberSpa",
-    "FRLG_BirthIsland_Harbor"
+    "FRLG_BirthIsland_Harbor",
+    "FRLG_NavelRock_Harbor"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

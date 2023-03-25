@@ -7476,6 +7476,18 @@
       "secondary_tileset": "gTileset_IslandHarbor",
       "border_filepath": "data/layouts/FRLG_BirthIsland_Harbor/border.bin",
       "blockdata_filepath": "data/layouts/FRLG_BirthIsland_Harbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_NAVEL_ROCK_HARBOR",
+      "name": "FRLG_NavelRock_Harbor_Layout",
+      "width": 17,
+      "height": 13,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/FRLG_NavelRock_Harbor/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_NavelRock_Harbor/map.bin"
     }
   ]
 }
