@@ -65,6 +65,10 @@
 #define MAP_SILPH_CO_10F                        (56 | (0 << 8))
 #define MAP_SILPH_CO_11F                        (57 | (0 << 8))
 #define MAP_SILPH_CO_ELEVATOR                   (58 | (0 << 8))
+#define MAP_POKEMON_MANSION_1F                  (59 | (0 << 8))
+#define MAP_POKEMON_MANSION_2F                  (60 | (0 << 8))
+#define MAP_POKEMON_MANSION_3F                  (61 | (0 << 8))
+#define MAP_POKEMON_MANSION_B1F                 (62 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

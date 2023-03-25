@@ -1173,3 +1173,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SilphCo_11F/scripts.inc"
 
 	.include "data/maps/SilphCo_Elevator/scripts.inc"
+
+	.include "data/maps/PokemonMansion_1F/scripts.inc"
+
+	.include "data/maps/PokemonMansion_2F/scripts.inc"
+
+	.include "data/maps/PokemonMansion_3F/scripts.inc"
+
+	.include "data/maps/PokemonMansion_B1F/scripts.inc"

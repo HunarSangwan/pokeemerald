@@ -62,7 +62,11 @@
     "SilphCo_9F",
     "SilphCo_10F",
     "SilphCo_11F",
-    "SilphCo_Elevator"
+    "SilphCo_Elevator",
+    "PokemonMansion_1F",
+    "PokemonMansion_2F",
+    "PokemonMansion_3F",
+    "PokemonMansion_B1F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
