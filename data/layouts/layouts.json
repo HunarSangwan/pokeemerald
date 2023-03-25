@@ -6672,6 +6672,78 @@
       "secondary_tileset": "gTileset_silph_co",
       "border_filepath": "data/layouts/FiveIsland_RocketWarehouse/border.bin",
       "blockdata_filepath": "data/layouts/FiveIsland_RocketWarehouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_1F",
+      "name": "SixIsland_DottedHole_1F_Layout",
+      "width": 16,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SixIsland_DottedHole_1F/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_DottedHole_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_B1F",
+      "name": "SixIsland_DottedHole_B1F_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SixIsland_DottedHole_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_DottedHole_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_B2F",
+      "name": "SixIsland_DottedHole_B2F_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SixIsland_DottedHole_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_DottedHole_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_B3F",
+      "name": "SixIsland_DottedHole_B3F_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SixIsland_DottedHole_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_DottedHole_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_B4F",
+      "name": "SixIsland_DottedHole_B4F_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SixIsland_DottedHole_B4F/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_DottedHole_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM",
+      "name": "SixIsland_DottedHole_SapphireRoom_Layout",
+      "width": 16,
+      "height": 15,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SixIsland_DottedHole_SapphireRoom/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_DottedHole_SapphireRoom/map.bin"
     }
   ]
 }

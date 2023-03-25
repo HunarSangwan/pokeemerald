@@ -1285,3 +1285,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FourIsland_IcefallCave_Back/scripts.inc"
 
 	.include "data/maps/FiveIsland_RocketWarehouse/scripts.inc"
+
+	.include "data/maps/SixIsland_DottedHole_1F/scripts.inc"
+
+	.include "data/maps/SixIsland_DottedHole_B1F/scripts.inc"
+
+	.include "data/maps/SixIsland_DottedHole_B2F/scripts.inc"
+
+	.include "data/maps/SixIsland_DottedHole_B3F/scripts.inc"
+
+	.include "data/maps/SixIsland_DottedHole_B4F/scripts.inc"
+
+	.include "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.inc"
