@@ -7176,6 +7176,18 @@
       "secondary_tileset": "gTileset_tanoby_ruins",
       "border_filepath": "data/layouts/SevenIsland_TanobyRuins_ViapoisChamber/border.bin",
       "blockdata_filepath": "data/layouts/SevenIsland_TanobyRuins_ViapoisChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_THREE_ISLAND_DUNSPARCE_TUNNEL",
+      "name": "ThreeIsland_DunsparceTunnel_Layout",
+      "width": 30,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ThreeIsland_DunsparceTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/ThreeIsland_DunsparceTunnel/map.bin"
     }
   ]
 }
