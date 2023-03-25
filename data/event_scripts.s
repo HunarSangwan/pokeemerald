@@ -1379,3 +1379,37 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NavelRock_Summit/scripts.inc"
 
 	.include "data/maps/NavelRock_Base/scripts.inc"
+
+	.include "data/maps/NavelRock_SummitPath_2F/scripts.inc"
+
+	.include "data/maps/NavelRock_SummitPath_3F/scripts.inc"
+
+	.include "data/maps/NavelRock_SummitPath_4F/scripts.inc"
+
+	.include "data/maps/NavelRock_SummitPath_5F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B1F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B2F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B3F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B4F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B5F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B6F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B7F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B8F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B9F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B10F/scripts.inc"
+
+	.include "data/maps/NavelRock_BasePath_B11F/scripts.inc"
+
+	.include "data/maps/FRLG_NavelRock_B1F/scripts.inc"
+
+	.include "data/maps/FRLG_NavelRock_Fork/scripts.inc"

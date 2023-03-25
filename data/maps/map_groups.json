@@ -127,10 +127,7 @@
     "SixIsland_DottedHole_B4F",
     "SixIsland_DottedHole_SapphireRoom",
     "SixIsland_PatternBush",
-    "SixIsland_AlteringCave",
-    "NavelRock_1F",
-    "NavelRock_Summit",
-    "NavelRock_Base"
+    "SixIsland_AlteringCave"
   ],
   "gMapGroup_SpecialArea": [
     "FRLG_NavelRock_Exterior",
@@ -168,7 +165,27 @@
     "SevenIsland_TanobyRuins_RixyChamber",
     "SevenIsland_TanobyRuins_ViapoisChamber",
     "ThreeIsland_DunsparceTunnel",
-    "SevenIsland_SevaultCanyon_TanobyKey"
+    "SevenIsland_SevaultCanyon_TanobyKey",
+    "NavelRock_1F",
+    "NavelRock_Summit",
+    "NavelRock_Base",
+    "NavelRock_SummitPath_2F",
+    "NavelRock_SummitPath_3F",
+    "NavelRock_SummitPath_4F",
+    "NavelRock_SummitPath_5F",
+    "NavelRock_BasePath_B1F",
+    "NavelRock_BasePath_B2F",
+    "NavelRock_BasePath_B3F",
+    "NavelRock_BasePath_B4F",
+    "NavelRock_BasePath_B5F",
+    "NavelRock_BasePath_B6F",
+    "NavelRock_BasePath_B7F",
+    "NavelRock_BasePath_B8F",
+    "NavelRock_BasePath_B9F",
+    "NavelRock_BasePath_B10F",
+    "NavelRock_BasePath_B11F",
+    "FRLG_NavelRock_B1F",
+    "FRLG_NavelRock_Fork"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
