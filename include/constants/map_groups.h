@@ -188,6 +188,7 @@
 #define MAP_FRLG_NAVEL_ROCK_B1F                       (54 | (1 << 8))
 #define MAP_FRLG_NAVEL_ROCK_FORK                      (55 | (1 << 8))
 #define MAP_FRLG_BIRTH_ISLAND_EXTERIOR                (56 | (1 << 8))
+#define MAP_ONE_ISLAND_KINDLE_ROAD_EMBER_SPA          (57 | (1 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (2 << 8))
