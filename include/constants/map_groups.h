@@ -69,6 +69,10 @@
 #define MAP_POKEMON_MANSION_2F                  (60 | (0 << 8))
 #define MAP_POKEMON_MANSION_3F                  (61 | (0 << 8))
 #define MAP_POKEMON_MANSION_B1F                 (62 | (0 << 8))
+#define MAP_SAFARI_ZONE_CENTER                  (63 | (0 << 8))
+#define MAP_SAFARI_ZONE_EAST                    (64 | (0 << 8))
+#define MAP_KANTO_SAFARI_ZONE_NORTH             (65 | (0 << 8))
+#define MAP_SAFARI_ZONE_WEST                    (66 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

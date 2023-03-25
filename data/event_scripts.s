@@ -1181,3 +1181,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PokemonMansion_3F/scripts.inc"
 
 	.include "data/maps/PokemonMansion_B1F/scripts.inc"
+
+	.include "data/maps/SafariZone_Center/scripts.inc"
+
+	.include "data/maps/SafariZone_East/scripts.inc"
+
+	.include "data/maps/Kanto_SafariZone_North/scripts.inc"
+
+	.include "data/maps/SafariZone_West/scripts.inc"
