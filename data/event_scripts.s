@@ -1371,3 +1371,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SevenIsland_TanobyRuins_ViapoisChamber/scripts.inc"
 
 	.include "data/maps/ThreeIsland_DunsparceTunnel/scripts.inc"
+
+	.include "data/maps/SevenIsland_SevaultCanyon_TanobyKey/scripts.inc"
