@@ -81,6 +81,12 @@
 #define MAP_CERULEAN_CAVE_1F                    (72 | (0 << 8))
 #define MAP_CERULEAN_CAVE_2F                    (73 | (0 << 8))
 #define MAP_CERULEAN_CAVE_B1F                   (74 | (0 << 8))
+#define MAP_POKEMON_LEAGUE_LORELEIS_ROOM        (75 | (0 << 8))
+#define MAP_POKEMON_LEAGUE_BRUNOS_ROOM          (76 | (0 << 8))
+#define MAP_POKEMON_LEAGUE_AGATHAS_ROOM         (77 | (0 << 8))
+#define MAP_POKEMON_LEAGUE_LANCES_ROOM          (78 | (0 << 8))
+#define MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM       (79 | (0 << 8))
+#define MAP_POKEMON_LEAGUE_HALL_OF_FAME         (80 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

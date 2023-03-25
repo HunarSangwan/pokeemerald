@@ -1205,3 +1205,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeruleanCave_2F/scripts.inc"
 
 	.include "data/maps/CeruleanCave_B1F/scripts.inc"
+
+	.include "data/maps/PokemonLeague_LoreleisRoom/scripts.inc"
+
+	.include "data/maps/PokemonLeague_BrunosRoom/scripts.inc"
+
+	.include "data/maps/PokemonLeague_AgathasRoom/scripts.inc"
+
+	.include "data/maps/PokemonLeague_LancesRoom/scripts.inc"
+
+	.include "data/maps/PokemonLeague_ChampionsRoom/scripts.inc"
+
+	.include "data/maps/PokemonLeague_HallOfFame/scripts.inc"
