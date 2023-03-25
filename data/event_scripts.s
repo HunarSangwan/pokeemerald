@@ -1373,3 +1373,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ThreeIsland_DunsparceTunnel/scripts.inc"
 
 	.include "data/maps/SevenIsland_SevaultCanyon_TanobyKey/scripts.inc"
+
+	.include "data/maps/NavelRock_1F/scripts.inc"
+
+	.include "data/maps/NavelRock_Summit/scripts.inc"
+
+	.include "data/maps/NavelRock_Base/scripts.inc"

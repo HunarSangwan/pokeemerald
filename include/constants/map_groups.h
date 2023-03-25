@@ -129,6 +129,9 @@
 #define MAP_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM (120 | (0 << 8))
 #define MAP_SIX_ISLAND_PATTERN_BUSH              (121 | (0 << 8))
 #define MAP_SIX_ISLAND_ALTERING_CAVE             (122 | (0 << 8))
+#define MAP_NAVEL_ROCK_1F                        (123 | (0 << 8))
+#define MAP_NAVEL_ROCK_SUMMIT                    (124 | (0 << 8))
+#define MAP_NAVEL_ROCK_BASE                      (125 | (0 << 8))
 
 // gMapGroup_SpecialArea
 #define MAP_FRLG_NAVEL_ROCK_EXTERIOR                  (0 | (1 << 8))

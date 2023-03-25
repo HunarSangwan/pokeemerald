@@ -7200,6 +7200,42 @@
       "secondary_tileset": "gTileset_digletts_cave",
       "border_filepath": "data/layouts/SevenIsland_SevaultCanyon_TanobyKey/border.bin",
       "blockdata_filepath": "data/layouts/SevenIsland_SevaultCanyon_TanobyKey/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_1F",
+      "name": "NavelRock_1F_Layout",
+      "width": 17,
+      "height": 26,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_1F/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_SUMMIT",
+      "name": "NavelRock_Summit_Layout",
+      "width": 19,
+      "height": 25,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_Summit/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_Summit/map.bin"
+    },
+    {
+      "id": "LAYOUT_NAVEL_ROCK_BASE",
+      "name": "NavelRock_Base_Layout",
+      "width": 21,
+      "height": 23,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/NavelRock_Base/border.bin",
+      "blockdata_filepath": "data/layouts/NavelRock_Base/map.bin"
     }
   ]
 }
