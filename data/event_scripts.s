@@ -1297,3 +1297,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SixIsland_DottedHole_B4F/scripts.inc"
 
 	.include "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.inc"
+
+	.include "data/maps/SixIsland_PatternBush/scripts.inc"
+
+	.include "data/maps/SixIsland_AlteringCave/scripts.inc"

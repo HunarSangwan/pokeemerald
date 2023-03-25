@@ -6744,6 +6744,30 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/SixIsland_DottedHole_SapphireRoom/border.bin",
       "blockdata_filepath": "data/layouts/SixIsland_DottedHole_SapphireRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_PATTERN_BUSH",
+      "name": "SixIsland_PatternBush_Layout",
+      "width": 60,
+      "height": 32,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_viridian_forest",
+      "border_filepath": "data/layouts/SixIsland_PatternBush/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_PatternBush/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIX_ISLAND_ALTERING_CAVE",
+      "name": "SixIsland_AlteringCave_Layout",
+      "width": 32,
+      "height": 24,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_rock_tunnel",
+      "border_filepath": "data/layouts/SixIsland_AlteringCave/border.bin",
+      "blockdata_filepath": "data/layouts/SixIsland_AlteringCave/map.bin"
     }
   ]
 }

@@ -124,7 +124,9 @@
     "SixIsland_DottedHole_B2F",
     "SixIsland_DottedHole_B3F",
     "SixIsland_DottedHole_B4F",
-    "SixIsland_DottedHole_SapphireRoom"
+    "SixIsland_DottedHole_SapphireRoom",
+    "SixIsland_PatternBush",
+    "SixIsland_AlteringCave"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

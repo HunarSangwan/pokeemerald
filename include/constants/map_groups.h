@@ -127,6 +127,8 @@
 #define MAP_SIX_ISLAND_DOTTED_HOLE_B3F           (118 | (0 << 8))
 #define MAP_SIX_ISLAND_DOTTED_HOLE_B4F           (119 | (0 << 8))
 #define MAP_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM (120 | (0 << 8))
+#define MAP_SIX_ISLAND_PATTERN_BUSH              (121 | (0 << 8))
+#define MAP_SIX_ISLAND_ALTERING_CAVE             (122 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
