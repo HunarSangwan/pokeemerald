@@ -1355,3 +1355,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FiveIsland_LostCave_Room13/scripts.inc"
 
 	.include "data/maps/FiveIsland_LostCave_Room14/scripts.inc"
+
+	.include "data/maps/SevenIsland_TanobyRuins_MoneanChamber/scripts.inc"
