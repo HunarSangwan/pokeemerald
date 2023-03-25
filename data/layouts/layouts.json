@@ -7128,6 +7128,18 @@
       "secondary_tileset": "gTileset_tanoby_ruins",
       "border_filepath": "data/layouts/SevenIsland_TanobyRuins_WeepthChamber/border.bin",
       "blockdata_filepath": "data/layouts/SevenIsland_TanobyRuins_WeepthChamber/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER",
+      "name": "SevenIsland_TanobyRuins_DilfordChamber_Layout",
+      "width": 23,
+      "height": 17,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_tanoby_ruins",
+      "border_filepath": "data/layouts/SevenIsland_TanobyRuins_DilfordChamber/border.bin",
+      "blockdata_filepath": "data/layouts/SevenIsland_TanobyRuins_DilfordChamber/map.bin"
     }
   ]
 }
