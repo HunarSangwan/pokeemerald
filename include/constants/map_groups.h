@@ -53,6 +53,18 @@
 #define MAP_ROCKET_HIDEOUT_B3F                  (44 | (0 << 8))
 #define MAP_ROCKET_HIDEOUT_B4F                  (45 | (0 << 8))
 #define MAP_ROCKET_HIDEOUT_ELEVATOR             (46 | (0 << 8))
+#define MAP_SILPH_CO_1F                         (47 | (0 << 8))
+#define MAP_SILPH_CO_2F                         (48 | (0 << 8))
+#define MAP_SILPH_CO_3F                         (49 | (0 << 8))
+#define MAP_SILPH_CO_4F                         (50 | (0 << 8))
+#define MAP_SILPH_CO_5F                         (51 | (0 << 8))
+#define MAP_SILPH_CO_6F                         (52 | (0 << 8))
+#define MAP_SILPH_CO_7F                         (53 | (0 << 8))
+#define MAP_SILPH_CO_8F                         (54 | (0 << 8))
+#define MAP_SILPH_CO_9F                         (55 | (0 << 8))
+#define MAP_SILPH_CO_10F                        (56 | (0 << 8))
+#define MAP_SILPH_CO_11F                        (57 | (0 << 8))
+#define MAP_SILPH_CO_ELEVATOR                   (58 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
