@@ -101,6 +101,7 @@
 #define MAP_POKEMON_TOWER_5F                    (92 | (0 << 8))
 #define MAP_POKEMON_TOWER_6F                    (93 | (0 << 8))
 #define MAP_POKEMON_TOWER_7F                    (94 | (0 << 8))
+#define MAP_POWER_PLANT                         (95 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
