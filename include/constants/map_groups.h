@@ -115,6 +115,7 @@
 #define MAP_MT_EMBER_RUBY_PATH_B3F              (106 | (0 << 8))
 #define MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS       (107 | (0 << 8))
 #define MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS       (108 | (0 << 8))
+#define MAP_THREE_ISLAND_BERRY_FOREST           (109 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

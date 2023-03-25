@@ -1273,3 +1273,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtEmber_RubyPath_B1F_Stairs/scripts.inc"
 
 	.include "data/maps/MtEmber_RubyPath_B2F_Stairs/scripts.inc"
+
+	.include "data/maps/ThreeIsland_BerryForest/scripts.inc"
