@@ -73,6 +73,11 @@
 #define MAP_SAFARI_ZONE_EAST                    (64 | (0 << 8))
 #define MAP_KANTO_SAFARI_ZONE_NORTH             (65 | (0 << 8))
 #define MAP_SAFARI_ZONE_WEST                    (66 | (0 << 8))
+#define MAP_SAFARI_ZONE_CENTER_REST_HOUSE       (67 | (0 << 8))
+#define MAP_SAFARI_ZONE_EAST_REST_HOUSE         (68 | (0 << 8))
+#define MAP_SAFARI_ZONE_NORTH_REST_HOUSE        (69 | (0 << 8))
+#define MAP_SAFARI_ZONE_WEST_REST_HOUSE         (70 | (0 << 8))
+#define MAP_SAFARI_ZONE_SECRET_HOUSE            (71 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

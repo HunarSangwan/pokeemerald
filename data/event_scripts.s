@@ -1189,3 +1189,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kanto_SafariZone_North/scripts.inc"
 
 	.include "data/maps/SafariZone_West/scripts.inc"
+
+	.include "data/maps/SafariZone_Center_RestHouse/scripts.inc"
+
+	.include "data/maps/SafariZone_East_RestHouse/scripts.inc"
+
+	.include "data/maps/SafariZone_North_RestHouse/scripts.inc"
+
+	.include "data/maps/SafariZone_West_RestHouse/scripts.inc"
+
+	.include "data/maps/SafariZone_SecretHouse/scripts.inc"

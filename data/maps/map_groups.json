@@ -70,7 +70,12 @@
     "SafariZone_Center",
     "SafariZone_East",
     "Kanto_SafariZone_North",
-    "SafariZone_West"
+    "SafariZone_West",
+    "SafariZone_Center_RestHouse",
+    "SafariZone_East_RestHouse",
+    "SafariZone_North_RestHouse",
+    "SafariZone_West_RestHouse",
+    "SafariZone_SecretHouse"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

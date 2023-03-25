@@ -6096,6 +6096,66 @@
       "secondary_tileset": "gTileset_fuchsia_city",
       "border_filepath": "data/layouts/SafariZone_West/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_CENTER_REST_HOUSE",
+      "name": "SafariZone_Center_RestHouse_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_safari_zone_building",
+      "border_filepath": "data/layouts/SafariZone_Center_RestHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Center_RestHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_EAST_REST_HOUSE",
+      "name": "SafariZone_East_RestHouse_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_safari_zone_building",
+      "border_filepath": "data/layouts/SafariZone_East_RestHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_East_RestHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_NORTH_REST_HOUSE",
+      "name": "SafariZone_North_RestHouse_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_safari_zone_building",
+      "border_filepath": "data/layouts/SafariZone_North_RestHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_North_RestHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_WEST_REST_HOUSE",
+      "name": "SafariZone_West_RestHouse_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_safari_zone_building",
+      "border_filepath": "data/layouts/SafariZone_West_RestHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_West_RestHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_SECRET_HOUSE",
+      "name": "SafariZone_SecretHouse_Layout",
+      "width": 13,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_safari_zone_building",
+      "border_filepath": "data/layouts/SafariZone_SecretHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_SecretHouse/map.bin"
     }
   ]
 }
