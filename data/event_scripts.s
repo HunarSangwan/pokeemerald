@@ -1413,3 +1413,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FRLG_NavelRock_B1F/scripts.inc"
 
 	.include "data/maps/FRLG_NavelRock_Fork/scripts.inc"
+
+	.include "data/maps/FRLG_BirthIsland_Exterior/scripts.inc"

@@ -7440,6 +7440,18 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/FRLG_NavelRock_Fork/border.bin",
       "blockdata_filepath": "data/layouts/FRLG_NavelRock_Fork/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_BIRTH_ISLAND_EXTERIOR",
+      "name": "FRLG_BirthIsland_Exterior_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/FRLG_BirthIsland_Exterior/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_BirthIsland_Exterior/map.bin"
     }
   ]
 }
