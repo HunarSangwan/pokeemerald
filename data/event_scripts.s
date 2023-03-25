@@ -1231,3 +1231,17 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SeafoamIslands_B3F/scripts.inc"
 
 	.include "data/maps/SeafoamIslands_B4F/scripts.inc"
+
+	.include "data/maps/PokemonTower_1F/scripts.inc"
+
+	.include "data/maps/PokemonTower_2F/scripts.inc"
+
+	.include "data/maps/PokemonTower_3F/scripts.inc"
+
+	.include "data/maps/PokemonTower_4F/scripts.inc"
+
+	.include "data/maps/PokemonTower_5F/scripts.inc"
+
+	.include "data/maps/PokemonTower_6F/scripts.inc"
+
+	.include "data/maps/PokemonTower_7F/scripts.inc"

@@ -94,6 +94,13 @@
 #define MAP_SEAFOAM_ISLANDS_B2F                 (85 | (0 << 8))
 #define MAP_SEAFOAM_ISLANDS_B3F                 (86 | (0 << 8))
 #define MAP_SEAFOAM_ISLANDS_B4F                 (87 | (0 << 8))
+#define MAP_POKEMON_TOWER_1F                    (88 | (0 << 8))
+#define MAP_POKEMON_TOWER_2F                    (89 | (0 << 8))
+#define MAP_POKEMON_TOWER_3F                    (90 | (0 << 8))
+#define MAP_POKEMON_TOWER_4F                    (91 | (0 << 8))
+#define MAP_POKEMON_TOWER_5F                    (92 | (0 << 8))
+#define MAP_POKEMON_TOWER_6F                    (93 | (0 << 8))
+#define MAP_POKEMON_TOWER_7F                    (94 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))
