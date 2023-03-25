@@ -89,6 +89,11 @@
 #define MAP_POKEMON_LEAGUE_HALL_OF_FAME         (80 | (0 << 8))
 #define MAP_ROCK_TUNNEL_1F                      (81 | (0 << 8))
 #define MAP_ROCK_TUNNEL_B1F                     (82 | (0 << 8))
+#define MAP_SEAFOAM_ISLANDS_1F                  (83 | (0 << 8))
+#define MAP_SEAFOAM_ISLANDS_B1F                 (84 | (0 << 8))
+#define MAP_SEAFOAM_ISLANDS_B2F                 (85 | (0 << 8))
+#define MAP_SEAFOAM_ISLANDS_B3F                 (86 | (0 << 8))
+#define MAP_SEAFOAM_ISLANDS_B4F                 (87 | (0 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (1 << 8))

@@ -1221,3 +1221,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RockTunnel_1F/scripts.inc"
 
 	.include "data/maps/RockTunnel_B1F/scripts.inc"
+
+	.include "data/maps/SeafoamIslands_1F/scripts.inc"
+
+	.include "data/maps/SeafoamIslands_B1F/scripts.inc"
+
+	.include "data/maps/SeafoamIslands_B2F/scripts.inc"
+
+	.include "data/maps/SeafoamIslands_B3F/scripts.inc"
+
+	.include "data/maps/SeafoamIslands_B4F/scripts.inc"

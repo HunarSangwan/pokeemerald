@@ -86,7 +86,12 @@
     "PokemonLeague_ChampionsRoom",
     "PokemonLeague_HallOfFame",
     "RockTunnel_1F",
-    "RockTunnel_B1F"
+    "RockTunnel_B1F",
+    "SeafoamIslands_1F",
+    "SeafoamIslands_B1F",
+    "SeafoamIslands_B2F",
+    "SeafoamIslands_B3F",
+    "SeafoamIslands_B4F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
