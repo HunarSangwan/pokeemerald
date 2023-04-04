@@ -7836,6 +7836,66 @@
       "secondary_tileset": "gTileset_LavenderTown",
       "border_filepath": "data/layouts/Route10/border.bin",
       "blockdata_filepath": "data/layouts/Route10/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_BATTLE_COLOSSEUM_2P",
+      "name": "FRLG_BattleColosseum_2P_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/FRLG_BattleColosseum_2P/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_BattleColosseum_2P/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_TRADE_CENTER",
+      "name": "FRLG_TradeCenter_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/FRLG_TradeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_TradeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_RECORD_CORNER",
+      "name": "FRLG_RecordCorner_Layout",
+      "width": 20,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/FRLG_RecordCorner/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_RecordCorner/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_BATTLE_COLOSSEUM_4P",
+      "name": "FRLG_BattleColosseum_4P_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/FRLG_BattleColosseum_4P/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_BattleColosseum_4P/map.bin"
+    },
+    {
+      "id": "LAYOUT_FRLG_UNION_ROOM",
+      "name": "FRLG_UnionRoom_Layout",
+      "width": 15,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/FRLG_UnionRoom/border.bin",
+      "blockdata_filepath": "data/layouts/FRLG_UnionRoom/map.bin"
     }
   ]
 }

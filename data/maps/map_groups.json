@@ -1,9 +1,17 @@
 {
   "group_order": [
+    "gMapGroup_Link",
     "gMapGroup_Dungeons",
     "gMapGroup_SpecialArea",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_Emerald"
+  ],
+  "gMapGroup_Link": [
+    "FRLG_BattleColosseum_2P",
+    "FRLG_TradeCenter",
+    "FRLG_RecordCorner",
+    "FRLG_BattleColosseum_4P",
+    "FRLG_UnionRoom"
   ],
   "gMapGroup_Dungeons": [
     "ViridianForest",

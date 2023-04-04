@@ -1479,3 +1479,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route9/scripts.inc"
 
 	.include "data/maps/Route10/scripts.inc"
+
+	.include "data/maps/FRLG_BattleColosseum_2P/scripts.inc"
+
+	.include "data/maps/FRLG_TradeCenter/scripts.inc"
+
+	.include "data/maps/FRLG_RecordCorner/scripts.inc"
+
+	.include "data/maps/FRLG_BattleColosseum_4P/scripts.inc"
+
+	.include "data/maps/FRLG_UnionRoom/scripts.inc"
