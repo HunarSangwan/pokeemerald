@@ -212,6 +212,16 @@
 #define MAP_FIVE_ISLAND             (16 | (2 << 8))
 #define MAP_SIX_ISLAND              (17 | (2 << 8))
 #define MAP_SEVEN_ISLAND            (18 | (2 << 8))
+#define MAP_ROUTE1                  (19 | (2 << 8))
+#define MAP_ROUTE2                  (20 | (2 << 8))
+#define MAP_ROUTE3                  (21 | (2 << 8))
+#define MAP_ROUTE4                  (22 | (2 << 8))
+#define MAP_ROUTE5                  (23 | (2 << 8))
+#define MAP_ROUTE6                  (24 | (2 << 8))
+#define MAP_ROUTE7                  (25 | (2 << 8))
+#define MAP_ROUTE8                  (26 | (2 << 8))
+#define MAP_ROUTE9                  (27 | (2 << 8))
+#define MAP_ROUTE10                 (28 | (2 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (3 << 8))
