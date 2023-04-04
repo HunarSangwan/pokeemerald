@@ -360,3 +360,6 @@ const u16 gMetatileAttributes_viridian_forest[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_viridian_gym[] = INCBIN_U16("data/tilesets/secondary/viridian_gym/metatiles.bin");
 const u16 gMetatileAttributes_viridian_gym[] = INCBIN_U16("data/tilesets/secondary/viridian_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_LavenderTown[] = INCBIN_U16("data/tilesets/secondary/lavender_town/metatiles.bin");
+const u16 gMetatileAttributes_LavenderTown[] = INCBIN_U16("data/tilesets/secondary/lavender_town/metatile_attributes.bin");

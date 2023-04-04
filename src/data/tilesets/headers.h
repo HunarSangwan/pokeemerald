@@ -1386,3 +1386,14 @@ const struct Tileset gTileset_viridian_gym =
     .metatileAttributes = gMetatileAttributes_viridian_gym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_LavenderTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LavenderTown,
+    .palettes = gTilesetPalettes_LavenderTown,
+    .metatiles = gMetatiles_LavenderTown,
+    .metatileAttributes = gMetatileAttributes_LavenderTown,
+    .callback = NULL,
+};
