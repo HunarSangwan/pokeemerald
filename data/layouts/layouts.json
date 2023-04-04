@@ -7893,7 +7893,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_CableClub",
+      "secondary_tileset": "gTileset_hall_of_fame",
       "border_filepath": "data/layouts/FRLG_UnionRoom/border.bin",
       "blockdata_filepath": "data/layouts/FRLG_UnionRoom/map.bin"
     }
