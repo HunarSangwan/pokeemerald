@@ -1,7 +1,20 @@
 InsideOfTruck_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, InsideOfTruck_OnLoad
 	map_script MAP_SCRIPT_ON_RESUME, InsideOfTruck_OnResume
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, InsideOfTruck_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
+
+InsideOfTruck_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_TEMP_0, 0, SetCustomStarterVar
+	.2byte 0
+
+
+SetCustomStarterVar::
+	msgbox SetCustomStarterVar_Text_0
+	setvar VAR_CUSTOM_STARTER, 151
+	setvar VAR_TEMP_0, 1
+	return
+
 
 InsideOfTruck_OnLoad:
 	setmetatile 4, 1, METATILE_InsideOfTruck_ExitLight_Top, FALSE
@@ -56,3 +69,11 @@ InsideOfTruck_Text_BoxPrintedWithMonLogo:
 	.string "It's a POKéMON brand moving and\n"
 	.string "delivery service.$"
 
+SetCustomStarterVar_Text_0:
+	.string "Please input the national dex number of\n"
+	.string "the species... is what I would say when\l"
+	.string "I figure out how to allow the user give\l"
+	.string "numeric input :/ so i just set it to a\l"
+	.string "Mew for now. I'm still reading into the\l"
+	.string "'main_menu.c' code so for now this script\l"
+	.string "stays in the truck lol.$"
