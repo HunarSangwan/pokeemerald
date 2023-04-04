@@ -193,7 +193,25 @@
 #define MAP_FRLG_NAVEL_ROCK_HARBOR                    (59 | (1 << 8))
 
 // gMapGroup_TownsAndRoutes
-#define MAP_PALLET_TOWN (0 | (2 << 8))
+#define MAP_PALLET_TOWN             (0 | (2 << 8))
+#define MAP_VIRIDIAN_CITY           (1 | (2 << 8))
+#define MAP_PEWTER_CITY             (2 | (2 << 8))
+#define MAP_CERULEAN_CITY           (3 | (2 << 8))
+#define MAP_LAVENDER_TOWN           (4 | (2 << 8))
+#define MAP_VERMILLION_CITY         (5 | (2 << 8))
+#define MAP_CELADON_CITY            (6 | (2 << 8))
+#define MAP_FUCHSIA_CITY            (7 | (2 << 8))
+#define MAP_CINNABAR_ISLAND         (8 | (2 << 8))
+#define MAP_INDIGO_PLATEAU_EXTERIOR (9 | (2 << 8))
+#define MAP_SAFFRON_CITY            (10 | (2 << 8))
+#define MAP_SAFFRON_CITY_CONNECTION (11 | (2 << 8))
+#define MAP_ONE_ISLAND              (12 | (2 << 8))
+#define MAP_TWO_ISLAND              (13 | (2 << 8))
+#define MAP_THREE_ISLAND            (14 | (2 << 8))
+#define MAP_FOUR_ISLAND             (15 | (2 << 8))
+#define MAP_FIVE_ISLAND             (16 | (2 << 8))
+#define MAP_SIX_ISLAND              (17 | (2 << 8))
+#define MAP_SEVEN_ISLAND            (18 | (2 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (3 << 8))

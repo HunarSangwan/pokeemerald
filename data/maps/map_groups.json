@@ -193,7 +193,25 @@
     "FRLG_NavelRock_Harbor"
   ],
   "gMapGroup_TownsAndRoutes": [
-    "PalletTown"
+    "PalletTown",
+    "ViridianCity",
+    "PewterCity",
+    "CeruleanCity",
+    "LavenderTown",
+    "VermillionCity",
+    "CeladonCity",
+    "FuchsiaCity",
+    "CinnabarIsland",
+    "IndigoPlateau_Exterior",
+    "SaffronCity",
+    "SaffronCity_Connection",
+    "OneIsland",
+    "TwoIsland",
+    "ThreeIsland",
+    "FourIsland",
+    "FiveIsland",
+    "SixIsland",
+    "SevenIsland"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

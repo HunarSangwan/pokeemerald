@@ -1423,3 +1423,39 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FRLG_NavelRock_Harbor/scripts.inc"
 
 	.include "data/maps/PalletTown/scripts.inc"
+
+	.include "data/maps/ViridianCity/scripts.inc"
+
+	.include "data/maps/PewterCity/scripts.inc"
+
+	.include "data/maps/CeruleanCity/scripts.inc"
+
+	.include "data/maps/LavenderTown/scripts.inc"
+
+	.include "data/maps/VermillionCity/scripts.inc"
+
+	.include "data/maps/CeladonCity/scripts.inc"
+
+	.include "data/maps/FuchsiaCity/scripts.inc"
+
+	.include "data/maps/CinnabarIsland/scripts.inc"
+
+	.include "data/maps/IndigoPlateau_Exterior/scripts.inc"
+
+	.include "data/maps/SaffronCity/scripts.inc"
+
+	.include "data/maps/SaffronCity_Connection/scripts.inc"
+
+	.include "data/maps/OneIsland/scripts.inc"
+
+	.include "data/maps/TwoIsland/scripts.inc"
+
+	.include "data/maps/ThreeIsland/scripts.inc"
+
+	.include "data/maps/FourIsland/scripts.inc"
+
+	.include "data/maps/FiveIsland/scripts.inc"
+
+	.include "data/maps/SixIsland/scripts.inc"
+
+	.include "data/maps/SevenIsland/scripts.inc"
