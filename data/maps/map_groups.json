@@ -2,6 +2,7 @@
   "group_order": [
     "gMapGroup_Dungeons",
     "gMapGroup_SpecialArea",
+    "gMapGroup_TownsAndRoutes",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Dungeons": [
@@ -190,6 +191,9 @@
     "OneIsland_KindleRoad_EmberSpa",
     "FRLG_BirthIsland_Harbor",
     "FRLG_NavelRock_Harbor"
+  ],
+  "gMapGroup_TownsAndRoutes": [
+    "PalletTown"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

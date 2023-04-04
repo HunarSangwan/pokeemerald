@@ -1421,3 +1421,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FRLG_BirthIsland_Harbor/scripts.inc"
 
 	.include "data/maps/FRLG_NavelRock_Harbor/scripts.inc"
+
+	.include "data/maps/PalletTown/scripts.inc"

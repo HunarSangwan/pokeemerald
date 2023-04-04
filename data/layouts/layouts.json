@@ -7488,6 +7488,18 @@
       "secondary_tileset": "gTileset_IslandHarbor",
       "border_filepath": "data/layouts/FRLG_NavelRock_Harbor/border.bin",
       "blockdata_filepath": "data/layouts/FRLG_NavelRock_Harbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN",
+      "name": "PalletTown_Layout",
+      "width": 24,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_pallet_town",
+      "border_filepath": "data/layouts/PalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown/map.bin"
     }
   ]
 }
