@@ -2,7 +2,6 @@
 #define GUARD_TEXT_WINDOW_H
 
 #define WINDOW_FRAMES_COUNT 20
-#define STARTER_CHOICE_COUNT 386
 
 struct TilesPal
 {
