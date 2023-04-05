@@ -565,7 +565,7 @@ static void StarterChoice_DrawChoices(u8 selection)
 
     text[i] = EOS;
 
-    DrawOptionMenuChoice(gText_StarterChoice, 104, YPOS_STARTERCHOICE, 0);
+    DrawOptionMenuChoice(gText_Starter, 104, YPOS_STARTERCHOICE, 0);
     DrawOptionMenuChoice(text, 148, YPOS_STARTERCHOICE, 1);
 }
 
