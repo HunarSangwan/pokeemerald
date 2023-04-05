@@ -538,8 +538,8 @@ static void StarterChoice_DrawChoices(u8 selection)
     u8 n = selection + 1;
     u16 i;
 
-    for (i = 0; gText_StarterChoiceNumber[i] != EOS && i <= 5; i++)
-        text[i] = gText_StarterChoiceNumber[i];
+    for (i = 0; gText_StarterChoiceName[i] != EOS && i <= 5; i++)
+        text[i] = gText_StarterChoiceName[i];
 
     // Convert a number to decimal string
     if (n / 10 != 0)
