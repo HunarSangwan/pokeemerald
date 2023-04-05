@@ -172,8 +172,6 @@ static EWRAM_DATA u16 sCurrItemAndOptionMenuCheck = 0;
 
 static u8 sBirchSpeechMainTaskId;
 
-//extern u8 SetCustomStarterVar[];
-
 // Static ROM declarations
 
 static u32 InitMainMenu(bool8);
@@ -1263,14 +1261,8 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem, s16 
 #define tBrendanSpriteId data[10]
 #define tMaySpriteId data[11]
 
-//#include "script.h"
 static void Task_NewGameBirchSpeech_Init(u8 taskId)
 {
-    //ScriptContext_SetupScript(SetCustomStarterVar);
-    SetMainCallback2(CB2_NewGame);
-    DestroyTask(taskId);
-    // SKIP ALL THE BIRCH SH*T
-    /*
     SetGpuReg(REG_OFFSET_DISPCNT, 0);
     SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
     InitBgFromTemplate(&sBirchBgTemplate);
@@ -1299,7 +1291,7 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     gTasks[taskId].tTimer = 0xD8;
     PlayBGM(MUS_ROUTE122);
     ShowBg(0);
-    ShowBg(1);*/
+    ShowBg(1);
 }
 
 static void Task_NewGameBirchSpeech_WaitToShowBirch(u8 taskId)

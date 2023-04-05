@@ -10,9 +10,13 @@ InsideOfTruck_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 
 SetCustomStarterVar::
+	lockall
 	msgbox SetCustomStarterVar_Text_0
-	setvar VAR_CUSTOM_STARTER, 151
+	waitmessage
+	closemessage
+	callnative ChooseCustomStarterFromMenu
 	setvar VAR_TEMP_0, 1
+	releaseall
 	return
 
 
@@ -70,10 +74,6 @@ InsideOfTruck_Text_BoxPrintedWithMonLogo:
 	.string "delivery service.$"
 
 SetCustomStarterVar_Text_0:
-	.string "Please input the national dex number of\n"
-	.string "the species... is what I would say when\l"
-	.string "I figure out how to allow the user give\l"
-	.string "numeric input :/ so i just set it to a\l"
-	.string "Mew for now. I'm still reading into the\l"
-	.string "'main_menu.c' code so for now this script\l"
-	.string "stays in the truck lol.$"
+	.string "Please input the species number for a\n"
+	.string "custom starter or escape this using {B_BUTTON}\l"
+	.string "for the default Hoenn Trio.$"
