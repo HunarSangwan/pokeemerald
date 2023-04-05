@@ -513,54 +513,39 @@ static void Sound_DrawChoices(u8 selection)
 
 static u8 StarterChoice_ProcessInput(u8 selection)
 {
-    if (JOY_NEW(DPAD_RIGHT))
-    {
-        if (selection < STARTER_CHOICE_COUNT - 1)
-            selection++;
-        else
-            selection = 0;
-        sArrowPressed = TRUE;
-    }
     if (JOY_NEW(DPAD_LEFT))
     {
         if (selection != 0)
-            selection--;
-        else
-            selection = STARTER_CHOICE_COUNT - 1;
+			selection--;
         sArrowPressed = TRUE;
     }
+    if (JOY_NEW(DPAD_RIGHT))
+    {
+	if (selection < 386)
+		selection++;
+	sArrowPressed = TRUE;
+    }
+
     return selection;
 }
 
 static void StarterChoice_DrawChoices(u8 selection)
 {
-    u8 text[16];
-    u8 n = selection + 1;
-    u16 i;
-
-    for (i = 0; gText_StarterChoiceName[i] != EOS && i <= 5; i++)
-        text[i] = gText_StarterChoiceName[i];
-
-    // Convert a number to decimal string
-    if (n / 10 != 0)
-    {
-        text[i] = n / 10 + CHAR_0;
-        i++;
-        text[i] = n % 10 + CHAR_0;
-        i++;
-    }
-    else
-    {
-        text[i] = n % 10 + CHAR_0;
-        i++;
-        text[i] = CHAR_SPACER;
-        i++;
-    }
-
-    text[i] = EOS;
-
-    DrawOptionMenuChoice(gText_Starter, 104, YPOS_STARTERCHOICE, 0);
-    DrawOptionMenuChoice(text, 148, YPOS_STARTERCHOICE, 1);
+    switch (selection)
+	{   
+        case 0:
+			DrawOptionMenuChoice(gText_Default, 104, YPOS_STARTERCHOICE, 0);
+			break;
+		case 1:
+			DrawOptionMenuChoice(gText_BULBASAUR, 104, YPOS_STARTERCHOICE, 0);
+			break;
+		case 2:
+			DrawOptionMenuChoice(gText_IVYSAUR, 104, YPOS_STARTERCHOICE, 0);
+			break;
+		case 3:
+			DrawOptionMenuChoice(gText_VENUSAUR, 104, YPOS_STARTERCHOICE, 0);
+			break;
+	}
 }
 
 static u8 ButtonMode_ProcessInput(u8 selection)

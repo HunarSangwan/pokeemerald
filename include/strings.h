@@ -3028,6 +3028,7 @@ extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
+extern const u8 gText_Default[];
 extern const u8 gText_BULBASAUR[];
 extern const u8 gText_IVYSAUR[];
 extern const u8 gText_VENUSAUR[];
