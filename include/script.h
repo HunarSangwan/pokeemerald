@@ -62,4 +62,7 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize);
 // srccmd.h
 void SetMovingNpcId(u16 npcId);
 
+// Custom Starter
+void ChooseCustomStarterFromMenu(void);
+
 #endif // GUARD_SCRIPT_H

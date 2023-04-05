@@ -468,3 +468,181 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
         scriptSize = sizeof(gSaveBlock1Ptr->ramScript.data.script);
     InitRamScript(script, scriptSize, MAP_GROUP(UNDEFINED), MAP_NUM(UNDEFINED), NO_OBJECT);
 }
+
+#include "task.h"
+#include "window.h"
+#include "menu.h"
+#include "string_util.h"
+#include "event_object_lock.h"
+#include "field_player_avatar.h"
+#include "data.h"
+#include "pokemon_icon.h"
+#include "script_pokemon_util.h"
+#include "map_name_popup.h"
+#include "sound.h"
+#include "constants/songs.h"
+#include "constants/items.h"
+
+#define tskSpeciesId             data[0]
+#define tskDigitSelectedIndex    data[1]  // The digitInidicator_* stuff
+#define tskMonSpriteIconId       data[2]
+#define tskWindowId              data[3]
+
+
+
+static const u8 sCustomMonID[]         =   _("Species:  {STR_VAR_3}\nName: {STR_VAR_1}    \n\n{STR_VAR_2}");
+
+static const u8 digitInidicator_1[]    =   _("{LEFT_ARROW}+1{RIGHT_ARROW}        ");
+static const u8 digitInidicator_5[]    =   _("{LEFT_ARROW}+5{RIGHT_ARROW}        ");
+static const u8 digitInidicator_10[]   =   _("{LEFT_ARROW}+10{RIGHT_ARROW}       ");
+static const u8 digitInidicator_25[]   =   _("{LEFT_ARROW}+25{RIGHT_ARROW}       ");
+static const u8 digitInidicator_50[]   =   _("{LEFT_ARROW}+50{RIGHT_ARROW}       ");
+static const u8 digitInidicator_100[]  =   _("{LEFT_ARROW}+100{RIGHT_ARROW}      ");
+
+static const u8 * const sText_DigitIndicator[] =
+{
+    digitInidicator_1,
+    digitInidicator_5,
+    digitInidicator_10,
+    digitInidicator_25,
+    digitInidicator_50,
+    digitInidicator_100
+};
+
+static const u8 sPowersofDigitIndicator[] = {1, 5, 10, 25, 50, 100}; 
+
+static const struct WindowTemplate sChooseMonDisplayWindowTemplate =
+{
+    .bg = 0,
+    .tilemapLeft = 4 + 13, // 4 + 15
+    .tilemapTop = 1,
+    .width = 12, // 10
+    .height = 2 * 4,
+    .paletteNum = 15,
+    .baseBlock = 1,
+};
+
+// This runs every frame, recieves input and updates the information shown
+void Task_HandleCustomStarterChoiceMenuInput(u8 taskId)
+{
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+
+        // Deals with selecting a mon
+        if (JOY_NEW(DPAD_UP))
+        {
+            gTasks[taskId].tskSpeciesId += sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
+            if (gTasks[taskId].tskSpeciesId >= NUM_SPECIES)
+                gTasks[taskId].tskSpeciesId = NUM_SPECIES - 1;
+            
+            // Unown B till Z have no icons so skip
+            if (gTasks[taskId].tskSpeciesId >= SPECIES_OLD_UNOWN_B && gTasks[taskId].tskSpeciesId <= SPECIES_OLD_UNOWN_Z)
+                gTasks[taskId].tskSpeciesId = SPECIES_TREECKO;
+        }
+        if (JOY_NEW(DPAD_DOWN))
+        {
+            gTasks[taskId].tskSpeciesId -= sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
+            if (gTasks[taskId].tskSpeciesId < 1)
+                gTasks[taskId].tskSpeciesId = 1;
+            
+            // Unown B till Z have no icons so skip
+            if (gTasks[taskId].tskSpeciesId >= SPECIES_OLD_UNOWN_B && gTasks[taskId].tskSpeciesId <= SPECIES_OLD_UNOWN_Z)
+                gTasks[taskId].tskSpeciesId = SPECIES_CELEBI;
+        }
+        // Deals with changing the digit indicator
+        if (JOY_NEW(DPAD_LEFT))
+        {
+            if (gTasks[taskId].tskDigitSelectedIndex > 0)
+                gTasks[taskId].tskDigitSelectedIndex -= 1;
+        }
+        if (JOY_NEW(DPAD_RIGHT))
+        {
+            if (gTasks[taskId].tskDigitSelectedIndex < (ARRAY_COUNT(sPowersofDigitIndicator) - 1))
+                gTasks[taskId].tskDigitSelectedIndex += 1;
+        }
+
+        // Update the text and then re-print it
+        StringCopy(gStringVar2, sText_DigitIndicator[gTasks[taskId].tskDigitSelectedIndex]);                   // Reloads the Digit indicator
+        StringCopy(gStringVar1, gSpeciesNames[gTasks[taskId].tskSpeciesId]);                                   // Reloads the Species Name
+        StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
+        ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tskSpeciesId, STR_CONV_MODE_LEADING_ZEROS, 3);  // Natdex Num
+        StringExpandPlaceholders(gStringVar4, sCustomMonID);
+        AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);
+
+        // Destroy the old sprite and reload the new one
+        FreeAndDestroyMonIconSprite(&gSprites[gTasks[taskId].tskMonSpriteIconId]);          // Destroy previous icon
+        FreeMonIconPalettes();                                                              // Free space for new pallete
+        LoadMonIconPalette(gTasks[taskId].tskSpeciesId);                                    // Loads pallete for current mon
+        gTasks[taskId].tskMonSpriteIconId = CreateMonIcon(gTasks[taskId].tskSpeciesId, SpriteCB_MonIcon, 210, 50, 4, 0, 0); //Create pokemon sprite
+        gSprites[gTasks[taskId].tskMonSpriteIconId].oam.priority = 0;
+    }
+
+    // Handle the A_BUTTON/B_BUTTON input
+    if (JOY_NEW(A_BUTTON | B_BUTTON))
+    {
+        // Destroy the Icon Sprite
+        FreeMonIconPalettes();
+        FreeAndDestroyMonIconSprite(&gSprites[gTasks[taskId].tskMonSpriteIconId]);
+
+        // Set VAR_CUSTOM_STARTER 
+        PlaySE(MUS_LEVEL_UP);
+        if (JOY_NEW(A_BUTTON))
+            VarSet(VAR_CUSTOM_STARTER, gTasks[taskId].tskSpeciesId);
+        else
+            VarSet(VAR_CUSTOM_STARTER, 0);  // Default to the regular Hoenn starters
+
+        // Destroy window and restore the player
+        ClearStdWindowAndFrame(gTasks[taskId].tskWindowId, TRUE);
+        RemoveWindow(gTasks[taskId].tskWindowId);
+        ScriptContext_Enable();
+        ScriptUnfreezeObjectEvents();
+        UnlockPlayerFieldControls();
+        DestroyTask(taskId);
+
+        return;
+    }
+}
+
+// Runs once to freeze the player, print the window and sample data of the mon
+void Task_CreateCustomStarterChoiceMenu(u8 taskId)
+{
+    // General Data initialization and others
+    gTasks[taskId].tskSpeciesId = SPECIES_BULBASAUR;                                         // Bulbuous Saur
+    PlayerFreeze();
+    StopPlayerAvatar();
+    LockPlayerFieldControls();
+
+    // Create window
+    HideMapNamePopUpWindow();
+    gTasks[taskId].tskWindowId = AddWindow(&sChooseMonDisplayWindowTemplate);
+    DrawStdWindowFrame(gTasks[taskId].tskWindowId, FALSE);
+    CopyWindowToVram(gTasks[taskId].tskWindowId, 3);
+
+    // Load in the Text and Number
+    StringCopy(gStringVar2, sText_DigitIndicator[0]);
+    ConvertIntToDecimalStringN(gStringVar3, 1, STR_CONV_MODE_LEADING_ZEROS, 2);     //This will give 001 (Bulbuous Saur's Natdex num)
+    StringCopy(gStringVar1, gSpeciesNames[gTasks[taskId].tskSpeciesId]);            // Loads the first mon being the Bulbuous Saur
+    StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);                     // Pads the species name with space
+    StringExpandPlaceholders(gStringVar4, sCustomMonID);
+    AddTextPrinterParameterized(gTasks[taskId].tskWindowId, FONT_NORMAL, gStringVar4, 1, 1, 0, NULL);   // Prints all the text we prepared
+
+    // Load Animated Icon Sprite
+    FreeMonIconPalettes();                                                //Free space for new pallete
+    LoadMonIconPalette(gTasks[taskId].tskSpeciesId);                      //Loads pallete for current mon
+    gTasks[taskId].tskMonSpriteIconId = CreateMonIcon(gTasks[taskId].tskSpeciesId, SpriteCB_MonIcon, 210, 50, 4, 0, 0); //Create pokemon sprite
+    gSprites[gTasks[taskId].tskMonSpriteIconId].oam.priority = 0;         // Render it on the top layer
+
+    // Move on to next task
+    gTasks[taskId].func = Task_HandleCustomStarterChoiceMenuInput;
+}
+
+void ChooseCustomStarterFromMenu(void)
+{
+    CreateTask(Task_CreateCustomStarterChoiceMenu, 0);
+}
+
+#undef tskSpeciesId
+#undef tskDigitSelectedIndex
+#undef tskMonSpriteIconId
+#undef tskWindowId
