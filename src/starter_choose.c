@@ -2115,7 +2115,7 @@ static const u16 sStarterMonShroomish[STARTER_MON_COUNT] =
     SPECIES_SHROOMISH,
 };
 
-static const u16 sStarterMonBrellom[STARTER_MON_COUNT] =
+static const u16 sStarterMonBreloom[STARTER_MON_COUNT] =
 {
     SPECIES_BRELOOM,
     SPECIES_BRELOOM,
@@ -3632,7 +3632,7 @@ u16 GetStarterPokemon(u16 chosenStarterId)
     case 285:
         return sStarterMonShroomish[chosenStarterId];
     case 286:
-        return sStarterMonBrellom[chosenStarterId];
+        return sStarterMonBreloom[chosenStarterId];
     case 287:
         return sStarterMonSlakoth[chosenStarterId];
     case 288:
