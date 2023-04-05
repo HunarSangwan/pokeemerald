@@ -22,7 +22,7 @@
 #define tBattleStyle data[3]
 #define tSound data[4]
 #define tButtonMode data[5]
-#define tWindowFrameType data[6]
+#define tStarterChoice data[6]
 
 enum
 {
@@ -31,7 +31,7 @@ enum
     MENUITEM_BATTLESTYLE,
     MENUITEM_SOUND,
     MENUITEM_BUTTONMODE,
-    MENUITEM_FRAMETYPE,
+    MENUITEM_STARTERCHOICE,
     MENUITEM_CANCEL,
     MENUITEM_COUNT,
 };
@@ -42,12 +42,12 @@ enum
     WIN_OPTIONS
 };
 
-#define YPOS_TEXTSPEED    (MENUITEM_TEXTSPEED * 16)
-#define YPOS_BATTLESCENE  (MENUITEM_BATTLESCENE * 16)
-#define YPOS_BATTLESTYLE  (MENUITEM_BATTLESTYLE * 16)
-#define YPOS_SOUND        (MENUITEM_SOUND * 16)
-#define YPOS_BUTTONMODE   (MENUITEM_BUTTONMODE * 16)
-#define YPOS_FRAMETYPE    (MENUITEM_FRAMETYPE * 16)
+#define YPOS_TEXTSPEED        (MENUITEM_TEXTSPEED * 16)
+#define YPOS_BATTLESCENE      (MENUITEM_BATTLESCENE * 16)
+#define YPOS_BATTLESTYLE      (MENUITEM_BATTLESTYLE * 16)
+#define YPOS_SOUND            (MENUITEM_SOUND * 16)
+#define YPOS_BUTTONMODE       (MENUITEM_BUTTONMODE * 16)
+#define YPOS_STARTERCHOICE    (MENUITEM_STARTERCHOICE * 16)
 
 static void Task_OptionMenuFadeIn(u8 taskId);
 static void Task_OptionMenuProcessInput(u8 taskId);
@@ -62,8 +62,8 @@ static u8 BattleStyle_ProcessInput(u8 selection);
 static void BattleStyle_DrawChoices(u8 selection);
 static u8 Sound_ProcessInput(u8 selection);
 static void Sound_DrawChoices(u8 selection);
-static u8 FrameType_ProcessInput(u8 selection);
-static void FrameType_DrawChoices(u8 selection);
+static u8 StarterChoice_ProcessInput(u8 selection);
+static void StarterChoice_DrawChoices(u8 selection);
 static u8 ButtonMode_ProcessInput(u8 selection);
 static void ButtonMode_DrawChoices(u8 selection);
 static void DrawHeaderText(void);
@@ -78,13 +78,13 @@ static const u8 sEqualSignGfx[] = INCBIN_U8("graphics/interface/option_menu_equa
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
-    [MENUITEM_TEXTSPEED]   = gText_TextSpeed,
-    [MENUITEM_BATTLESCENE] = gText_BattleScene,
-    [MENUITEM_BATTLESTYLE] = gText_BattleStyle,
-    [MENUITEM_SOUND]       = gText_Sound,
-    [MENUITEM_BUTTONMODE]  = gText_ButtonMode,
-    [MENUITEM_FRAMETYPE]   = gText_Frame,
-    [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
+    [MENUITEM_TEXTSPEED]       = gText_TextSpeed,
+    [MENUITEM_BATTLESCENE]     = gText_BattleScene,
+    [MENUITEM_BATTLESTYLE]     = gText_BattleStyle,
+    [MENUITEM_SOUND]           = gText_Sound,
+    [MENUITEM_BUTTONMODE]      = gText_ButtonMode,
+    [MENUITEM_STARTERCHOICE]   = gText_StarterChoice,
+    [MENUITEM_CANCEL]          = gText_OptionMenuCancel,
 };
 
 static const struct WindowTemplate sOptionMenuWinTemplates[] =
@@ -233,14 +233,14 @@ void CB2_InitOptionMenu(void)
         gTasks[taskId].tBattleStyle = gSaveBlock2Ptr->optionsBattleStyle;
         gTasks[taskId].tSound = gSaveBlock2Ptr->optionsSound;
         gTasks[taskId].tButtonMode = gSaveBlock2Ptr->optionsButtonMode;
-        gTasks[taskId].tWindowFrameType = gSaveBlock2Ptr->optionsWindowFrameType;
+        gTasks[taskId].tStarterChoice = gSaveBlock2Ptr->optionsStarterChoice;
 
         TextSpeed_DrawChoices(gTasks[taskId].tTextSpeed);
         BattleScene_DrawChoices(gTasks[taskId].tBattleSceneOff);
         BattleStyle_DrawChoices(gTasks[taskId].tBattleStyle);
         Sound_DrawChoices(gTasks[taskId].tSound);
         ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
-        FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+        StarterChoice_DrawChoices(gTasks[taskId].tStarterChoice);
         HighlightOptionMenuItem(gTasks[taskId].tMenuSelection);
 
         CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
@@ -329,12 +329,12 @@ static void Task_OptionMenuProcessInput(u8 taskId)
             if (previousOption != gTasks[taskId].tButtonMode)
                 ButtonMode_DrawChoices(gTasks[taskId].tButtonMode);
             break;
-        case MENUITEM_FRAMETYPE:
-            previousOption = gTasks[taskId].tWindowFrameType;
-            gTasks[taskId].tWindowFrameType = FrameType_ProcessInput(gTasks[taskId].tWindowFrameType);
+        case MENUITEM_STARTERCHOICE:
+            previousOption = gTasks[taskId].tStarterChoice;
+            gTasks[taskId].tStarterChoice = StarterChoice_ProcessInput(gTasks[taskId].tStarterChoice);
 
-            if (previousOption != gTasks[taskId].tWindowFrameType)
-                FrameType_DrawChoices(gTasks[taskId].tWindowFrameType);
+            if (previousOption != gTasks[taskId].tStarterChoice)
+                StarterChoice_DrawChoices(gTasks[taskId].tStarterChoice);
             break;
         default:
             return;
@@ -355,7 +355,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsBattleStyle = gTasks[taskId].tBattleStyle;
     gSaveBlock2Ptr->optionsSound = gTasks[taskId].tSound;
     gSaveBlock2Ptr->optionsButtonMode = gTasks[taskId].tButtonMode;
-    gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].tWindowFrameType;
+    gSaveBlock2Ptr->optionsStarterChoice = gTasks[taskId].tStarterChoice;
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
@@ -511,7 +511,7 @@ static void Sound_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_SoundStereo, GetStringRightAlignXOffset(FONT_NORMAL, gText_SoundStereo, 198), YPOS_SOUND, styles[1]);
 }
 
-static u8 FrameType_ProcessInput(u8 selection)
+static u8 StarterChoice_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
     {
@@ -538,7 +538,7 @@ static u8 FrameType_ProcessInput(u8 selection)
     return selection;
 }
 
-static void FrameType_DrawChoices(u8 selection)
+static void StarterChoice_DrawChoices(u8 selection)
 {
     u8 text[16];
     u8 n = selection + 1;
@@ -565,8 +565,8 @@ static void FrameType_DrawChoices(u8 selection)
 
     text[i] = EOS;
 
-    DrawOptionMenuChoice(gText_FrameType, 104, YPOS_FRAMETYPE, 0);
-    DrawOptionMenuChoice(text, 128, YPOS_FRAMETYPE, 1);
+    DrawOptionMenuChoice(gText_StarterChoice, 104, YPOS_STARTERCHOICE, 0);
+    DrawOptionMenuChoice(text, 148, YPOS_STARTERCHOICE, 1);
 }
 
 static u8 ButtonMode_ProcessInput(u8 selection)
