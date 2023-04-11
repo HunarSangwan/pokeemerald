@@ -229,6 +229,11 @@
 #define MAP_ROUTE8                  (26 | (3 << 8))
 #define MAP_ROUTE9                  (27 | (3 << 8))
 #define MAP_ROUTE10                 (28 | (3 << 8))
+#define MAP_ROUTE11                 (29 | (3 << 8))
+#define MAP_ROUTE12                 (30 | (3 << 8))
+#define MAP_ROUTE13                 (31 | (3 << 8))
+#define MAP_ROUTE14                 (32 | (3 << 8))
+#define MAP_ROUTE15                 (33 | (3 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (4 << 8))
