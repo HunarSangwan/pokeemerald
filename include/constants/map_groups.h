@@ -245,6 +245,11 @@
 #define MAP_ROUTE23                 (42 | (3 << 8))
 #define MAP_ROUTE24                 (43 | (3 << 8))
 #define MAP_ROUTE25                 (44 | (3 << 8))
+#define MAP_BOND_BRIDGE             (45 | (3 << 8))
+#define MAP_CAPE_BRINK              (46 | (3 << 8))
+#define MAP_KINDLE_ROAD             (47 | (3 << 8))
+#define MAP_THREE_ISLAND_PORT       (48 | (3 << 8))
+#define MAP_TREASURE_BEACH          (49 | (3 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (4 << 8))

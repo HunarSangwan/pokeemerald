@@ -6740,6 +6740,56 @@
       "secondary_tileset": "gTileset_cerulean_city",
       "border_filepath": "data/layouts/Route25/border.bin",
       "blockdata_filepath": "data/layouts/Route25/map.bin"
+    },
+    {
+      "id": "LAYOUT_BOND_BRIDGE",
+      "name": "Bond_Bridge_Layout",
+      "width": 96,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_123",
+      "border_filepath": "data/layouts/Bond_Bridge/border.bin",
+      "blockdata_filepath": "data/layouts/Bond_Bridge/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAPE_BRINK",
+      "name": "Cape_Brink_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_123",
+      "border_filepath": "data/layouts/Cape_Brink/border.bin",
+      "blockdata_filepath": "data/layouts/Cape_Brink/map.bin"
+    },
+    {
+      "id": "LAYOUT_KINDLE_ROAD",
+      "name": "Kindle_Road_Layout",
+      "width": 24,
+      "height": 140,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_123",
+      "border_filepath": "data/layouts/Kindle_Road/border.bin",
+      "blockdata_filepath": "data/layouts/Kindle_Road/map.bin"
+    },
+    {
+      "id": "LAYOUT_THREE_ISLAND_PORT",
+      "name": "Three_Island_Port_Layout",
+      "width": 48,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_123",
+      "border_filepath": "data/layouts/Three_Island_Port/border.bin",
+      "blockdata_filepath": "data/layouts/Three_Island_Port/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREASURE_BEACH",
+      "name": "Treasure_Beach_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_123",
+      "border_filepath": "data/layouts/Treasure_Beach/border.bin",
+      "blockdata_filepath": "data/layouts/Treasure_Beach/map.bin"
     }
   ]
 }

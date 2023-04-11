@@ -245,7 +245,12 @@
     "Route22",
     "Route23",
     "Route24",
-    "Route25"
+    "Route25",
+    "Kindle_Road",
+    "Treasure_Beach",
+    "Cape_Brink",
+    "Bond_Bridge",
+    "Three_Island_Port"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

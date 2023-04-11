@@ -1521,3 +1521,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route24/scripts.inc"
 
 	.include "data/maps/Route25/scripts.inc"
+
+	.include "data/maps/Bond_Bridge/scripts.inc"
+
+	.include "data/maps/Cape_Brink/scripts.inc"
+
+	.include "data/maps/Kindle_Road/scripts.inc"
+
+	.include "data/maps/Three_Island_Port/scripts.inc"
+
+	.include "data/maps/Treasure_Beach/scripts.inc"
