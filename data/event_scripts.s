@@ -1543,3 +1543,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Green_Path/scripts.inc"
 
 	.include "data/maps/Water_Path/scripts.inc"
+
+	.include "data/maps/Ruin_Valley/scripts.inc"

@@ -256,6 +256,7 @@
 #define MAP_OUTCASE_ISLAND          (53 | (3 << 8))
 #define MAP_GREEN_PATH              (54 | (3 << 8))
 #define MAP_WATER_PATH              (55 | (3 << 8))
+#define MAP_RUIN_VALLEY             (56 | (3 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (4 << 8))
