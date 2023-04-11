@@ -75,5 +75,4 @@ InsideOfTruck_Text_BoxPrintedWithMonLogo:
 
 SetCustomStarterVar_Text_0:
 	.string "Please input the species number for a\n"
-	.string "custom starter or escape this using {B_BUTTON}\l"
-	.string "for the default Hoenn Trio.$"
+	.string "custom starter.$"

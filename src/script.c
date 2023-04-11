@@ -31,6 +31,13 @@ extern ScrCmdFunc gScriptCmdTable[];
 extern ScrCmdFunc gScriptCmdTableEnd[];
 extern void *gNullScriptPtr;
 
+static void LoadCustomStarterIcon(u8 taskId);
+static void Task_HandleCustomStarterInputNature(u8 taskId);
+static void Task_HandleCustomStarterMenuRefresh(u8 taskId);
+static void Task_HandleCustomStarterChoiceMenuInput(u8 taskId);
+static void Task_CreateCustomStarterChoiceMenu(u8 taskId);
+static void Task_GiveCustomStarterToPlayer(u8 taskId);
+
 void InitScriptContext(struct ScriptContext *ctx, void *cmdTable, void *cmdTableEnd)
 {
     s32 i;
@@ -476,6 +483,10 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
 #include "event_object_lock.h"
 #include "field_player_avatar.h"
 #include "data.h"
+#include "random.h"
+#include "pokedex.h"
+#include "pokemon.h"
+#include "pokemon_summary_screen.h"
 #include "pokemon_icon.h"
 #include "script_pokemon_util.h"
 #include "map_name_popup.h"
@@ -487,10 +498,35 @@ void InitRamScript_NoObjectEvent(u8 *script, u16 scriptSize)
 #define tskDigitSelectedIndex    data[1]  // The digitInidicator_* stuff
 #define tskMonSpriteIconId       data[2]
 #define tskWindowId              data[3]
+#define tskNatureId              data[4]
+#define tskFuncId                data[5]  // Keeps track of what function/task is currently running
+#define tskIVsCounter            data[6]  // Keeps count on the current IV to set
+#define tskHpIVs                 data[7]
+#define tskAtkIVs                data[8]
+#define tskDefIVs                data[9]
+#define tskSpatkIVs              data[10]
+#define tskSpdefIVs              data[11]
+#define tskSpdIVs                data[12]
 
 
+enum
+{
+    CUSTOM_STARTER_CREATE_MENU,
+    CUSTOM_STARTER_HANDLE_SPECIES,
+    CUSTOM_STARTER_HANDLE_IVS,
+    CUSTOM_STARTER_HANDLE_NATURE,
+    CUSTOM_STARTER_GIVE_MON,  // The task is destroyed here
+};
 
-static const u8 sCustomMonID[]         =   _("Species:  {STR_VAR_3}\nName: {STR_VAR_1}    \n\n{STR_VAR_2}");
+static const u8 sCustomStarterText_ID[]         =   _("Species:  {STR_VAR_3}\nName: {STR_VAR_1}    \n\n{STR_VAR_2}");
+static const u8 sCustomStarterText_Nature[]     =   _("Name:  {STR_VAR_3}\nNature: {STR_VAR_1}    \n\n{STR_VAR_2}");
+
+static const u8 sCustomStarterText_HpIV[]       =   _("IV Hp:                   \n    {STR_VAR_3}            \n             \n{STR_VAR_2}          ");
+static const u8 sCustomStarterText_AtkIV[]      =   _("IV Attack:               \n    {STR_VAR_3}            \n             \n{STR_VAR_2}          ");
+static const u8 sCustomStarterText_DefIV[]      =   _("IV Defense:               \n    {STR_VAR_3}            \n             \n{STR_VAR_2}          ");
+static const u8 sCustomStarterText_SpatkIV[]    =   _("IV Speed:               \n    {STR_VAR_3}            \n             \n{STR_VAR_2}          ");
+static const u8 sCustomStarterText_SpdefIV[]    =   _("IV Sp. Attack:               \n    {STR_VAR_3}            \n             \n{STR_VAR_2}          ");
+static const u8 sCustomStarterText_SpdIV[]      =   _("IV Sp. Defense:               \n    {STR_VAR_3}            \n             \n{STR_VAR_2}          ");
 
 static const u8 digitInidicator_1[]    =   _("{LEFT_ARROW}+1{RIGHT_ARROW}        ");
 static const u8 digitInidicator_5[]    =   _("{LEFT_ARROW}+5{RIGHT_ARROW}        ");
@@ -499,7 +535,7 @@ static const u8 digitInidicator_25[]   =   _("{LEFT_ARROW}+25{RIGHT_ARROW}      
 static const u8 digitInidicator_50[]   =   _("{LEFT_ARROW}+50{RIGHT_ARROW}       ");
 static const u8 digitInidicator_100[]  =   _("{LEFT_ARROW}+100{RIGHT_ARROW}      ");
 
-static const u8 * const sText_DigitIndicator[] =
+static const u8 *const sText_DigitIndicator[] =
 {
     digitInidicator_1,
     digitInidicator_5,
@@ -522,9 +558,274 @@ static const struct WindowTemplate sChooseMonDisplayWindowTemplate =
     .baseBlock = 1,
 };
 
-// This runs every frame, recieves input and updates the information shown
+void Task_GiveCustomStarterToPlayer(u8 taskId)
+{
+    struct Pokemon customStarter;
+    u8 nationalDexNum;
+
+    gTasks[taskId].tskFuncId = CUSTOM_STARTER_GIVE_MON;
+
+    // Create the mon at lvl 5 with the specified nature
+    CreateMonWithNature(&customStarter, gTasks[taskId].tskSpeciesId, 5, 32, gTasks[taskId].tskNatureId);
+
+    // Set the IVs
+    SetMonData(&customStarter, MON_DATA_HP_IV, &gTasks[taskId].tskHpIVs);
+    SetMonData(&customStarter, MON_DATA_ATK_IV, &gTasks[taskId].tskAtkIVs);
+    SetMonData(&customStarter, MON_DATA_DEF_IV, &gTasks[taskId].tskDefIVs);
+    SetMonData(&customStarter, MON_DATA_SPATK_IV, &gTasks[taskId].tskSpatkIVs);
+    SetMonData(&customStarter, MON_DATA_SPDEF_IV, &gTasks[taskId].tskSpdefIVs);
+    SetMonData(&customStarter, MON_DATA_SPEED_IV, &gTasks[taskId].tskSpdIVs);
+
+    // Update the stats
+    CalculateMonStats(&customStarter);
+
+    // Set Player Data on mon
+    SetMonData(&customStarter, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+    SetMonData(&customStarter, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+
+    // Add mon to first slot in party and update the global var
+    CopyMon(&gPlayerParty[0], &customStarter, sizeof(customStarter));
+    gPlayerPartyCount = 1;
+
+    // Update Natdex seen & caught
+    nationalDexNum = SpeciesToNationalPokedexNum(gTasks[taskId].tskSpeciesId);
+    GetSetPokedexFlag(nationalDexNum, FLAG_SET_SEEN);
+    GetSetPokedexFlag(nationalDexNum, FLAG_SET_CAUGHT);
+
+    // Destroy the Icon Sprite
+    FreeAndDestroyMonIconSprite(&gSprites[gTasks[taskId].tskMonSpriteIconId]);
+    FreeMonIconPalettes();
+    
+    // Clean up window, destroy task and restore control to the player
+    ClearStdWindowAndFrame(gTasks[taskId].tskWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tskWindowId);
+    ScriptContext_Enable();
+    ScriptUnfreezeObjectEvents();
+    UnlockPlayerFieldControls();
+    DestroyTask(taskId);
+}
+
+// Self Explanatory
+void LoadCustomStarterIcon(u8 taskId)
+{
+    // Destroy the old sprite and reload the new one
+    FreeAndDestroyMonIconSprite(&gSprites[gTasks[taskId].tskMonSpriteIconId]);          // Destroy previous icon
+    FreeMonIconPalettes();                                                              // Free space for new pallete
+    LoadMonIconPalette(gTasks[taskId].tskSpeciesId);                                    // Loads pallete for current mon
+    gTasks[taskId].tskMonSpriteIconId = CreateMonIcon(gTasks[taskId].tskSpeciesId, SpriteCB_MonIcon, 210, 50, 4, 0, 0); //Create pokemon sprite
+    gSprites[gTasks[taskId].tskMonSpriteIconId].oam.priority = 0;
+}
+
+// Handles setting the IVs
+void Task_HandleCustomStarterInputIVs(u8 taskId)
+{
+    s16 *currentIVtoSetPtr;
+    const u8 *currentIVText;
+
+    gTasks[taskId].tskFuncId = CUSTOM_STARTER_HANDLE_IVS;
+
+    switch (gTasks[taskId].tskIVsCounter)  // Decides the right IV/IV-related thing to use
+    {
+        case 0: // HP IV
+            currentIVtoSetPtr = &gTasks[taskId].tskHpIVs;
+            currentIVText = sCustomStarterText_HpIV;
+            break;
+        case 1: // ATK IV
+            currentIVtoSetPtr = &gTasks[taskId].tskAtkIVs;
+            currentIVText = sCustomStarterText_AtkIV;
+            break;
+        case 2: // DEF IV
+            currentIVtoSetPtr = &gTasks[taskId].tskDefIVs;
+            currentIVText = sCustomStarterText_DefIV;
+            break;
+        case 3: // SPATK IV
+            currentIVtoSetPtr = &gTasks[taskId].tskSpatkIVs;
+            currentIVText = sCustomStarterText_SpatkIV;
+            break;
+        case 4: // SPDEF IV
+            currentIVtoSetPtr = &gTasks[taskId].tskSpdefIVs;
+            currentIVText = sCustomStarterText_SpdefIV;
+            break;
+        case 5: // SPEED IV
+            currentIVtoSetPtr = &gTasks[taskId].tskSpdIVs;
+            currentIVText = sCustomStarterText_SpdIV;
+            break;
+    }
+
+    // Reload the names. There might be a noticable drop in performance because of this code chunk, I'll optimize it later
+    StringCopy(gStringVar2, sText_DigitIndicator[gTasks[taskId].tskDigitSelectedIndex]);
+    ConvertIntToDecimalStringN(gStringVar3, *currentIVtoSetPtr, STR_CONV_MODE_LEADING_ZEROS, 2);       // Reload IV
+    StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
+    StringExpandPlaceholders(gStringVar4, currentIVText);
+    AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);
+
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+
+        // Deals with selecting a nature
+        if (JOY_NEW(DPAD_UP))
+        {
+            *currentIVtoSetPtr += sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
+            if (*currentIVtoSetPtr > MAX_PER_STAT_IVS)
+                *currentIVtoSetPtr = MAX_PER_STAT_IVS;
+        }
+        if (JOY_NEW(DPAD_DOWN))
+        {
+            *currentIVtoSetPtr -= sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
+            if (*currentIVtoSetPtr < 0)
+                *currentIVtoSetPtr = 0;
+        }
+        // Deals with changing the digit indicator
+        if (JOY_NEW(DPAD_LEFT))
+        {
+            if (gTasks[taskId].tskDigitSelectedIndex > 0)
+                gTasks[taskId].tskDigitSelectedIndex -= 1;
+        }
+        if (JOY_NEW(DPAD_RIGHT))
+        {
+            if (gTasks[taskId].tskDigitSelectedIndex < (ARRAY_COUNT(sPowersofDigitIndicator) - 1))
+                gTasks[taskId].tskDigitSelectedIndex += 1;
+        }
+
+        // Reload names
+        /*StringCopy(gStringVar2, sText_DigitIndicator[gTasks[taskId].tskDigitSelectedIndex]);
+        ConvertIntToDecimalStringN(gStringVar3, *currentIVtoSetPtr, STR_CONV_MODE_LEADING_ZEROS, 2);       // Reload IV
+        StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
+        StringExpandPlaceholders(gStringVar4, currentIVText);
+        AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);*/
+
+        //LoadCustomStarterIcon(taskId);
+    }
+
+    if (JOY_NEW(A_BUTTON | B_BUTTON))
+    {
+        if (JOY_NEW(B_BUTTON))
+        {
+            if (gTasks[taskId].tskIVsCounter > 0)
+                gTasks[taskId].tskIVsCounter--;     // Move to previous IV
+        }
+
+        if (gTasks[taskId].tskIVsCounter < 5)  // All IVs have not been inputed
+        {
+            gTasks[taskId].tskIVsCounter++;     // Move on to next IV
+        }
+        else  // All IVs have been inputted
+        {
+            // Move on to the next task
+            gTasks[taskId].func = Task_HandleCustomStarterMenuRefresh;
+        }
+    }
+}
+
+// Handles setting the nature
+void Task_HandleCustomStarterInputNature(u8 taskId)
+{
+    gTasks[taskId].tskFuncId = CUSTOM_STARTER_HANDLE_NATURE;
+
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+
+        // Deals with selecting a nature
+        if (JOY_NEW(DPAD_UP))
+        {
+            gTasks[taskId].tskNatureId += sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
+            if (gTasks[taskId].tskNatureId > (NUM_NATURES - 1))
+                gTasks[taskId].tskNatureId = (NUM_NATURES - 1);
+        }
+        if (JOY_NEW(DPAD_DOWN))
+        {
+            gTasks[taskId].tskNatureId -= sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
+            if (gTasks[taskId].tskNatureId < 0)
+                gTasks[taskId].tskNatureId = 0;
+        }
+        // Deals with changing the digit indicator
+        if (JOY_NEW(DPAD_LEFT))
+        {
+            if (gTasks[taskId].tskDigitSelectedIndex > 0)
+                gTasks[taskId].tskDigitSelectedIndex -= 1;
+        }
+        if (JOY_NEW(DPAD_RIGHT))
+        {
+            if (gTasks[taskId].tskDigitSelectedIndex < (ARRAY_COUNT(sPowersofDigitIndicator) - 1))
+                gTasks[taskId].tskDigitSelectedIndex += 1;
+        }
+
+        // Update the text and then re-print it
+        StringCopy(gStringVar2, sText_DigitIndicator[gTasks[taskId].tskDigitSelectedIndex]);              // Reloads the Digit indicator
+        StringCopy(gStringVar1, gNatureNamePointers[gTasks[taskId].tskNatureId]);                         // Reloads the Nature Name
+        StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
+        StringCopy(gStringVar3, gSpeciesNames[gTasks[taskId].tskSpeciesId]);                              // Reloads the Species Name
+        StringExpandPlaceholders(gStringVar4, sCustomStarterText_Nature);
+        AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);
+
+        //LoadCustomStarterIcon(taskId);
+    }
+
+    if (JOY_NEW(A_BUTTON | B_BUTTON))
+    {
+        PlaySE(MUS_LEVEL_UP);
+
+        // Randomize nature
+        if (JOY_NEW(B_BUTTON))
+            gTasks[taskId].tskNatureId = Random() % (NUM_NATURES - 1);
+
+        // Move on to the next task
+        gTasks[taskId].func = Task_HandleCustomStarterMenuRefresh;
+    }
+}
+
+// When switching between the menus for species, ivs, nature, etc This will refrsh the page instea of waiting till a button is pressed
+void Task_HandleCustomStarterMenuRefresh(u8 taskId)
+{
+    // Tbf, this function might be a bit redundant. It would be far more useful if you could go back to previous options
+    gTasks[taskId].tskDigitSelectedIndex = 0;           // Reset this
+
+    switch (gTasks[taskId].tskFuncId)
+    {
+        case CUSTOM_STARTER_CREATE_MENU:
+            break;
+            
+        case CUSTOM_STARTER_HANDLE_SPECIES:
+            StringCopy(gStringVar2, sText_DigitIndicator[gTasks[taskId].tskDigitSelectedIndex]);              // Refreshes the Digit indicator
+            StringCopy(gStringVar1, gNatureNamePointers[gTasks[taskId].tskNatureId]);                         // Refreshes the Nature Name
+            StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
+            StringCopy(gStringVar3, gSpeciesNames[gTasks[taskId].tskSpeciesId]);                              // Refreshes the Species Name
+            StringExpandPlaceholders(gStringVar4, sCustomStarterText_Nature);
+            AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);
+
+            // Move on to next task
+            gTasks[taskId].func = Task_HandleCustomStarterInputNature;
+            break;
+
+        case CUSTOM_STARTER_HANDLE_IVS:
+            gTasks[taskId].func = Task_GiveCustomStarterToPlayer;
+            break;
+
+        case CUSTOM_STARTER_HANDLE_NATURE:
+            StringCopy(gStringVar2, sText_DigitIndicator[gTasks[taskId].tskDigitSelectedIndex]);
+            ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tskHpIVs, STR_CONV_MODE_LEADING_ZEROS, 2);       // Reload IV
+            StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
+            StringExpandPlaceholders(gStringVar4, sCustomStarterText_HpIV);
+            AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);
+
+            gTasks[taskId].tskIVsCounter = 0; // Reset this
+            // Move on to next task
+            gTasks[taskId].func = Task_HandleCustomStarterInputIVs;
+            break;
+
+        case CUSTOM_STARTER_GIVE_MON:
+            break;
+
+    }
+}
+
+// This runs every frame, recieves input and updates the information shown for the mon
 void Task_HandleCustomStarterChoiceMenuInput(u8 taskId)
 {
+    gTasks[taskId].tskFuncId = CUSTOM_STARTER_HANDLE_SPECIES;
+
     if (JOY_NEW(DPAD_ANY))
     {
         PlaySE(SE_SELECT);
@@ -533,7 +834,7 @@ void Task_HandleCustomStarterChoiceMenuInput(u8 taskId)
         if (JOY_NEW(DPAD_UP))
         {
             gTasks[taskId].tskSpeciesId += sPowersofDigitIndicator[gTasks[taskId].tskDigitSelectedIndex];
-            if (gTasks[taskId].tskSpeciesId >= NUM_SPECIES)
+            if (gTasks[taskId].tskSpeciesId >= NUM_SPECIES - 1)
                 gTasks[taskId].tskSpeciesId = NUM_SPECIES - 1;
             
             // Unown B till Z have no icons so skip
@@ -567,40 +868,26 @@ void Task_HandleCustomStarterChoiceMenuInput(u8 taskId)
         StringCopy(gStringVar1, gSpeciesNames[gTasks[taskId].tskSpeciesId]);                                   // Reloads the Species Name
         StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
         ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tskSpeciesId, STR_CONV_MODE_LEADING_ZEROS, 3);  // Natdex Num
-        StringExpandPlaceholders(gStringVar4, sCustomMonID);
+        StringExpandPlaceholders(gStringVar4, sCustomStarterText_ID);
         AddTextPrinterParameterized(gTasks[taskId].tskWindowId, 1, gStringVar4, 1, 1, 0, NULL);
 
-        // Destroy the old sprite and reload the new one
-        FreeAndDestroyMonIconSprite(&gSprites[gTasks[taskId].tskMonSpriteIconId]);          // Destroy previous icon
-        FreeMonIconPalettes();                                                              // Free space for new pallete
-        LoadMonIconPalette(gTasks[taskId].tskSpeciesId);                                    // Loads pallete for current mon
-        gTasks[taskId].tskMonSpriteIconId = CreateMonIcon(gTasks[taskId].tskSpeciesId, SpriteCB_MonIcon, 210, 50, 4, 0, 0); //Create pokemon sprite
-        gSprites[gTasks[taskId].tskMonSpriteIconId].oam.priority = 0;
+        LoadCustomStarterIcon(taskId);
     }
 
     // Handle the A_BUTTON/B_BUTTON input
     if (JOY_NEW(A_BUTTON | B_BUTTON))
     {
-        // Destroy the Icon Sprite
-        FreeMonIconPalettes();
-        FreeAndDestroyMonIconSprite(&gSprites[gTasks[taskId].tskMonSpriteIconId]);
-
-        // Set VAR_CUSTOM_STARTER 
+        // Clean up and move on
         PlaySE(MUS_LEVEL_UP);
-        if (JOY_NEW(A_BUTTON))
-            VarSet(VAR_CUSTOM_STARTER, gTasks[taskId].tskSpeciesId);
-        else
-            VarSet(VAR_CUSTOM_STARTER, 0);  // Default to the regular Hoenn starters
 
-        // Destroy window and restore the player
-        ClearStdWindowAndFrame(gTasks[taskId].tskWindowId, TRUE);
-        RemoveWindow(gTasks[taskId].tskWindowId);
-        ScriptContext_Enable();
-        ScriptUnfreezeObjectEvents();
-        UnlockPlayerFieldControls();
-        DestroyTask(taskId);
-
-        return;
+        // Randomize Starter
+        if (JOY_NEW(B_BUTTON))
+            gTasks[taskId].tskSpeciesId = Random() % (NUM_SPECIES - 1);
+            if (gTasks[taskId].tskSpeciesId == SPECIES_NONE)
+                gTasks[taskId].tskSpeciesId == SPECIES_BULBASAUR;       // The bulbuous one is a backup
+        
+        // Move on to next task
+        gTasks[taskId].func = Task_HandleCustomStarterMenuRefresh;
     }
 }
 
@@ -612,6 +899,7 @@ void Task_CreateCustomStarterChoiceMenu(u8 taskId)
     PlayerFreeze();
     StopPlayerAvatar();
     LockPlayerFieldControls();
+    gTasks[taskId].tskFuncId = CUSTOM_STARTER_CREATE_MENU;
 
     // Create window
     HideMapNamePopUpWindow();
@@ -624,7 +912,7 @@ void Task_CreateCustomStarterChoiceMenu(u8 taskId)
     ConvertIntToDecimalStringN(gStringVar3, 1, STR_CONV_MODE_LEADING_ZEROS, 2);     //This will give 001 (Bulbuous Saur's Natdex num)
     StringCopy(gStringVar1, gSpeciesNames[gTasks[taskId].tskSpeciesId]);            // Loads the first mon being the Bulbuous Saur
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);                     // Pads the species name with space
-    StringExpandPlaceholders(gStringVar4, sCustomMonID);
+    StringExpandPlaceholders(gStringVar4, sCustomStarterText_ID);
     AddTextPrinterParameterized(gTasks[taskId].tskWindowId, FONT_NORMAL, gStringVar4, 1, 1, 0, NULL);   // Prints all the text we prepared
 
     // Load Animated Icon Sprite
@@ -646,3 +934,12 @@ void ChooseCustomStarterFromMenu(void)
 #undef tskDigitSelectedIndex
 #undef tskMonSpriteIconId
 #undef tskWindowId
+#undef tskNatureId              
+#undef tskFuncId                
+#undef tskIVsCounter            
+#undef tskHpIVs                 
+#undef tskAtkIVs                
+#undef tskDefIVs                
+#undef tskSpatkIVs              
+#undef tskSpdefIVs              
+#undef tskSpdIVs                
