@@ -6820,6 +6820,16 @@
       "secondary_tileset": "gTileset_sevii_islands_45",
       "border_filepath": "data/layouts/Memorial_Pillar/border.bin",
       "blockdata_filepath": "data/layouts/Memorial_Pillar/map.bin"
+    },
+    {
+      "id": "LAYOUT_OUTCASE_ISLAND",
+      "name": "Outcase_Island_Layout",
+      "width": 24,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/Outcase_Island/border.bin",
+      "blockdata_filepath": "data/layouts/Outcase_Island/map.bin"
     }
   ]
 }

@@ -253,6 +253,7 @@
 #define MAP_RESORT_GORGEOUS         (50 | (3 << 8))
 #define MAP_FIVE_ISLE_MEADOW        (51 | (3 << 8))
 #define MAP_MEMORIAL_PILLAR         (52 | (3 << 8))
+#define MAP_OUTCASE_ISLAND          (53 | (3 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (4 << 8))
