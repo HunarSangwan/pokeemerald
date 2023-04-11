@@ -1531,3 +1531,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Three_Island_Port/scripts.inc"
 
 	.include "data/maps/Treasure_Beach/scripts.inc"
+
+	.include "data/maps/Resort_Gorgeous/scripts.inc"

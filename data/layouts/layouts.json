@@ -6790,6 +6790,16 @@
       "secondary_tileset": "gTileset_sevii_islands_123",
       "border_filepath": "data/layouts/Treasure_Beach/border.bin",
       "blockdata_filepath": "data/layouts/Treasure_Beach/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESORT_GORGEOUS",
+      "name": "Resort_Gorgeous_Layout",
+      "width": 72,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_45",
+      "border_filepath": "data/layouts/Resort_Gorgeous/border.bin",
+      "blockdata_filepath": "data/layouts/Resort_Gorgeous/map.bin"
     }
   ]
 }
