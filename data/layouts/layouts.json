@@ -6860,6 +6860,46 @@
       "secondary_tileset": "gTileset_sevii_islands_67",
       "border_filepath": "data/layouts/Ruin_Valley/border.bin",
       "blockdata_filepath": "data/layouts/Ruin_Valley/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRAINER_TOWER",
+      "name": "Trainer_Tower_Layout",
+      "width": 120,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/Trainer_Tower/border.bin",
+      "blockdata_filepath": "data/layouts/Trainer_Tower/map.bin"
+    },
+    {
+      "id": "LAYOUT_CANYON_ENTRANCE",
+      "name": "CanyonEntrance_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/CanyonEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/CanyonEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEVAULT_CANYON",
+      "name": "Sevault_Canyon_Layout",
+      "width": 24,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/Sevault_Canyon/border.bin",
+      "blockdata_filepath": "data/layouts/Sevault_Canyon/map.bin"
+    },
+    {
+      "id": "LAYOUT_TANOBY_RUINS",
+      "name": "Tanoby_Ruins_Layout",
+      "width": 144,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/Tanoby_Ruins/border.bin",
+      "blockdata_filepath": "data/layouts/Tanoby_Ruins/map.bin"
     }
   ]
 }

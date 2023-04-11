@@ -257,6 +257,10 @@
 #define MAP_GREEN_PATH              (54 | (3 << 8))
 #define MAP_WATER_PATH              (55 | (3 << 8))
 #define MAP_RUIN_VALLEY             (56 | (3 << 8))
+#define MAP_TRAINER_TOWER           (57 | (3 << 8))
+#define MAP_CANYON_ENTRANCE         (58 | (3 << 8))
+#define MAP_SEVAULT_CANYON          (59 | (3 << 8))
+#define MAP_TANOBY_RUINS            (60 | (3 << 8))
 
 // gMapGroup_Emerald
 #define MAP_PETALBURG_CITY                                  (0 | (4 << 8))

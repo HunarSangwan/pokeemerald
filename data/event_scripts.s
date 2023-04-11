@@ -1545,3 +1545,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Water_Path/scripts.inc"
 
 	.include "data/maps/Ruin_Valley/scripts.inc"
+
+	.include "data/maps/Trainer_Tower/scripts.inc"
+
+	.include "data/maps/CanyonEntrance/scripts.inc"
+
+	.include "data/maps/Sevault_Canyon/scripts.inc"
+
+	.include "data/maps/Tanoby_Ruins/scripts.inc"

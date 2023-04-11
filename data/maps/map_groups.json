@@ -257,7 +257,11 @@
     "Outcase_Island",
     "Green_Path",
     "Water_Path",
-    "Ruin_Valley"
+    "Ruin_Valley",
+    "Trainer_Tower",
+    "CanyonEntrance",
+    "Sevault_Canyon",
+    "Tanoby_Ruins"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
