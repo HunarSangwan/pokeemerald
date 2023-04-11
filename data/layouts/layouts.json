@@ -6840,6 +6840,16 @@
       "secondary_tileset": "gTileset_sevii_islands_67",
       "border_filepath": "data/layouts/Green_Path/border.bin",
       "blockdata_filepath": "data/layouts/Green_Path/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATER_PATH",
+      "name": "Water_Path_Layout",
+      "width": 24,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/Water_Path/border.bin",
+      "blockdata_filepath": "data/layouts/Water_Path/map.bin"
     }
   ]
 }
