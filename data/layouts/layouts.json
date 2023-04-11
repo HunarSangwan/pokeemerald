@@ -6810,6 +6810,16 @@
       "secondary_tileset": "gTileset_sevii_islands_45",
       "border_filepath": "data/layouts/Five_Isle_Meadow/border.bin",
       "blockdata_filepath": "data/layouts/Five_Isle_Meadow/map.bin"
+    },
+    {
+      "id": "LAYOUT_MEMORIAL_PILLAR",
+      "name": "Memorial_Pillar_Layout",
+      "width": 24,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_45",
+      "border_filepath": "data/layouts/Memorial_Pillar/border.bin",
+      "blockdata_filepath": "data/layouts/Memorial_Pillar/map.bin"
     }
   ]
 }

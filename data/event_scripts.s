@@ -1535,3 +1535,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Resort_Gorgeous/scripts.inc"
 
 	.include "data/maps/Five_Isle_Meadow/scripts.inc"
+
+	.include "data/maps/Memorial_Pillar/scripts.inc"
