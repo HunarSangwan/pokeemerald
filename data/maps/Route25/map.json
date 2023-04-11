@@ -1,9 +1,9 @@
 {
-  "id": "MAP_ROUTE20",
-  "name": "Route20",
-  "layout": "LAYOUT_ROUTE20",
+  "id": "MAP_ROUTE25",
+  "name": "Route25",
+  "layout": "LAYOUT_ROUTE25",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ROUTE_20",
+  "region_map_section": "MAPSEC_ROUTE_25",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

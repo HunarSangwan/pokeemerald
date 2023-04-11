@@ -239,7 +239,13 @@
     "Route17",
     "Route18",
     "Route19",
-    "Route20"
+    "Route20",
+    "Route21_North",
+    "Route21_South",
+    "Route22",
+    "Route23",
+    "Route24",
+    "Route25"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
