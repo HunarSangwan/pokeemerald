@@ -1539,3 +1539,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Memorial_Pillar/scripts.inc"
 
 	.include "data/maps/Outcase_Island/scripts.inc"
+
+	.include "data/maps/Green_Path/scripts.inc"

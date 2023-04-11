@@ -6830,6 +6830,16 @@
       "secondary_tileset": "gTileset_sevii_islands_67",
       "border_filepath": "data/layouts/Outcase_Island/border.bin",
       "blockdata_filepath": "data/layouts/Outcase_Island/map.bin"
+    },
+    {
+      "id": "LAYOUT_GREEN_PATH",
+      "name": "Green_Path_Layout",
+      "width": 72,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_67",
+      "border_filepath": "data/layouts/Green_Path/border.bin",
+      "blockdata_filepath": "data/layouts/Green_Path/map.bin"
     }
   ]
 }
