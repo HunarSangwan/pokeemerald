@@ -6800,6 +6800,16 @@
       "secondary_tileset": "gTileset_sevii_islands_45",
       "border_filepath": "data/layouts/Resort_Gorgeous/border.bin",
       "blockdata_filepath": "data/layouts/Resort_Gorgeous/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLE_MEADOW",
+      "name": "Five_Isle_Meadow_Layout",
+      "width": 24,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_sevii_islands_45",
+      "border_filepath": "data/layouts/Five_Isle_Meadow/border.bin",
+      "blockdata_filepath": "data/layouts/Five_Isle_Meadow/map.bin"
     }
   ]
 }
