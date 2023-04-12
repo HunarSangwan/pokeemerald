@@ -14,7 +14,7 @@ SetCustomStarterVar::
 	msgbox SetCustomStarterVar_Text_0
 	waitmessage
 	closemessage
-	callnative ChooseCustomStarterFromMenu
+	@@callnative ChooseCustomStarterFromMenu
 	setvar VAR_TEMP_0, 1
 	releaseall
 	return

@@ -26,6 +26,9 @@ gText_Birch_MainSpeech::
 	.string "To unravel POKéMON mysteries,\n"
 	.string "I've been undertaking research.\l"
 	.string "That's what I do.\p"
+	.string "Oh yeah, while we're talking about\n"
+	.string "POKéMON, who would you like to start\l"
+	.string "with?\p"
 	.string "$"
 
 gText_Birch_AndYouAre::
