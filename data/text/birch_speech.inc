@@ -32,6 +32,7 @@ gText_Birch_MainSpeech::
 	.string "$"
 
 gText_Birch_AndYouAre::
+	.string "Noted!\p"
 	.string "And you are?$"
 
 gText_Birch_BoyOrGirl::
