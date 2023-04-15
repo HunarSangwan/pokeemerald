@@ -209,7 +209,7 @@ void NewGameInitData(void)
     ResetContestLinkResults();
 
     // Custom Starter
-    if (gCustomStarterStruct->isStarterPrepared)
+    if (gCustomStarterStructPtr->isStarterPrepared)
         AddCustomStarterToPlayerTeam();
 }
 
@@ -230,15 +230,15 @@ void AddCustomStarterToPlayerTeam(void)
     u8 nationalDexNum;
 
     // Create the mon at lvl 5 with the specified nature
-    CreateMonWithNature(&customStarter, gCustomStarterStruct->speciesId, 5, 32, gCustomStarterStruct->natureId);
+    CreateMonWithNature(&customStarter, gCustomStarterStructPtr->speciesId, 5, 32, gCustomStarterStructPtr->natureId);
 
     // Set the IVs
-    SetMonData(&customStarter, MON_DATA_HP_IV, &gCustomStarterStruct->hpIV);
-    SetMonData(&customStarter, MON_DATA_ATK_IV, &gCustomStarterStruct->atkIV);
-    SetMonData(&customStarter, MON_DATA_DEF_IV, &gCustomStarterStruct->defIV);
-    SetMonData(&customStarter, MON_DATA_SPATK_IV, &gCustomStarterStruct->spatkIV);
-    SetMonData(&customStarter, MON_DATA_SPDEF_IV, &gCustomStarterStruct->spdefIV);
-    SetMonData(&customStarter, MON_DATA_SPEED_IV, &gCustomStarterStruct->spdIV);
+    SetMonData(&customStarter, MON_DATA_HP_IV, &gCustomStarterStructPtr->hpIV);
+    SetMonData(&customStarter, MON_DATA_ATK_IV, &gCustomStarterStructPtr->atkIV);
+    SetMonData(&customStarter, MON_DATA_DEF_IV, &gCustomStarterStructPtr->defIV);
+    SetMonData(&customStarter, MON_DATA_SPATK_IV, &gCustomStarterStructPtr->spatkIV);
+    SetMonData(&customStarter, MON_DATA_SPDEF_IV, &gCustomStarterStructPtr->spdefIV);
+    SetMonData(&customStarter, MON_DATA_SPEED_IV, &gCustomStarterStructPtr->spdIV);
 
     // Update the stats
     CalculateMonStats(&customStarter);
@@ -252,10 +252,10 @@ void AddCustomStarterToPlayerTeam(void)
     gPlayerPartyCount = 1;
 
     // Update Natdex seen & caught
-    nationalDexNum = SpeciesToNationalPokedexNum(gCustomStarterStruct->speciesId);
+    nationalDexNum = SpeciesToNationalPokedexNum(gCustomStarterStructPtr->speciesId);
     GetSetPokedexFlag(nationalDexNum, FLAG_SET_SEEN);
     GetSetPokedexFlag(nationalDexNum, FLAG_SET_CAUGHT);
     
     // Free up the struct
-    Free(gCustomStarterStruct);
+    Free(gCustomStarterStructPtr);
 }

@@ -145,6 +145,6 @@ struct CustomStarter
     bool8 isStarterPrepared;              // If true, sets up the starter in NewGameInitData
 };        
 
-extern struct CustomStarter *gCustomStarterStruct;       // Apparently, the task slots are already occupied so the next best thing is this
+extern struct CustomStarter *gCustomStarterStructPtr;       // Apparently, the task slots are already occupied so the next best thing is this
 
 #endif // GUARD_MENU_H
