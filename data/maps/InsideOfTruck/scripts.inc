@@ -1,24 +1,7 @@
 InsideOfTruck_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, InsideOfTruck_OnLoad
 	map_script MAP_SCRIPT_ON_RESUME, InsideOfTruck_OnResume
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, InsideOfTruck_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
-
-InsideOfTruck_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_TEMP_0, 0, SetCustomStarterVar
-	.2byte 0
-
-
-SetCustomStarterVar::
-	lockall
-	msgbox SetCustomStarterVar_Text_0
-	waitmessage
-	closemessage
-	@@callnative ChooseCustomStarterFromMenu
-	setvar VAR_TEMP_0, 1
-	releaseall
-	return
-
 
 InsideOfTruck_OnLoad:
 	setmetatile 4, 1, METATILE_InsideOfTruck_ExitLight_Top, FALSE
@@ -72,7 +55,3 @@ InsideOfTruck_Text_BoxPrintedWithMonLogo:
 	.string "The box is printed with a POKéMON logo.\p"
 	.string "It's a POKéMON brand moving and\n"
 	.string "delivery service.$"
-
-SetCustomStarterVar_Text_0:
-	.string "Please input the species number for a\n"
-	.string "custom starter.$"
