@@ -7,6 +7,7 @@
     "gMapGroup_IndoorPallet",
     "gMapGroup_IndoorViridian",
     "gMapGroup_IndoorPewter",
+    "gMapGroup_IndoorCerulean",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -289,6 +290,18 @@
     "PewterCity_PokemonCenter_1F",
     "PewterCity_PokemonCenter_2F",
     "PewterCity_House2"
+  ],
+  "gMapGroup_IndoorCerulean": [
+    "CeruleanCity_House1",
+    "CeruleanCity_House2",
+    "CeruleanCity_House3",
+    "CeruleanCity_PokemonCenter_1F",
+    "CeruleanCity_PokemonCenter_2F",
+    "CeruleanCity_Gym",
+    "CeruleanCity_BikeShop",
+    "CeruleanCity_Mart",
+    "CeruleanCity_House4",
+    "CeruleanCity_House5"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
