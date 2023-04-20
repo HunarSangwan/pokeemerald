@@ -8,6 +8,7 @@
     "gMapGroup_IndoorViridian",
     "gMapGroup_IndoorPewter",
     "gMapGroup_IndoorCerulean",
+    "gMapGroup_IndoorLavender",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -302,6 +303,14 @@
     "CeruleanCity_Mart",
     "CeruleanCity_House4",
     "CeruleanCity_House5"
+  ],
+  "gMapGroup_IndoorLavender": [
+    "LavenderTown_PokemonCenter_1F",
+    "LavenderTown_PokemonCenter_2F",
+    "LavenderTown_VolunteerPokemonHouse",
+    "LavenderTown_House1",
+    "LavenderTown_House2",
+    "LavenderTown_Mart"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

@@ -1609,3 +1609,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CeruleanCity_House4/scripts.inc"
 
 	.include "data/maps/CeruleanCity_House5/scripts.inc"
+
+	.include "data/maps/LavenderTown_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/LavenderTown_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/LavenderTown_VolunteerPokemonHouse/scripts.inc"
+
+	.include "data/maps/LavenderTown_House1/scripts.inc"
+
+	.include "data/maps/LavenderTown_House2/scripts.inc"
+
+	.include "data/maps/LavenderTown_Mart/scripts.inc"
