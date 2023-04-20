@@ -1553,3 +1553,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Sevault_Canyon/scripts.inc"
 
 	.include "data/maps/Tanoby_Ruins/scripts.inc"
+
+	.include "data/maps/PalletTown_PlayersHouse_1F/scripts.inc"
+
+	.include "data/maps/PalletTown_PlayersHouse_2F/scripts.inc"
+
+	.include "data/maps/PalletTown_RivalsHouse/scripts.inc"
+
+	.include "data/maps/PalletTown_ProfessorOaksLab/scripts.inc"

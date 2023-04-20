@@ -4,6 +4,7 @@
     "gMapGroup_Dungeons",
     "gMapGroup_SpecialArea",
     "gMapGroup_TownsAndRoutes",
+    "gMapGroup_IndoorPallet",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -262,6 +263,12 @@
     "CanyonEntrance",
     "Sevault_Canyon",
     "Tanoby_Ruins"
+  ],
+  "gMapGroup_IndoorPallet": [
+    "PalletTown_PlayersHouse_1F",
+    "PalletTown_PlayersHouse_2F",
+    "PalletTown_RivalsHouse",
+    "PalletTown_ProfessorOaksLab"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
