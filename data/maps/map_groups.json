@@ -13,6 +13,7 @@
     "gMapGroup_IndoorCeladon",
     "gMapGroup_IndoorFuchsia",
     "gMapGroup_IndoorCinnabar",
+    "gMapGroup_IndoorIndigoPlateau",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -369,6 +370,10 @@
     "CinnabarIsland_PokemonCenter_1F",
     "CinnabarIsland_PokemonCenter_2F",
     "CinnabarIsland_Mart"
+  ],
+  "gMapGroup_IndoorIndigoPlateau": [
+    "IndigoPlateau_PokemonCenter_1F",
+    "IndigoPlateau_PokemonCenter_2F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

@@ -1713,3 +1713,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CinnabarIsland_PokemonCenter_2F/scripts.inc"
 
 	.include "data/maps/CinnabarIsland_Mart/scripts.inc"
+
+	.include "data/maps/IndigoPlateau_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/IndigoPlateau_PokemonCenter_2F/scripts.inc"
