@@ -1697,3 +1697,19 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FuchsiaCity_House2/scripts.inc"
 
 	.include "data/maps/FuchsiaCity_House3/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_Gym/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonLab_Entrance/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonLab_ResearchRoom/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/CinnabarIsland_Mart/scripts.inc"

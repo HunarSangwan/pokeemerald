@@ -12,6 +12,7 @@
     "gMapGroup_IndoorVermilion",
     "gMapGroup_IndoorCeladon",
     "gMapGroup_IndoorFuchsia",
+    "gMapGroup_IndoorCinnabar",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -358,6 +359,16 @@
     "FuchsiaCity_WardensHouse",
     "FuchsiaCity_House2",
     "FuchsiaCity_House3"
+  ],
+  "gMapGroup_IndoorCinnabar": [
+    "CinnabarIsland_Gym",
+    "CinnabarIsland_PokemonLab_Entrance",
+    "CinnabarIsland_PokemonLab_Lounge",
+    "CinnabarIsland_PokemonLab_ResearchRoom",
+    "CinnabarIsland_PokemonLab_ExperimentRoom",
+    "CinnabarIsland_PokemonCenter_1F",
+    "CinnabarIsland_PokemonCenter_2F",
+    "CinnabarIsland_Mart"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
