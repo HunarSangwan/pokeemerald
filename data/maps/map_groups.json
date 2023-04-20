@@ -9,6 +9,7 @@
     "gMapGroup_IndoorPewter",
     "gMapGroup_IndoorCerulean",
     "gMapGroup_IndoorLavender",
+    "gMapGroup_IndoorVermilion",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -311,6 +312,16 @@
     "LavenderTown_House1",
     "LavenderTown_House2",
     "LavenderTown_Mart"
+  ],
+  "gMapGroup_IndoorVermilion": [
+    "VermilionCity_House1",
+    "VermilionCity_PokemonCenter_1F",
+    "VermilionCity_PokemonCenter_2F",
+    "VermilionCity_PokemonFanClub",
+    "VermilionCity_House2",
+    "VermilionCity_Mart",
+    "VermilionCity_Gym",
+    "VermilionCity_House3"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
