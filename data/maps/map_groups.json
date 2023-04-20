@@ -10,6 +10,7 @@
     "gMapGroup_IndoorCerulean",
     "gMapGroup_IndoorLavender",
     "gMapGroup_IndoorVermilion",
+    "gMapGroup_IndoorIndoorCeladon",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -322,6 +323,28 @@
     "VermilionCity_Mart",
     "VermilionCity_Gym",
     "VermilionCity_House3"
+  ],
+  "gMapGroup_IndoorIndoorCeladon": [
+    "CeladonCity_DepartmentStore_1F",
+    "CeladonCity_DepartmentStore_2F",
+    "CeladonCity_DepartmentStore_3F",
+    "CeladonCity_DepartmentStore_4F",
+    "CeladonCity_DepartmentStore_5F",
+    "CeladonCity_DepartmentStore_Roof",
+    "CeladonCity_DepartmentStore_Elevator",
+    "CeladonCity_Condominiums_1F",
+    "CeladonCity_Condominiums_2F",
+    "CeladonCity_Condominiums_3F",
+    "CeladonCity_Condominiums_Roof",
+    "CeladonCity_Condominiums_RoofRoom",
+    "CeladonCity_PokemonCenter_1F",
+    "CeladonCity_PokemonCenter_2F",
+    "CeladonCity_GameCorner",
+    "CeladonCity_GameCorner_PrizeRoom",
+    "CeladonCity_Gym",
+    "CeladonCity_Restaurant",
+    "CeladonCity_House1",
+    "CeladonCity_Hotel"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
