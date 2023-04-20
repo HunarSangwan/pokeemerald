@@ -5,6 +5,7 @@
     "gMapGroup_SpecialArea",
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorPallet",
+    "gMapGroup_IndoorViridian",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -269,6 +270,14 @@
     "PalletTown_PlayersHouse_2F",
     "PalletTown_RivalsHouse",
     "PalletTown_ProfessorOaksLab"
+  ],
+  "gMapGroup_IndoorViridian": [
+    "ViridianCity_House",
+    "ViridianCity_Gym",
+    "ViridianCity_School",
+    "ViridianCity_Mart",
+    "ViridianCity_PokemonCenter_1F",
+    "ViridianCity_PokemonCenter_2F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
