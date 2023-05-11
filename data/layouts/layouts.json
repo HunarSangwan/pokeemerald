@@ -9708,6 +9708,18 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/Route19_UnusedHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route19_UnusedHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE22_NORTH_ENTRANCE",
+      "name": "Route22_NorthEntrance_Layout",
+      "width": 15,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route22_NorthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route22_NorthEntrance/map.bin"
     }
   ]
 }
