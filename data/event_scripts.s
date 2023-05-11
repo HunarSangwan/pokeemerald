@@ -1737,3 +1737,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SaffronCity_MrPsychicsHouse/scripts.inc"
 
 	.include "data/maps/SaffronCity_PokemonTrainerFanClub/scripts.inc"
+
+	.include "data/maps/Route2_ViridianForest_SouthEntrance/scripts.inc"
+
+	.include "data/maps/Route2_House/scripts.inc"
+
+	.include "data/maps/Route2_EastBuilding/scripts.inc"
+
+	.include "data/maps/Route2_ViridianForest_NorthEntrance/scripts.inc"

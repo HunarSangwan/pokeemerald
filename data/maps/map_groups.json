@@ -15,6 +15,7 @@
     "gMapGroup_IndoorCinnabar",
     "gMapGroup_IndoorIndigoPlateau",
     "gMapGroup_IndoorSaffron",
+    "gMapGroup_IndoorRoute2",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -387,6 +388,12 @@
     "SaffronCity_PokemonCenter_2F",
     "SaffronCity_MrPsychicsHouse",
     "SaffronCity_PokemonTrainerFanClub"
+  ],
+  "gMapGroup_IndoorRoute2": [
+    "Route2_ViridianForest_SouthEntrance",
+    "Route2_House",
+    "Route2_EastBuilding",
+    "Route2_ViridianForest_NorthEntrance"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

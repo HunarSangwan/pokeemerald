@@ -9384,6 +9384,54 @@
       "secondary_tileset": "gTileset_fan_club_daycare",
       "border_filepath": "data/layouts/SaffronCity_PokemonTrainerFanClub/border.bin",
       "blockdata_filepath": "data/layouts/SaffronCity_PokemonTrainerFanClub/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
+      "name": "Route2_ViridianForest_SouthEntrance_Layout",
+      "width": 15,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route2_ViridianForest_SouthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route2_ViridianForest_SouthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2_HOUSE",
+      "name": "Route2_House_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route2_House/border.bin",
+      "blockdata_filepath": "data/layouts/Route2_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2_EAST_BUILDING",
+      "name": "Route2_EastBuilding_Layout",
+      "width": 15,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route2_EastBuilding/border.bin",
+      "blockdata_filepath": "data/layouts/Route2_EastBuilding/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
+      "name": "Route2_ViridianForest_NorthEntrance_Layout",
+      "width": 15,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route2_ViridianForest_NorthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route2_ViridianForest_NorthEntrance/map.bin"
     }
   ]
 }
