@@ -1749,3 +1749,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route4_PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/Route4_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/Route5_PokemonDayCare/scripts.inc"
+
+	.include "data/maps/Route5_SouthEntrance/scripts.inc"
