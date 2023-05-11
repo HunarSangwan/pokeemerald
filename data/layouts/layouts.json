@@ -10140,6 +10140,66 @@
       "secondary_tileset": "gTileset_mart",
       "border_filepath": "data/layouts/FourIsland_Mart/border.bin",
       "blockdata_filepath": "data/layouts/FourIsland_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLAND_POKEMON_CENTER_1F",
+      "name": "FiveIsland_PokemonCenter_1F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/FiveIsland_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/FiveIsland_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLAND_POKEMON_CENTER_2F",
+      "name": "FiveIsland_PokemonCenter_2F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/FiveIsland_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/FiveIsland_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLAND_HARBOR",
+      "name": "FiveIsland_Harbor_Layout",
+      "width": 17,
+      "height": 13,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/FiveIsland_Harbor/border.bin",
+      "blockdata_filepath": "data/layouts/FiveIsland_Harbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLAND_HOUSE1",
+      "name": "FiveIsland_House1_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/FiveIsland_House1/border.bin",
+      "blockdata_filepath": "data/layouts/FiveIsland_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIVE_ISLAND_HOUSE2",
+      "name": "FiveIsland_House2_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/FiveIsland_House2/border.bin",
+      "blockdata_filepath": "data/layouts/FiveIsland_House2/map.bin"
     }
   ]
 }

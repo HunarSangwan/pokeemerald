@@ -36,6 +36,7 @@
     "gMapGroup_IndoorTwoIsland",
     "gMapGroup_IndoorThreeIsland",
     "gMapGroup_IndoorFourIsland",
+    "gMapGroup_IndoorFiveIsland",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -513,6 +514,13 @@
     "FourIsland_Harbor",
     "FourIsland_House2",
     "FourIsland_Mart"
+  ],
+  "gMapGroup_IndoorFiveIsland": [
+    "FiveIsland_PokemonCenter_1F",
+    "FiveIsland_PokemonCenter_2F",
+    "FiveIsland_Harbor",
+    "FiveIsland_House1",
+    "FiveIsland_House2"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
