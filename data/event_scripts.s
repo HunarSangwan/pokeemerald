@@ -1765,3 +1765,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route10_PokemonCenter_1F/scripts.inc"
 
 	.include "data/maps/Route10_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/Route11_EastEntrance_1F/scripts.inc"
+
+	.include "data/maps/Route11_EastEntrance_2F/scripts.inc"
