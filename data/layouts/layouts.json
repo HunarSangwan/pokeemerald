@@ -9528,6 +9528,30 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/Route8_WestEntrance/border.bin",
       "blockdata_filepath": "data/layouts/Route8_WestEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE10_POKEMON_CENTER_1F",
+      "name": "Route10_PokemonCenter_1F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Route10_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Route10_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE10_POKEMON_CENTER_2F",
+      "name": "Route10_PokemonCenter_2F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Route10_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Route10_PokemonCenter_2F/map.bin"
     }
   ]
 }
