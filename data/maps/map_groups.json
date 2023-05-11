@@ -19,6 +19,7 @@
     "gMapGroup_IndoorRoute4",
     "gMapGroup_IndoorRoute5",
     "gMapGroup_IndoorRoute6",
+    "gMapGroup_IndoorRoute7",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -409,6 +410,9 @@
   "gMapGroup_IndoorRoute6": [
     "Route6_NorthEntrance",
     "Route6_UnusedHouse"
+  ],
+  "gMapGroup_IndoorRoute7": [
+    "Route7_EastEntrance"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
