@@ -9516,6 +9516,18 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/Route7_EastEntrance/border.bin",
       "blockdata_filepath": "data/layouts/Route7_EastEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE8_WEST_ENTRANCE",
+      "name": "Route8_WestEntrance_Layout",
+      "width": 13,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route8_WestEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route8_WestEntrance/map.bin"
     }
   ]
 }

@@ -1759,3 +1759,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route6_UnusedHouse/scripts.inc"
 
 	.include "data/maps/Route7_EastEntrance/scripts.inc"
+
+	.include "data/maps/Route8_WestEntrance/scripts.inc"
