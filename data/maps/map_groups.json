@@ -18,6 +18,7 @@
     "gMapGroup_IndoorRoute2",
     "gMapGroup_IndoorRoute4",
     "gMapGroup_IndoorRoute5",
+    "gMapGroup_IndoorRoute6",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -404,6 +405,10 @@
   "gMapGroup_IndoorRoute5": [
     "Route5_PokemonDayCare",
     "Route5_SouthEntrance"
+  ],
+  "gMapGroup_IndoorRoute6": [
+    "Route6_NorthEntrance",
+    "Route6_UnusedHouse"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

@@ -9480,6 +9480,30 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/Route5_SouthEntrance/border.bin",
       "blockdata_filepath": "data/layouts/Route5_SouthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6_NORTH_ENTRANCE",
+      "name": "Route6_NorthEntrance_Layout",
+      "width": 9,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route6_NorthEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/Route6_NorthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6_UNUSED_HOUSE",
+      "name": "Route6_UnusedHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/Route6_UnusedHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route6_UnusedHouse/map.bin"
     }
   ]
 }
