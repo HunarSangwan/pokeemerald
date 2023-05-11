@@ -1821,3 +1821,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/OneIsland_House2/scripts.inc"
 
 	.include "data/maps/OneIsland_Harbor/scripts.inc"
+
+	.include "data/maps/TwoIsland_JoyfulGameCorner/scripts.inc"
+
+	.include "data/maps/TwoIsland_House/scripts.inc"
+
+	.include "data/maps/TwoIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/TwoIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/TwoIsland_Harbor/scripts.inc"

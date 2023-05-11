@@ -9888,6 +9888,66 @@
       "secondary_tileset": "gTileset_IslandHarbor",
       "border_filepath": "data/layouts/OneIsland_Harbor/border.bin",
       "blockdata_filepath": "data/layouts/OneIsland_Harbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWO_ISLAND_JOYFUL_GAME_CORNER",
+      "name": "TwoIsland_JoyfulGameCorner_Layout",
+      "width": 12,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_game_corner",
+      "border_filepath": "data/layouts/TwoIsland_JoyfulGameCorner/border.bin",
+      "blockdata_filepath": "data/layouts/TwoIsland_JoyfulGameCorner/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWO_ISLAND_HOUSE",
+      "name": "TwoIsland_House_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/TwoIsland_House/border.bin",
+      "blockdata_filepath": "data/layouts/TwoIsland_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWO_ISLAND_POKEMON_CENTER_1F",
+      "name": "TwoIsland_PokemonCenter_1F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/TwoIsland_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TwoIsland_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWO_ISLAND_POKEMON_CENTER_2F",
+      "name": "TwoIsland_PokemonCenter_2F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/TwoIsland_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TwoIsland_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWO_ISLAND_HARBOR",
+      "name": "TwoIsland_Harbor_Layout",
+      "width": 17,
+      "height": 13,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/TwoIsland_Harbor/border.bin",
+      "blockdata_filepath": "data/layouts/TwoIsland_Harbor/map.bin"
     }
   ]
 }
