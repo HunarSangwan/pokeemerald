@@ -1831,3 +1831,19 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TwoIsland_PokemonCenter_2F/scripts.inc"
 
 	.include "data/maps/TwoIsland_Harbor/scripts.inc"
+
+	.include "data/maps/ThreeIsland_House1/scripts.inc"
+
+	.include "data/maps/ThreeIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/ThreeIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/ThreeIsland_Mart/scripts.inc"
+
+	.include "data/maps/ThreeIsland_House2/scripts.inc"
+
+	.include "data/maps/ThreeIsland_House3/scripts.inc"
+
+	.include "data/maps/ThreeIsland_House4/scripts.inc"
+
+	.include "data/maps/ThreeIsland_House5/scripts.inc"
