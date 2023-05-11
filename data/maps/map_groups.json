@@ -14,6 +14,7 @@
     "gMapGroup_IndoorFuchsia",
     "gMapGroup_IndoorCinnabar",
     "gMapGroup_IndoorIndigoPlateau",
+    "gMapGroup_IndoorSaffron",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -374,6 +375,18 @@
   "gMapGroup_IndoorIndigoPlateau": [
     "IndigoPlateau_PokemonCenter_1F",
     "IndigoPlateau_PokemonCenter_2F"
+  ],
+  "gMapGroup_IndoorSaffron": [
+    "SaffronCity_CopycatsHouse_1F",
+    "SaffronCity_CopycatsHouse_2F",
+    "SaffronCity_Dojo",
+    "SaffronCity_Gym",
+    "SaffronCity_House",
+    "SaffronCity_Mart",
+    "SaffronCity_PokemonCenter_1F",
+    "SaffronCity_PokemonCenter_2F",
+    "SaffronCity_MrPsychicsHouse",
+    "SaffronCity_PokemonTrainerFanClub"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
