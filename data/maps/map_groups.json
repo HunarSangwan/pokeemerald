@@ -16,6 +16,7 @@
     "gMapGroup_IndoorIndigoPlateau",
     "gMapGroup_IndoorSaffron",
     "gMapGroup_IndoorRoute2",
+    "gMapGroup_IndoorRoute4",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -394,6 +395,10 @@
     "Route2_House",
     "Route2_EastBuilding",
     "Route2_ViridianForest_NorthEntrance"
+  ],
+  "gMapGroup_IndoorRoute4": [
+    "Route4_PokemonCenter_1F",
+    "Route4_PokemonCenter_2F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

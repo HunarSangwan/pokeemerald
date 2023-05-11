@@ -9432,6 +9432,30 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/Route2_ViridianForest_NorthEntrance/border.bin",
       "blockdata_filepath": "data/layouts/Route2_ViridianForest_NorthEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4_POKEMON_CENTER_1F",
+      "name": "Route4_PokemonCenter_1F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Route4_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Route4_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4_POKEMON_CENTER_2F",
+      "name": "Route4_PokemonCenter_2F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/Route4_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Route4_PokemonCenter_2F/map.bin"
     }
   ]
 }
