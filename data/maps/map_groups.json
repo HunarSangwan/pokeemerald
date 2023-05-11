@@ -32,6 +32,7 @@
     "gMapGroup_IndoorRoute23",
     "gMapGroup_IndoorRoute25",
     "gMapGroup_IndoorSevenIsland",
+    "gMapGroup_IndoorOneIsland",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -475,6 +476,13 @@
     "SevenIsland_PokemonCenter_2F",
     "SevenIsland_UnusedHouse",
     "SevenIsland_Harbor"
+  ],
+  "gMapGroup_IndoorOneIsland": [
+    "OneIsland_PokemonCenter_1F",
+    "OneIsland_PokemonCenter_2F",
+    "OneIsland_House1",
+    "OneIsland_House2",
+    "OneIsland_Harbor"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",

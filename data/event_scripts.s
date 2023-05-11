@@ -1811,3 +1811,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SevenIsland_UnusedHouse/scripts.inc"
 
 	.include "data/maps/SevenIsland_Harbor/scripts.inc"
+
+	.include "data/maps/OneIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/OneIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/OneIsland_House1/scripts.inc"
+
+	.include "data/maps/OneIsland_House2/scripts.inc"
+
+	.include "data/maps/OneIsland_Harbor/scripts.inc"
