@@ -25,6 +25,7 @@
     "gMapGroup_IndoorRoute11",
     "gMapGroup_IndoorRoute12",
     "gMapGroup_IndoorRoute15",
+    "gMapGroup_IndoorRoute16",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -438,6 +439,11 @@
   "gMapGroup_IndoorRoute15": [
     "Route15_WestEntrance_1F",
     "Route15_WestEntrance_2F"
+  ],
+  "gMapGroup_IndoorRoute16": [
+    "Route16_House",
+    "Route16_NorthEntrance_1F",
+    "Route16_NorthEntrance_2F"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
