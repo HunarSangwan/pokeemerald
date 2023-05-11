@@ -9732,6 +9732,18 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/Route23_UnusedHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route23_UnusedHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25_SEA_COTTAGE",
+      "name": "Route25_SeaCottage_Layout",
+      "width": 15,
+      "height": 11,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_sea_cottage",
+      "border_filepath": "data/layouts/Route25_SeaCottage/border.bin",
+      "blockdata_filepath": "data/layouts/Route25_SeaCottage/map.bin"
     }
   ]
 }

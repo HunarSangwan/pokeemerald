@@ -30,6 +30,7 @@
     "gMapGroup_IndoorRoute19",
     "gMapGroup_IndoorRoute22",
     "gMapGroup_IndoorRoute23",
+    "gMapGroup_IndoorRoute25",
     "gMapGroup_Emerald"
   ],
   "gMapGroup_Link": [
@@ -461,6 +462,9 @@
   ],
   "gMapGroup_IndoorRoute23": [
     "Route23_UnusedHouse"
+  ],
+  "gMapGroup_IndoorRoute25": [
+    "Route25_SeaCottage"
   ],
   "gMapGroup_Emerald": [
     "PetalburgCity",
