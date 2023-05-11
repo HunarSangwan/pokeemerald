@@ -1797,3 +1797,17 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route23_UnusedHouse/scripts.inc"
 
 	.include "data/maps/Route25_SeaCottage/scripts.inc"
+
+	.include "data/maps/SevenIsland_House_Room1/scripts.inc"
+
+	.include "data/maps/SevenIsland_House_Room2/scripts.inc"
+
+	.include "data/maps/SevenIsland_Mart/scripts.inc"
+
+	.include "data/maps/SevenIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/SevenIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/SevenIsland_UnusedHouse/scripts.inc"
+
+	.include "data/maps/SevenIsland_Harbor/scripts.inc"
