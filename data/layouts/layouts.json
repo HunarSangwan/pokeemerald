@@ -10044,6 +10044,102 @@
       "secondary_tileset": "gTileset_generic_building_2",
       "border_filepath": "data/layouts/ThreeIsland_House5/border.bin",
       "blockdata_filepath": "data/layouts/ThreeIsland_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_POKEMON_DAY_CARE",
+      "name": "FourIsland_PokemonDayCare_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_fan_club_daycare",
+      "border_filepath": "data/layouts/FourIsland_PokemonDayCare/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_PokemonDayCare/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_POKEMON_CENTER_1F",
+      "name": "FourIsland_PokemonCenter_1F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/FourIsland_PokemonCenter_1F/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_PokemonCenter_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_POKEMON_CENTER_2F",
+      "name": "FourIsland_PokemonCenter_2F_Layout",
+      "width": 15,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/FourIsland_PokemonCenter_2F/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_PokemonCenter_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_HOUSE1",
+      "name": "FourIsland_House1_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/FourIsland_House1/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_LORELEIS_HOUSE",
+      "name": "FourIsland_LoreleisHouse_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_safari_zone_building",
+      "border_filepath": "data/layouts/FourIsland_LoreleisHouse/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_LoreleisHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_HARBOR",
+      "name": "FourIsland_Harbor_Layout",
+      "width": 17,
+      "height": 13,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_IslandHarbor",
+      "border_filepath": "data/layouts/FourIsland_Harbor/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_Harbor/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_HOUSE2",
+      "name": "FourIsland_House2_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_generic_building_2",
+      "border_filepath": "data/layouts/FourIsland_House2/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUR_ISLAND_MART",
+      "name": "FourIsland_Mart_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_mart",
+      "border_filepath": "data/layouts/FourIsland_Mart/border.bin",
+      "blockdata_filepath": "data/layouts/FourIsland_Mart/map.bin"
     }
   ]
 }

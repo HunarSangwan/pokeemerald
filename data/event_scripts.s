@@ -1847,3 +1847,19 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/ThreeIsland_House4/scripts.inc"
 
 	.include "data/maps/ThreeIsland_House5/scripts.inc"
+
+	.include "data/maps/FourIsland_PokemonDayCare/scripts.inc"
+
+	.include "data/maps/FourIsland_PokemonCenter_1F/scripts.inc"
+
+	.include "data/maps/FourIsland_PokemonCenter_2F/scripts.inc"
+
+	.include "data/maps/FourIsland_House1/scripts.inc"
+
+	.include "data/maps/FourIsland_LoreleisHouse/scripts.inc"
+
+	.include "data/maps/FourIsland_Harbor/scripts.inc"
+
+	.include "data/maps/FourIsland_House2/scripts.inc"
+
+	.include "data/maps/FourIsland_Mart/scripts.inc"
