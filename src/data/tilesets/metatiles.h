@@ -237,3 +237,6 @@ const u16 gMetatileAttributes_frlg_cable_club[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_cerulean_cave[] = INCBIN_U16("data/tilesets/secondary/cerulean_cave/metatiles.bin");
 const u16 gMetatileAttributes_cerulean_cave[] = INCBIN_U16("data/tilesets/secondary/cerulean_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_cerulean_city[] = INCBIN_U16("data/tilesets/secondary/cerulean_city/metatiles.bin");
+const u16 gMetatileAttributes_cerulean_city[] = INCBIN_U16("data/tilesets/secondary/cerulean_city/metatile_attributes.bin");
