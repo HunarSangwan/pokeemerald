@@ -946,3 +946,14 @@ const struct Tileset gTileset_cerulean_city =
     .metatileAttributes = gMetatileAttributes_cerulean_city,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_cerulean_gym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_cerulean_gym,
+    .palettes = gTilesetPalettes_cerulean_gym,
+    .metatiles = gMetatiles_cerulean_gym,
+    .metatileAttributes = gMetatileAttributes_cerulean_gym,
+    .callback = NULL,
+};
