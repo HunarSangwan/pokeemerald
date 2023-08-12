@@ -924,3 +924,14 @@ const struct Tileset gTileset_frlg_cable_club =
     .metatileAttributes = gMetatileAttributes_frlg_cable_club,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_cerulean_cave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_cerulean_cave,
+    .palettes = gTilesetPalettes_cerulean_cave,
+    .metatiles = gMetatiles_cerulean_cave,
+    .metatileAttributes = gMetatileAttributes_cerulean_cave,
+    .callback = NULL,
+};
