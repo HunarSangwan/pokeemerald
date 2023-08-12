@@ -891,3 +891,14 @@ const struct Tileset gTileset_FRLG_Cave =
     .metatileAttributes = gMetatileAttributes_FRLG_Cave,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_celadon_city =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_celadon_city,
+    .palettes = gTilesetPalettes_celadon_city,
+    .metatiles = gMetatiles_celadon_city,
+    .metatileAttributes = gMetatileAttributes_celadon_city,
+    .callback = NULL,
+};
