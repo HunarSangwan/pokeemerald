@@ -228,3 +228,6 @@ const u16 gMetatileAttributes_FRLG_Cave[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_celadon_city[] = INCBIN_U16("data/tilesets/secondary/celadon_city/metatiles.bin");
 const u16 gMetatileAttributes_celadon_city[] = INCBIN_U16("data/tilesets/secondary/celadon_city/metatile_attributes.bin");
+
+const u16 gMetatiles_celadon_gym[] = INCBIN_U16("data/tilesets/secondary/celadon_gym/metatiles.bin");
+const u16 gMetatileAttributes_celadon_gym[] = INCBIN_U16("data/tilesets/secondary/celadon_gym/metatile_attributes.bin");

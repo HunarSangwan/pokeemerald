@@ -902,3 +902,14 @@ const struct Tileset gTileset_celadon_city =
     .metatileAttributes = gMetatileAttributes_celadon_city,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_celadon_gym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_celadon_gym,
+    .palettes = gTilesetPalettes_celadon_gym,
+    .metatiles = gMetatiles_celadon_gym,
+    .metatileAttributes = gMetatileAttributes_celadon_gym,
+    .callback = NULL,
+};
