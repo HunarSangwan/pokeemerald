@@ -968,3 +968,14 @@ const struct Tileset gTileset_cinnabar_gym =
     .metatileAttributes = gMetatileAttributes_cinnabar_gym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_cinnabar_island =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_cinnabar_island,
+    .palettes = gTilesetPalettes_cinnabar_island,
+    .metatiles = gMetatiles_cinnabar_island,
+    .metatileAttributes = gMetatileAttributes_cinnabar_island,
+    .callback = NULL,
+};
