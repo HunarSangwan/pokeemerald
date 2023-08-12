@@ -222,3 +222,6 @@ const u16 gMetatileAttributes_FRLG_bike_shop[] = INCBIN_U16("data/tilesets/secon
 
 const u16 gMetatiles_burgled_house[] = INCBIN_U16("data/tilesets/secondary/burgled_house/metatiles.bin");
 const u16 gMetatileAttributes_burgled_house[] = INCBIN_U16("data/tilesets/secondary/burgled_house/metatile_attributes.bin");
+
+const u16 gMetatiles_FRLG_Cave[] = INCBIN_U16("data/tilesets/secondary/frlg_cave/metatiles.bin");
+const u16 gMetatileAttributes_FRLG_Cave[] = INCBIN_U16("data/tilesets/secondary/frlg_cave/metatile_attributes.bin");

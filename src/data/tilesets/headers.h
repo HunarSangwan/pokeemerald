@@ -880,3 +880,14 @@ const struct Tileset gTileset_burgled_house =
     .metatileAttributes = gMetatileAttributes_burgled_house,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_FRLG_Cave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_FRLG_Cave,
+    .palettes = gTilesetPalettes_FRLG_Cave,
+    .metatiles = gMetatiles_FRLG_Cave,
+    .metatileAttributes = gMetatileAttributes_FRLG_Cave,
+    .callback = NULL,
+};

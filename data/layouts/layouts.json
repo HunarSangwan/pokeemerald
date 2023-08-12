@@ -7,7 +7,7 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_FRLG_General",
-      "secondary_tileset": "gTileset_berry_forest",
+      "secondary_tileset": "gTileset_FRLG_Cave",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
     },
