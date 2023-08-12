@@ -1691,3 +1691,22 @@ const u16 gTilesetPalettes_berry_forest[][16] =
 };
 
 const u32 gTilesetTiles_berry_forest[] = INCBIN_U32("data/tilesets/secondary/berry_forest/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_FRLG_bike_shop[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_FRLG_bike_shop[] = INCBIN_U32("data/tilesets/secondary/frlg_bike_shop/tiles.4bpp.lz");

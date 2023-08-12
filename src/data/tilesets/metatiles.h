@@ -216,3 +216,6 @@ const u16 gMetatileAttributes_FRLG_Building[] = INCBIN_U16("data/tilesets/primar
 
 const u16 gMetatiles_berry_forest[] = INCBIN_U16("data/tilesets/secondary/berry_forest/metatiles.bin");
 const u16 gMetatileAttributes_berry_forest[] = INCBIN_U16("data/tilesets/secondary/berry_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_FRLG_bike_shop[] = INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/metatiles.bin");
+const u16 gMetatileAttributes_FRLG_bike_shop[] = INCBIN_U16("data/tilesets/secondary/frlg_bike_shop/metatile_attributes.bin");
