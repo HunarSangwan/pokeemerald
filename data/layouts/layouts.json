@@ -7,7 +7,7 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_FRLG_Building",
-      "secondary_tileset": "gTileset_cerulean_gym",
+      "secondary_tileset": "gTileset_cinnabar_gym",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
     },
