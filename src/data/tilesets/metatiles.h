@@ -231,3 +231,6 @@ const u16 gMetatileAttributes_celadon_city[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_celadon_gym[] = INCBIN_U16("data/tilesets/secondary/celadon_gym/metatiles.bin");
 const u16 gMetatileAttributes_celadon_gym[] = INCBIN_U16("data/tilesets/secondary/celadon_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_frlg_cable_club[] = INCBIN_U16("data/tilesets/secondary/frlg_cable_club/metatiles.bin");
+const u16 gMetatileAttributes_frlg_cable_club[] = INCBIN_U16("data/tilesets/secondary/frlg_cable_club/metatile_attributes.bin");

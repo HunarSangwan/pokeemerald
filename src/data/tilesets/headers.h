@@ -913,3 +913,14 @@ const struct Tileset gTileset_celadon_gym =
     .metatileAttributes = gMetatileAttributes_celadon_gym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_frlg_cable_club =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_frlg_cable_club,
+    .palettes = gTilesetPalettes_frlg_cable_club,
+    .metatiles = gMetatiles_frlg_cable_club,
+    .metatileAttributes = gMetatileAttributes_frlg_cable_club,
+    .callback = NULL,
+};
