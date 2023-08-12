@@ -869,3 +869,14 @@ const struct Tileset gTileset_FRLG_bike_shop =
     .metatileAttributes = gMetatileAttributes_FRLG_bike_shop,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_burgled_house =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_burgled_house,
+    .palettes = gTilesetPalettes_burgled_house,
+    .metatiles = gMetatiles_burgled_house,
+    .metatileAttributes = gMetatileAttributes_burgled_house,
+    .callback = NULL,
+};
