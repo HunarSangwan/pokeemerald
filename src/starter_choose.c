@@ -498,6 +498,8 @@ static void Task_HandleStarterChooseInput(u8 taskId)
 {
     u8 selection = gTasks[taskId].tStarterSelection;
 
+    *GetVarPointer(VAR_STARTER_MON) = selection;
+
     if (JOY_NEW(A_BUTTON))
     {
         u8 spriteId;
