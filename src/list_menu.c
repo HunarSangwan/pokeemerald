@@ -99,7 +99,7 @@ static EWRAM_DATA struct {
 EWRAM_DATA struct ScrollArrowsTemplate gTempScrollArrowTemplate = {0};
 
 // IWRAM common
-struct {
+COMMON_DATA struct {
     u8 cursorPal:4;
     u8 fillValue:4;
     u8 cursorShadowPal:4;
@@ -107,9 +107,9 @@ struct {
     u8 field_2_2:6; // unused
     u8 fontId:7;
     bool8 enabled:1;
-} gListMenuOverride;
+} gListMenuOverride = {0};
 
-struct ListMenuTemplate gMultiuseListMenuTemplate;
+COMMON_DATA struct ListMenuTemplate gMultiuseListMenuTemplate = {0};
 
 // const rom data
 static const struct
@@ -316,7 +316,7 @@ static void ListMenuDummyTask(u8 taskId)
 
 }
 
-s32 DoMysteryGiftListMenu(const struct WindowTemplate *windowTemplate, const struct ListMenuTemplate *listMenuTemplate, u8 drawMode, u16 tileNum, u16 palNum)
+s32 DoMysteryGiftListMenu(const struct WindowTemplate *windowTemplate, const struct ListMenuTemplate *listMenuTemplate, u8 drawMode, u16 tileNum, u16 palOffset)
 {
     switch (sMysteryGiftLinkMenu.state)
     {
@@ -326,9 +326,9 @@ s32 DoMysteryGiftListMenu(const struct WindowTemplate *windowTemplate, const str
         switch (drawMode)
         {
         case 2:
-            LoadUserWindowBorderGfx(sMysteryGiftLinkMenu.windowId, tileNum, palNum);
+            LoadUserWindowBorderGfx(sMysteryGiftLinkMenu.windowId, tileNum, palOffset);
         case 1:
-            DrawTextBorderOuter(sMysteryGiftLinkMenu.windowId, tileNum, palNum / 16);
+            DrawTextBorderOuter(sMysteryGiftLinkMenu.windowId, tileNum, palOffset / 16);
             break;
         }
         gMultiuseListMenuTemplate = *listMenuTemplate;
@@ -677,8 +677,6 @@ static void ListMenuDrawCursor(struct ListMenu *list)
         break;
     }
 }
-
-#undef TASK_NONE
 
 static u8 ListMenuAddCursorObject(struct ListMenu *list, u32 cursorObjId)
 {

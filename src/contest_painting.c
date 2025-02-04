@@ -21,10 +21,10 @@
 #include "window.h"
 #include "constants/rgb.h"
 
-u16 (*gContestMonPixels)[][32];
-struct ImageProcessingContext gImageProcessingContext;
-struct ContestWinner *gContestPaintingWinner;
-u16 *gContestPaintingMonPalette;
+COMMON_DATA u16 (*gContestMonPixels)[][32] = {0};
+COMMON_DATA struct ImageProcessingContext gImageProcessingContext = {0};
+COMMON_DATA struct ContestWinner *gContestPaintingWinner = {0};
+COMMON_DATA u16 *gContestPaintingMonPalette = NULL;
 
 static u8 sHoldState;
 static u16 sMosaicVal;
@@ -248,7 +248,7 @@ static void HoldContestPainting(void)
         if ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON)))
         {
             sHoldState++;
-            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB(0, 0, 0));
+            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         }
 
         if (sVarsInitialized)
