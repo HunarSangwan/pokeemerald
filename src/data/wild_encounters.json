@@ -2312,29 +2312,29 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_CLAMPERL"
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_HUNTAIL"
               },
               {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_CHINCHOU"
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_LANTURN"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_CLAMPERL"
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_GOREBYSS"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_RELICANTH"
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_ARMALDO"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
-                "species": "SPECIES_RELICANTH"
+                "min_level": 68,
+                "max_level": 68,
+                "species": "SPECIES_CRADILY"
               }
             ]
           }
