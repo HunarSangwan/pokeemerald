@@ -30,15 +30,15 @@
   ],
   "warp_events": [
     {
-      "x": 25,
-      "y": 13,
+      "x": 30,
+      "y": 10,
       "elevation": 3,
       "dest_map": "MAP_GRANITE_CAVE_1F",
       "dest_warp_id": "1"
     },
     {
-      "x": 4,
-      "y": 21,
+      "x": 3,
+      "y": 22,
       "elevation": 3,
       "dest_map": "MAP_GRANITE_CAVE_1F",
       "dest_warp_id": "2"
@@ -51,8 +51,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
-      "y": 21,
+      "x": 29,
+      "y": 16,
       "elevation": 3,
       "dest_map": "MAP_GRANITE_CAVE_B2F",
       "dest_warp_id": "1"
