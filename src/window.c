@@ -5,12 +5,12 @@
 #include "blit.h"
 
 // This global is set to 0 and never changed.
-u8 gTransparentTileNumber;
-void *gWindowBgTilemapBuffers[NUM_BACKGROUNDS];
+COMMON_DATA u8 gTransparentTileNumber = 0;
+COMMON_DATA void *gWindowBgTilemapBuffers[NUM_BACKGROUNDS] = {0};
 extern u32 gWindowTileAutoAllocEnabled;
 
 EWRAM_DATA struct Window gWindows[WINDOWS_MAX] = {0};
-EWRAM_DATA static struct Window* sWindowPtr = NULL;
+EWRAM_DATA static struct Window *sWindowPtr = NULL;
 EWRAM_DATA static u16 sWindowSize = 0;
 
 static u8 GetNumActiveWindowsOnBg(u8 bgId);

@@ -42,7 +42,7 @@ static struct BgControl sGpuBgConfigs;
 static struct BgConfig2 sGpuBgConfigs2[NUM_BACKGROUNDS];
 static u32 sDmaBusyBitfield[NUM_BACKGROUNDS];
 
-u32 gWindowTileAutoAllocEnabled;
+COMMON_DATA u32 gWindowTileAutoAllocEnabled = 0;
 
 static const struct BgConfig sZeroedBgControlStruct = { 0 };
 
@@ -916,7 +916,7 @@ void CopyToBgTilemapBufferRect(u8 bg, const void *src, u8 destX, u8 destY, u8 wi
         {
         case BG_TYPE_NORMAL:
         {
-            const u16 * srcCopy = src;
+            const u16 *srcCopy = src;
             for (destY16 = destY; destY16 < (destY + height); destY16++)
             {
                 for (destX16 = destX; destX16 < (destX + width); destX16++)
@@ -928,7 +928,7 @@ void CopyToBgTilemapBufferRect(u8 bg, const void *src, u8 destX, u8 destY, u8 wi
         }
         case BG_TYPE_AFFINE:
         {
-            const u8 * srcCopy = src;
+            const u8 *srcCopy = src;
             mode = GetBgMetricAffineMode(bg, 0x1);
             for (destY16 = destY; destY16 < (destY + height); destY16++)
             {
