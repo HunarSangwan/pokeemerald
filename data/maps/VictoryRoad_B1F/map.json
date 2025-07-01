@@ -290,8 +290,8 @@
   ],
   "warp_events": [
     {
-      "x": 30,
-      "y": 25,
+      "x": 29,
+      "y": 27,
       "elevation": 3,
       "dest_map": "MAP_VICTORY_ROAD_B2F",
       "dest_warp_id": "0"
