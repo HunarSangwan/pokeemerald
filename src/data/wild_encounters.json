@@ -3336,64 +3336,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 23,
-                "max_level": 23,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 23,
-                "max_level": 23,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 43,
+                "max_level": 43,
                 "species": "SPECIES_ELECTRODE"
               },
               {
-                "min_level": 26,
-                "max_level": 26,
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_RAICHU"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
                 "species": "SPECIES_MAGNETON"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MANECTRIC"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MUK"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_PORYGON"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_VOLTORB"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_AMPHAROS"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_ELECTABUZZ"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_PORYGON2"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_PIKACHU"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_JOLTEON"
               }
             ]
           }
@@ -6862,64 +6862,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 24,
-                "max_level": 24,
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_ELECTRODE"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_PLUSLE"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MINUN"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MAGNETON"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_RAICHU"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_MANECTRIC"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_PORYGON"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_ELECTABUZZ"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_AMPHAROS"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_FLAAFFY"
+              },
+              {
+                "min_level": 43,
+                "max_level": 43,
                 "species": "SPECIES_VOLTORB"
               },
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 23,
-                "max_level": 23,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 23,
-                "max_level": 23,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_VOLTORB"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
+                "min_level": 43,
+                "max_level": 43,
+                "species": "SPECIES_PIKACHU"
               }
             ]
           }
