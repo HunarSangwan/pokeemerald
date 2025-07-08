@@ -369,7 +369,7 @@
 #define MOVE_FLASH_CANNON 365
 #define MOVE_ICE_SHARD 366
 
-#define MOVES_COUNT 377
+#define MOVES_COUNT 367
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF
