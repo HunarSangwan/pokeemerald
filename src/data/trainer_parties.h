@@ -12586,9 +12586,39 @@ static const struct TrainerMon sParty_Everett[] = {
 
 static const struct TrainerMon sParty_Red[] = {
     {
-    .iv = 0,
-    .lvl = 5,
+    .iv = 252,
+    .lvl = 9,
+    .species = SPECIES_EEVEE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_SNORE, MOVE_CURSE, MOVE_SNORE}
+    },
+    {
+    .iv = 252,
+    .lvl = 9,
+    .species = SPECIES_BULBASAUR,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_CUT, MOVE_LIGHT_SCREEN, MOVE_SLEEP_POWDER}
+    },
+    {
+    .iv = 252,
+    .lvl = 9,
     .species = SPECIES_CHARMANDER,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_FLAME_WHEEL, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_WILL_O_WISP}
+    },
+    {
+    .iv = 252,
+    .lvl = 9,
+    .species = SPECIES_SQUIRTLE,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_FAKE_OUT, MOVE_WATER_PULSE, MOVE_BITE, MOVE_YAWN}
+    },
+    {
+    .iv = 252,
+    .lvl = 9,
+    .species = SPECIES_PIKACHU,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_SURF, MOVE_THUNDER_WAVE}
     }
 };
 

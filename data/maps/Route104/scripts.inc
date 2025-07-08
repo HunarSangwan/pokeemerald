@@ -419,6 +419,11 @@ Route104_EventScript_LandedInDewford::
 	releaseall
 	end
 
+Route104_EventScript_Red::
+	trainerbattle_single TRAINER_RED, Route104_Text_RedIntro, Route104_Text_RedDefeat
+	msgbox Route104_Text_RedPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Route104_Movement_SailToDewfordBeforeDadCalls:
 	walk_down
 	walk_down
@@ -842,11 +847,6 @@ Route104_Movement_BrineyExitBoat:
 	walk_in_place_faster_left
 	step_end
 
-Route104_EventScript_Ivan::
-	trainerbattle_single TRAINER_IVAN, Route104_Text_IvanIntro, Route104_Text_IvanDefeat
-	msgbox Route104_Text_IvanPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route104_EventScript_Billy::
 	trainerbattle_single TRAINER_BILLY, Route104_Text_BillyIntro, Route104_Text_BillyDefeat
 	msgbox Route104_Text_BillyPostBattle, MSGBOX_AUTOCLOSE
@@ -1166,3 +1166,17 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+Route104_Text_RedIntro:
+	.string "..................\n"
+	.string "..........................\p"
+	.string "....\n"
+	.string "..................$"
+
+Route104_Text_RedDefeat:
+	.string " ................................\n"
+	.string "........................… .....…$"
+
+Route104_Text_RedPostBattle:
+	.string "........................\n"
+	.string "..................................…$"
