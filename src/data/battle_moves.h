@@ -4614,4 +4614,161 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
+
+    [MOVE_DRILL_RUN] =
+    {
+        .effect = EFFECT_HIGH_CRITICAL,
+        .power = 80,
+        .type = TYPE_GROUND,
+        .accuracy = 100,
+        .pp = 16,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_EARTH_POWER] =
+    {
+        .effect = EFFECT_DEFENSE_DOWN_HIT,
+        .power = 90,
+        .type = TYPE_GROUND,
+        .accuracy = 100,
+        .pp = 16,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_HEAD_SMASH] =
+    {
+        .effect = EFFECT_DOUBLE_EDGE,
+        .power = 150,
+        .type = TYPE_ROCK,
+        .accuracy = 100,
+        .pp = 8,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+
+    [MOVE_GUNK_SHOT] =
+    {
+        .effect = EFFECT_POISON_HIT,
+        .power = 120,
+        .type = TYPE_POISON,
+        .accuracy = 100,
+        .pp = 8,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_WILD_CHARGE] =
+    {
+        .effect = EFFECT_DOUBLE_EDGE,
+        .power = 90,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 24,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_X_SCISSORS] =
+    {
+        .effect = EFFECT_HIGH_CRITICAL,
+        .power = 80,
+        .type = TYPE_BUG,
+        .accuracy = 100,
+        .pp = 20,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+
+    [MOVE_DRACO_METEOR] =
+    {
+        .effect = EFFECT_DOUBLE_EDGE,
+        .power = 120,
+        .type = TYPE_DRAGON,
+        .accuracy = 100,
+        .pp = 8,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+
+    [MOVE_FORCE_PALM] =
+    {
+        .effect = EFFECT_PARALYZE_HIT,
+        .power = 60,
+        .type = TYPE_FIGHTING,
+        .accuracy = 100,
+        .pp = 16,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+
+    [MOVE_SHADOW_SNEAK] =
+    {
+        .effect = EFFECT_QUICK_ATTACK,
+        .power = 40,
+        .type = TYPE_GHOST,
+        .accuracy = 100,
+        .pp = 24,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_AIR_SLASH] =
+    {
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 80,
+        .type = TYPE_FLYING,
+        .accuracy = 100,
+        .pp = 25,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+
+    [MOVE_FLASH_CANNON] =
+    {
+        .effect = EFFECT_DEFENSE_DOWN_HIT,
+        .power = 90,
+        .type = TYPE_STEEL,
+        .accuracy = 100,
+        .pp = 16,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_ICE_SHARD] =
+    {
+        .effect = EFFECT_QUICK_ATTACK,
+        .power = 40,
+        .type = TYPE_ICE,
+        .accuracy = 100,
+        .pp = 30,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+    },
+
 };

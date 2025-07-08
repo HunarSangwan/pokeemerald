@@ -356,8 +356,20 @@
 #define MOVE_WATER_PULSE 352
 #define MOVE_DOOM_DESIRE 353
 #define MOVE_PSYCHO_BOOST 354
+#define MOVE_DRILL_RUN 355
+#define MOVE_EARTH_POWER 356
+#define MOVE_HEAD_SMASH 357
+#define MOVE_GUNK_SHOT 358
+#define MOVE_WILD_CHARGE 359
+#define MOVE_X_SCISSORS 360
+#define MOVE_DRACO_METEOR 361
+#define MOVE_FORCE_PALM 362
+#define MOVE_SHADOW_SNEAK 363
+#define MOVE_AIR_SLASH 364
+#define MOVE_FLASH_CANNON 365
+#define MOVE_ICE_SHARD 366
 
-#define MOVES_COUNT 355
+#define MOVES_COUNT 377
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

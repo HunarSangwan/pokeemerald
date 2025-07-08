@@ -1417,6 +1417,54 @@ static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
     "but sharply lowers SP. ATK.");
 
+static const u8 sDrillRunDescription[] = _(
+    "A one-hit KO attack that\n"
+    "uses a horn like a drill.");
+
+static const u8 sEarthPowerDescription[] = _(
+    "A one-hit KO move that\n"
+    "drops the foe in a fissure.");
+
+static const u8 sHeadSmashDescription[] = _(
+    "A one-hit KO move that\n"
+    "drops the foe in a fissure.");
+
+static const u8 sGunkShotDescription[] = _(
+    "Sludge is hurled to inflict\n"
+    "damage. May also poison.");
+
+static const u8 sWildChargeDescription[] = _(
+    "Sludge is hurled to inflict\n"
+    "damage. May also poison.");
+
+static const u8 sXScissorsDescription[] = _(
+    "An attack that intensifies\n"
+    "on each successive hit.");
+
+static const u8 sDracoMeteorDescription[] = _(
+    "The higher the user's HP,\n"
+    "the more damage caused.");
+
+static const u8 sForcePalmDescription[] = _(
+    "Straight-arm punches that\n"
+    "strike the foe 2 to 5 times.");
+
+static const u8 sShadowSneakDescription[] = _(
+    "Straight-arm punches that\n"
+    "strike the foe 2 to 5 times.");
+
+static const u8 sAirSlashDescription[] = _(
+    "Hacks with razorlike wind.\n"
+    "High critical-hit ratio.");
+
+static const u8 sFlashCannonDescription[] = _(
+    "Hacks with razorlike wind.\n"
+    "High critical-hit ratio.");
+
+static const u8 sIceShardDescription[] = _(
+    "Attacks the foe by firing\n"
+    "2 to 5 icicles in a row.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -1774,4 +1822,16 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,
+    [MOVE_DRILL_RUN - 1] = sDrillRunDescription,
+    [MOVE_EARTH_POWER - 1] = sEarthPowerDescription,
+    [MOVE_HEAD_SMASH - 1] = sHeadSmashDescription,
+    [MOVE_GUNK_SHOT - 1] = sGunkShotDescription,
+    [MOVE_WILD_CHARGE - 1] = sWildChargeDescription,
+    [MOVE_X_SCISSORS - 1] = sXScissorsDescription,
+    [MOVE_DRACO_METEOR - 1] = sDracoMeteorDescription,
+    [MOVE_FORCE_PALM - 1] = sForcePalmDescription,
+    [MOVE_SHADOW_SNEAK - 1] = sShadowSneakDescription,
+    [MOVE_AIR_SLASH - 1] = sAirSlashDescription,
+    [MOVE_FLASH_CANNON - 1] = sFlashCannonDescription,
+    [MOVE_ICE_SHARD - 1] = sIceShardDescription,
 };
