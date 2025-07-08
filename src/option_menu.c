@@ -15,6 +15,7 @@
 #include "window.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "event_data.h"
 
 #define tMenuSelection data[0]
 #define tTextSpeed data[1]
@@ -481,6 +482,14 @@ static void BattleStyle_DrawChoices(u8 selection)
 
     styles[0] = 0;
     styles[1] = 0;
+
+    if (FlagGet(FLAG_NUZLOCKE))
+    {
+        styles[1] = 1;
+        DrawOptionMenuChoice(gText_BattleStyleSet, 104, YPOS_BATTLESTYLE, styles[1]);
+        return;
+    }
+
     styles[selection] = 1;
 
     DrawOptionMenuChoice(gText_BattleStyleShift, 104, YPOS_BATTLESTYLE, styles[0]);

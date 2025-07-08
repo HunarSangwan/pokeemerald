@@ -2937,6 +2937,11 @@ void BoxMonToMon(const struct BoxPokemon *src, struct Pokemon *dest)
     value = MAIL_NONE;
     SetMonData(dest, MON_DATA_MAIL, &value);
     CalculateMonStats(dest);
+    if (GetMonData(dest, MON_DATA_DEAD) && FlagGet(FLAG_NUZLOCKE))
+    {
+        value = 0;
+        SetMonData(dest, MON_DATA_HP, &value);
+    }
 }
 
 u8 GetLevelFromMonExp(struct Pokemon *mon)
@@ -3821,6 +3826,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
     case MON_DATA_LANGUAGE:
         retVal = boxMon->language;
         break;
+    case MON_DATA_DEAD:
+        retVal = boxMon->dead;
+        break;
     case MON_DATA_SANITY_IS_BAD_EGG:
         retVal = boxMon->isBadEgg;
         break;
@@ -4197,6 +4205,9 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
     case MON_DATA_LANGUAGE:
         SET8(boxMon->language);
         break;
+     case MON_DATA_DEAD:
+         SET8(boxMon->dead);
+         break;
     case MON_DATA_SANITY_IS_BAD_EGG:
         SET8(boxMon->isBadEgg);
         break;

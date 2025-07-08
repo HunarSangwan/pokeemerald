@@ -97,6 +97,7 @@ static void BattleIntroPrintTrainerWantsToBattle(void);
 static void BattleIntroPrintWildMonAttacked(void);
 static void BattleIntroPrintOpponentSendsOut(void);
 static void BattleIntroPrintPlayerSendsOut(void);
+static void BattleIntroNuzlockDups(void);
 static void BattleIntroOpponent1SendsOutMonAnimation(void);
 static void BattleIntroOpponent2SendsOutMonAnimation(void);
 static void BattleIntroRecordMonsToDex(void);
@@ -3134,8 +3135,7 @@ static void BattleStartClearSetData(void)
         gHitMarker |= HITMARKER_NO_ANIMATIONS;
     }
 
-    gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle;
-
+    gBattleScripting.battleStyle = gSaveBlock2Ptr->optionsBattleStyle || FlagGet(FLAG_NUZLOCKE);
     gMultiHitCounter = 0;
     gBattleOutcome = 0;
     gBattleControllerExecFlags = 0;
@@ -3619,8 +3619,29 @@ static void BattleIntroPrintWildMonAttacked(void)
 {
     if (gBattleControllerExecFlags == 0)
     {
-        gBattleMainFunc = BattleIntroPrintPlayerSendsOut;
+        gBattleMainFunc = BattleIntroNuzlockDups;
         PrepareStringBattle(STRINGID_INTROMSG, 0);
+    }
+}
+
+static void BattleIntroNuzlockDups(void)
+{
+    if (gBattleControllerExecFlags == 0)
+    {
+        if (gNuzlockeCannotCatch == 2){  // If Pokemon was first in this route and was already caught
+            PrepareStringBattle(STRINGID_NUZLOCKEDUPS, 0);
+        }
+        gBattleMainFunc = BattleIntroPrintPlayerSendsOut;
+    }
+}
+
+static void BattleLostNuzlocke(void)
+{
+    if (gBattleControllerExecFlags == 0)
+    {
+        gBattleMainFunc = HandleEndTurn_FinishBattle;
+        PrepareStringBattle(STRINGID_NUZLOCKELOST, 0);
+        FlagClear(FLAG_NUZLOCKE);
     }
 }
 
@@ -4263,7 +4284,7 @@ static void HandleTurnActionSelectionState(void)
                     }
                     break;
                 case B_ACTION_USE_ITEM:
-                    if (FlagGet(FLAG_ENABLE_BAG) == FALSE || gBattleTypeFlags & (BATTLE_TYPE_LINK
+                    if (gBattleTypeFlags & (BATTLE_TYPE_LINK
                                             | BATTLE_TYPE_FRONTIER_NO_PYRAMID
                                             | BATTLE_TYPE_EREADER_TRAINER
                                             | BATTLE_TYPE_RECORDED_LINK))
@@ -5090,6 +5111,10 @@ static void HandleEndTurn_BattleLost(void)
     else
     {
         gBattlescriptCurrInstr = BattleScript_LocalBattleLost;
+        if (FlagGet(FLAG_NUZLOCKE) && FlagGet(FLAG_SYS_POKEDEX_GET)){
+            gBattleMainFunc = BattleLostNuzlocke;
+            return;
+        }
     }
 
     gBattleMainFunc = HandleEndTurn_FinishBattle;
@@ -5141,6 +5166,7 @@ static void HandleEndTurn_MonFled(void)
 
 static void HandleEndTurn_FinishBattle(void)
 {
+    gNuzlockeCannotCatch = 0;  // While not necissary, resetting this is nice to stay deterministic
     if (gCurrentActionFuncId == B_ACTION_TRY_FINISH || gCurrentActionFuncId == B_ACTION_FINISHED)
     {
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
