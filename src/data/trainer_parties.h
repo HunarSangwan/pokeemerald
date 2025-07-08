@@ -1450,11 +1450,26 @@ static const struct TrainerMon sParty_Valerie5[] = {
 
 static const struct TrainerMon sParty_Cindy1[] = {
     {
-    .iv = 0,
+    .iv = 122,
+    .lvl = 8,
+    .species = SPECIES_CLEFFA,
+    .heldItem = ITEM_LEPPA_BERRY,
+    .moves = {MOVE_METRONOME, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 49,
+    .lvl = 8,
+    .species = SPECIES_PICHU,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_THIEF, MOVE_SWEET_KISS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 25,
     .lvl = 7,
-    .species = SPECIES_ZIGZAGOON,
-    .heldItem = ITEM_NUGGET
-    }
+    .species = SPECIES_AZURILL,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_UPROAR, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
 };
 
 static const struct TrainerMon sParty_Daphne[] = {
@@ -4226,14 +4241,25 @@ static const struct TrainerMon sParty_Calvin1[] = {
 
 static const struct TrainerMon sParty_Billy[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_ZIGZAGOON,
+    .iv = 147,
+    .lvl = 7,
+    .species = SPECIES_PIDGEY,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_MUD_SLAP, MOVE_GUST, MOVE_WHIRLWIND}
     },
     {
-    .iv = 0,
+    .iv = 147,
     .lvl = 7,
-    .species = SPECIES_SEEDOT,
+    .species = SPECIES_WINGULL,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_GUST, MOVE_WATER_GUN, MOVE_PURSUIT, MOVE_SUPERSONIC}
+    },
+    {
+    .iv = 122,
+    .lvl = 7,
+    .species = SPECIES_TAILLOW,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_SNORE, MOVE_MUD_SLAP, MOVE_PECK}
     }
 };
 
@@ -9495,9 +9521,32 @@ static const struct TrainerMon sParty_Sarah[] = {
 
 static const struct TrainerMon sParty_Darian[] = {
     {
-    .iv = 0,
+    .iv = 252,
     .lvl = 9,
     .species = SPECIES_MAGIKARP,
+    .heldItem = ITEM_CHOICE_BAND,
+    .moves = {MOVE_BOUNCE, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_FEEBAS,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_FACADE, MOVE_HYPNOSIS}
+    },
+    {
+    .iv = 196,
+    .lvl = 7,
+    .species = SPECIES_GOLDEEN,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_AERIAL_ACE, MOVE_DIVE, MOVE_HORN_ATTACK, MOVE_DIVE}
+    },
+    {
+    .iv = 98,
+    .lvl = 7,
+    .species = SPECIES_LUVDISC,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_DIVE, MOVE_TOXIC, MOVE_ATTRACT, MOVE_SWEET_KISS}
     }
 };
 
