@@ -102,9 +102,39 @@ static const struct TrainerMon sParty_Gabrielle1[] = {
 
 static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     {
-    .iv = 0,
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_MAGNEMITE,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_TRI_ATTACK, MOVE_FLASH_CANNON, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_KOFFING,
+    .heldItem = ITEM_LAX_INCENSE,
+    .moves = {MOVE_THIEF, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
     .lvl = 9,
-    .species = SPECIES_POOCHYENA,
+    .species = SPECIES_HOUNDOUR,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_PURSUIT, MOVE_EMBER, MOVE_TOXIC, MOVE_SUPER_FANG}
+    },
+    {
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_DUSKULL,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_CONFUSE_RAY, MOVE_PROTECT, MOVE_SHADOW_SNEAK, MOVE_WILL_O_WISP}
+    },
+    {
+    .iv = 122,
+    .lvl = 8,
+    .species = SPECIES_BAGON,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_TWISTER, MOVE_EMBER, MOVE_BITE, MOVE_HEADBUTT}
     }
 };
 
@@ -8248,24 +8278,25 @@ static const struct TrainerMon sParty_Rick[] = {
 
 static const struct TrainerMon sParty_Lyle[] = {
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_SPINARAK,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_BATON_PASS, MOVE_SPIDER_WEB, MOVE_NIGHT_SHADE}
     },
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_LEDYBA,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_MACH_PUNCH, MOVE_GUST, MOVE_SUPERSONIC, MOVE_BATON_PASS}
     },
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
-    },
-    {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_WURMPLE,
+    .iv = 98,
+    .lvl = 8,
+    .species = SPECIES_VENONAT,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_PSYBEAM, MOVE_MEGA_DRAIN, MOVE_BATON_PASS, MOVE_STUN_SPORE}
     }
 };
 
@@ -8318,14 +8349,25 @@ static const struct TrainerMon sParty_Kent[] = {
 
 static const struct TrainerMon sParty_James1[] = {
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_NINCADA,
+    .iv = 252,
+    .lvl = 9,
+    .species = SPECIES_PARAS,
+    .heldItem = ITEM_SILVER_POWDER,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_AERIAL_ACE, MOVE_SECRET_POWER, MOVE_SPORE}
     },
     {
-    .iv = 0,
-    .lvl = 6,
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_SURSKIT,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_WATER_PULSE, MOVE_MEGA_DRAIN, MOVE_MUD_SHOT, MOVE_PSYBEAM}
+    },
+    {
+    .iv = 252,
+    .lvl = 9,
     .species = SPECIES_NINCADA,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_AERIAL_ACE, MOVE_DIG, MOVE_SNORE}
     }
 };
 
