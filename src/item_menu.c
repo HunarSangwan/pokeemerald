@@ -2310,7 +2310,7 @@ bool8 UseRegisteredKeyItemOnField(void)
     } else if (i > 0) {
         if (CheckBagHasItem(gSaveBlock1Ptr->registeredItemCompat, 1) == TRUE) {
             gSpecialVar_ItemId = gSaveBlock1Ptr->registeredItemCompat;
-            func = ItemId_GetFieldFunc(gSaveBlock1Ptr->registeredItemCompat);
+            func = GetItemFieldFunc(gSaveBlock1Ptr->registeredItemCompat);
         } else {
             gSaveBlock1Ptr->registeredItemCompat = ITEM_NONE;
         }
@@ -2432,7 +2432,7 @@ static void Task_KeyItemWheel(u8 taskId) {
         if (!gSprites[data[15]].affineAnimEnded)
             break;
         FreeKeyItemWheelGfx(data);
-        i = CreateTask(ItemId_GetFieldFunc(gSaveBlock1Ptr->registeredItemCompat), 8);
+        i = CreateTask(GetItemFieldFunc(gSaveBlock1Ptr->registeredItemCompat), 8);
         gTasks[i].tUsingRegisteredKeyItem = TRUE;
         DestroyTask(taskId);
         break;
