@@ -1753,10 +1753,25 @@ static const struct TrainerMon sParty_Jessica5[] = {
 
 static const struct TrainerMon sParty_Winston1[] = {
     {
-    .iv = 0,
-    .lvl = 7,
-    .species = SPECIES_ZIGZAGOON,
-    .heldItem = ITEM_NUGGET
+    .iv = 147,
+    .lvl = 8,
+    .species = SPECIES_SNUBBULL,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_PAY_DAY, MOVE_BITE, MOVE_MUD_SLAP, MOVE_METRONOME}
+    },
+    {
+    .iv = 147,
+    .lvl = 8,
+    .species = SPECIES_GROWLITHE,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_EMBER, MOVE_SWIFT, MOVE_BITE, MOVE_ROCK_SMASH}
+    },
+    {
+    .iv = 147,
+    .lvl = 8,
+    .species = SPECIES_ELECTRIKE,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_THUNDER_WAVE}
     }
 };
 
@@ -6355,14 +6370,18 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
 
 static const struct TrainerMon sParty_GinaAndMia1[] = {
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_SEEDOT,
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_SMEARGLE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FOCUS_PUNCH, MOVE_SOFT_BOILED, MOVE_TEETER_DANCE, MOVE_REFLECT}
     },
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_LOTAD,
+    .iv = 252,
+    .lvl = 8,
+    .species = SPECIES_SMEARGLE,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_MILK_DRINK, MOVE_FOLLOW_ME, MOVE_LIGHT_SCREEN, MOVE_NONE}
     }
 };
 
@@ -8104,14 +8123,25 @@ static const struct TrainerMon sParty_Tiana[] = {
 
 static const struct TrainerMon sParty_Haley1[] = {
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_LOTAD,
+    .iv = 196,
+    .lvl = 9,
+    .species = SPECIES_SKITTY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_ATTRACT, MOVE_ASSIST, MOVE_NONE, MOVE_NONE}
     },
     {
-    .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_SHROOMISH,
+    .iv = 147,
+    .lvl = 9,
+    .species = SPECIES_ODDISH,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_PROTECT, MOVE_POISON_POWDER}
+    },
+    {
+    .iv = 147,
+    .lvl = 9,
+    .species = SPECIES_VULPIX,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_EMBER, MOVE_BITE, MOVE_CONFUSE_RAY}
     }
 };
 
