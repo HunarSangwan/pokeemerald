@@ -2276,9 +2276,25 @@ static const struct TrainerMon sParty_Tony5[] = {
 
 static const struct TrainerMon sParty_Takao[] = {
     {
-    .iv = 127,
-    .lvl = 13,
-    .species = SPECIES_MACHOP,
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_TYROGUE,
+    .heldItem = ITEM_SALAC_BERRY,
+    .moves = {MOVE_MACH_PUNCH, MOVE_FACADE, MOVE_ROCK_SLIDE, MOVE_HI_JUMP_KICK}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MANKEY,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_BRICK_BREAK, MOVE_ROCK_TOMB, MOVE_FACADE, MOVE_BULK_UP}
+    },
+    {
+    .iv = 147,
+    .lvl = 16,
+    .species = SPECIES_VIGOROTH,
+    .heldItem = ITEM_RAWST_BERRY,
+    .moves = {MOVE_BRICK_BREAK, MOVE_SHADOW_BALL, MOVE_COUNTER, MOVE_SLACK_OFF}
     }
 };
 
@@ -3533,25 +3549,46 @@ static const struct TrainerMon sParty_Roxanne1[] = {
 
 static const struct TrainerMon sParty_Brawly1[] = {
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MACHOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
+    .iv = 252,
+    .lvl = 17,
+    .species = SPECIES_HITMONTOP,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_FAKE_OUT, MOVE_MACH_PUNCH, MOVE_ROCK_SLIDE, MOVE_SECRET_POWER}
     },
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MEDITITE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
-    },
-    {
-    .iv = 200,
-    .lvl = 19,
-    .species = SPECIES_MAKUHITA,
+    .iv = 252,
+    .lvl = 17,
+    .species = SPECIES_HITMONLEE,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .moves = {MOVE_ROLLING_KICK, MOVE_ROCK_SLIDE, MOVE_SECRET_POWER, MOVE_SLEEP_TALK}
+    },
+    {
+    .iv = 252,
+    .lvl = 17,
+    .species = SPECIES_HITMONCHAN,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_MACH_PUNCH, MOVE_ROCK_SLIDE, MOVE_FACADE}
+    },
+    {
+    .iv = 252,
+    .lvl = 19,
+    .species = SPECIES_MEDITITE,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_BRICK_BREAK, MOVE_SHADOW_BALL, MOVE_ROCK_SLIDE, MOVE_FAKE_OUT}
+    },
+    {
+    .iv = 252,
+    .lvl = 17,
+    .species = SPECIES_POLIWRATH,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_SURF, MOVE_ICE_PUNCH, MOVE_BRICK_BREAK, MOVE_HYPNOSIS}
+    },
+    {
+    .iv = 252,
+    .lvl = 19,
+    .species = SPECIES_HARIYAMA,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_ROCK_SLIDE, MOVE_FAKE_OUT, MOVE_FORCE_PALM}
     }
 };
 
@@ -5846,17 +5883,49 @@ static const struct TrainerMon sParty_Lao5[] = {
 
 static const struct TrainerMon sParty_Jocelyn[] = {
     {
-    .iv = 127,
-    .lvl = 13,
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_HERACROSS,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_ROCK_SMASH, MOVE_AERIAL_ACE, MOVE_ROCK_TOMB, MOVE_SLEEP_TALK}
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_WOBBUFFET,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_ENCORE, MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_CHARM}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
     .species = SPECIES_MEDITITE,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_REVENGE, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_PSYCHIC}
     }
 };
 
 static const struct TrainerMon sParty_Laura[] = {
     {
-    .iv = 150,
-    .lvl = 13,
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MAKUHITA,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FAKE_OUT, MOVE_ROCK_TOMB, MOVE_SHADOW_PUNCH, MOVE_FORCE_PALM}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MACHOP,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_REVENGE, MOVE_ROCK_TOMB, MOVE_FACADE, MOVE_SLEEP_TALK}
+    },
+    {
+    .iv = 220,
+    .lvl = 16,
     .species = SPECIES_MEDITITE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_FAKE_OUT, MOVE_ROCK_SMASH, MOVE_ROCK_TOMB, MOVE_BODY_SLAM}
     }
 };
 
@@ -7938,25 +8007,80 @@ static const struct TrainerMon sParty_Marc[] = {
 
 static const struct TrainerMon sParty_Brenden[] = {
     {
-    .iv = 100,
-    .lvl = 13,
-    .species = SPECIES_MACHOP,
+    .iv = 147,
+    .lvl = 16,
+    .species = SPECIES_BRELOOM,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_MACH_PUNCH, MOVE_GIGA_DRAIN, MOVE_ROCK_TOMB, MOVE_STUN_SPORE}
+    },
+    {
+    .iv = 196,
+    .lvl = 16,
+    .species = SPECIES_POLIWHIRL,
+    .heldItem = ITEM_SOFT_SAND,
+    .moves = {MOVE_WATER_PULSE, MOVE_ICE_PUNCH, MOVE_MUD_SHOT, MOVE_HYPNOSIS}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MACHOKE,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_KARATE_CHOP, MOVE_ROCK_TOMB, MOVE_REST, MOVE_BULK_UP}
     }
 };
 
 static const struct TrainerMon sParty_Lilith[] = {
     {
-    .iv = 150,
-    .lvl = 13,
-    .species = SPECIES_MEDITITE,
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_WYNAUT,
+    .heldItem = ITEM_LUM_BERRY,
+    .moves = {MOVE_SAFEGUARD, MOVE_TICKLE, MOVE_MIRROR_COAT, MOVE_COUNTER}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_SHROOMISH,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_GIGA_DRAIN, MOVE_FACADE, MOVE_SUBSTITUTE, MOVE_SPORE}
+    },
+    {
+    .iv = 196,
+    .lvl = 16,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_STARF_BERRY,
+    .moves = {MOVE_EMBER, MOVE_DOUBLE_KICK, MOVE_ROCK_TOMB, MOVE_ENDURE}
     }
 };
 
 static const struct TrainerMon sParty_Cristian[] = {
     {
-    .iv = 200,
-    .lvl = 13,
+    .iv = 147,
+    .lvl = 15,
+    .species = SPECIES_MAGBY,
+    .heldItem = ITEM_BLACK_BELT,
+    .moves = {MOVE_FIRE_PUNCH, MOVE_BRICK_BREAK, MOVE_THUNDER_PUNCH, MOVE_PSYCHIC}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
     .species = SPECIES_MAKUHITA,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_REVENGE, MOVE_ROCK_SLIDE, MOVE_SHADOW_PUNCH, MOVE_BULK_UP}
+    },
+    {
+    .iv = 122,
+    .lvl = 15,
+    .species = SPECIES_ELEKID,
+    .heldItem = ITEM_BLACK_BELT,
+    .moves = {MOVE_THUNDER_PUNCH, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MANKEY,
+    .heldItem = ITEM_LIECHI_BERRY,
+    .moves = {MOVE_ROCK_TOMB, MOVE_SECRET_POWER, MOVE_REVERSAL, MOVE_SUBSTITUTE}
     }
 };
 
