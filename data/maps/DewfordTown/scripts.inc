@@ -53,6 +53,10 @@ DewfordTown_EventScript_SailBackToPetalburg::
 	goto DewfordTown_EventScript_SailToPetalburg
 	end
 
+DewfordTown_EventScript_FisherMan::
+	msgbox DewfordTown_Text_ShouldHaveBroughtPotion, MSGBOX_NPC
+	end
+
 DewfordTown_EventScript_Woman::
 	msgbox DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC
 	end
@@ -585,6 +589,10 @@ DewfordTown_EventScript_PhraseNotTrendyEnough::
 	msgbox DewfordTown_Text_XHuhIThinkYIsCool, MSGBOX_DEFAULT
 	release
 	end
+
+DewfordTown_Text_ShouldHaveBroughtPotion:
+	.string "My POKéMON is staggeringly tired…\n"
+	.string "I should have brought a POTION…$"
 
 DewfordTown_Text_TinyIslandCommunity:
 	.string "DEWFORD is a tiny island community.\n"
