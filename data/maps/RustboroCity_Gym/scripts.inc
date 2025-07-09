@@ -43,9 +43,9 @@ RustboroCity_Gym_EventScript_Josh::
 	msgbox RustboroCity_Gym_Text_JoshPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-RustboroCity_Gym_EventScript_Tommy::
-	trainerbattle_single TRAINER_TOMMY, RustboroCity_Gym_Text_TommyIntro, RustboroCity_Gym_Text_TommyDefeat
-	msgbox RustboroCity_Gym_Text_TommyPostBattle, MSGBOX_AUTOCLOSE
+RustboroCity_Gym_EventScript_Tammy::
+	trainerbattle_single TRAINER_TAMMY, RustboroCity_Gym_Text_TammyIntro, RustboroCity_Gym_Text_TammyDefeat
+	msgbox RustboroCity_Gym_Text_TammyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 RustboroCity_Gym_EventScript_Marc::
@@ -148,14 +148,14 @@ RustboroCity_Gym_Text_JoshPostBattle:
 	.string "You haven't seen anything of the ROCK\n"
 	.string "type's terrifying power!$"
 
-RustboroCity_Gym_Text_TommyIntro:
+RustboroCity_Gym_Text_TammyIntro:
 	.string "If you can't beat me, you won't stand\n"
 	.string "a chance against ROXANNE!$"
 
-RustboroCity_Gym_Text_TommyDefeat:
+RustboroCity_Gym_Text_TammyDefeat:
 	.string "Wow! You've got some potential!$"
 
-RustboroCity_Gym_Text_TommyPostBattle:
+RustboroCity_Gym_Text_TammyPostBattle:
 	.string "ROXANNE is stronger than me by\n"
 	.string "several times.\p"
 	.string "You'd better be on your guard!$"
