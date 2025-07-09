@@ -195,9 +195,46 @@ static const struct TrainerMon sParty_Declan[] = {
 
 static const struct TrainerMon sParty_GruntRusturfTunnel[] = {
     {
-    .iv = 0,
-    .lvl = 11,
-    .species = SPECIES_POOCHYENA,
+    .iv = 196,
+    .lvl = 14,
+    .species = SPECIES_DRATINI,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_DRAGON_BREATH, MOVE_WATER_PULSE, MOVE_HEADBUTT, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_TENTACOOL,
+    .heldItem = ITEM_LAX_INCENSE,
+    .moves = {MOVE_WATER_PULSE, MOVE_ICY_WIND, MOVE_SECRET_POWER, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
+    .lvl = 13,
+    .species = SPECIES_VOLTORB,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_SHOCK_WAVE, MOVE_SELF_DESTRUCT, MOVE_SONIC_BOOM, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_BARBOACH,
+    .heldItem = ITEM_FOCUS_BAND,
+    .moves = {MOVE_WATER_PULSE, MOVE_SECRET_POWER, MOVE_DRAGON_DANCE, MOVE_MAGNITUDE}
+    },
+    {
+    .iv = 252,
+    .lvl = 13,
+    .species = SPECIES_SNORUNT,
+    .heldItem = ITEM_KINGS_ROCK,
+    .moves = {MOVE_BITE, MOVE_BODY_SLAM, MOVE_ATTRACT, MOVE_ICE_SHARD}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_CARVANHA,
+    .heldItem = ITEM_SCOPE_LENS,
+    .moves = {MOVE_ANCIENT_POWER, MOVE_BOUNCE, MOVE_WATER_PULSE, MOVE_CRUNCH}
     }
 };
 
