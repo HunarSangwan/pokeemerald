@@ -8112,27 +8112,91 @@ static const struct TrainerMon sParty_Macey[] = {
 
 static const struct TrainerMon sParty_BrendanRustboroTreecko[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_STICK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_AERIAL_ACE, MOVE_MUD_SLAP, MOVE_CUT}
     },
     {
-    .iv = 50,
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_NIDORINO,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_SECRET_POWER, MOVE_DRILL_RUN, MOVE_PROTECT, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_MINUN,
+    .heldItem = ITEM_MAGNET,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_SEISMIC_TOSS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
     .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_CHIKORITA,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_SECRET_POWER, MOVE_SYNTHESIS, MOVE_LIGHT_SCREEN}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_SQUIRTLE,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATER_GUN, MOVE_BITE, MOVE_SECRET_POWER, MOVE_MUD_SLAP}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_EMBER, MOVE_ROCK_SMASH, MOVE_QUICK_ATTACK, MOVE_SECRET_POWER}
     }
 };
 
 static const struct TrainerMon sParty_BrendanRustboroMudkip[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_STICK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_CUT, MOVE_AERIAL_ACE, MOVE_MUD_SLAP}
     },
     {
-    .iv = 50,
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_NIDORINO,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_SECRET_POWER, MOVE_PROTECT, MOVE_TOXIC, MOVE_DRILL_RUN}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_PLUSLE,
+    .heldItem = ITEM_MAGNET,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_SEISMIC_TOSS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
     .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .species = SPECIES_TOTODILE,
+    .heldItem = ITEM_MYSTIC_TICKET,
+    .moves = {MOVE_WATER_GUN, MOVE_BITE, MOVE_CUT, MOVE_AERIAL_ACE}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_CHARMANDER,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_ROCK_TOMB}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_GROVYLE,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_QUICK_ATTACK, MOVE_PURSUIT, MOVE_ROCK_TOMB}
     }
 };
 
@@ -8208,27 +8272,91 @@ static const struct TrainerMon sParty_Jonathan[] = {
 
 static const struct TrainerMon sParty_BrendanRustboroTorchic[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_SLUGMA,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_STICK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_AERIAL_ACE, MOVE_MUD_SLAP, MOVE_CUT}
     },
     {
-    .iv = 50,
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_NIDORINO,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_SECRET_POWER, MOVE_PROTECT, MOVE_DRILL_RUN, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
     .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_PLUSLE,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_SEISMIC_TOSS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_QUILAVA,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_SECRET_POWER, MOVE_MUD_SLAP}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_BULBASAUR,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_PROTECT, MOVE_TOXIC, MOVE_LEECH_SEED}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MARSHTOMP,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_ROCK_TOMB, MOVE_SECRET_POWER}
     }
 };
 
 static const struct TrainerMon sParty_MayRustboroMudkip[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_STICK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_AERIAL_ACE, MOVE_MUD_SLAP, MOVE_CUT}
     },
     {
-    .iv = 50,
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_NIDORINA,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_SECRET_POWER, MOVE_DRILL_RUN, MOVE_PROTECT, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_MINUN,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_SEISMIC_TOSS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
     .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .species = SPECIES_TOTODILE,
+    .heldItem = ITEM_MYSTIC_TICKET,
+    .moves = {MOVE_WATER_GUN, MOVE_BITE, MOVE_CUT, MOVE_AERIAL_ACE}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_CHARMANDER,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_BITE, MOVE_ROCK_TOMB}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_GROVYLE,
+    .heldItem = ITEM_MIRACLE_SEED,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_PURSUIT, MOVE_ROCK_TOMB, MOVE_QUICK_ATTACK}
     }
 };
 
@@ -10716,27 +10844,91 @@ static const struct TrainerMon sParty_Cristin1[] = {
 
 static const struct TrainerMon sParty_MayRustboroTreecko[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_STICK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_AERIAL_ACE, MOVE_MUD_SLAP, MOVE_CUT}
     },
     {
-    .iv = 50,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_MINUN,
+    .heldItem = ITEM_BERRY_JUICE,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_SEISMIC_TOSS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_NIDORINA,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_SECRET_POWER, MOVE_PROTECT, MOVE_DRILL_RUN, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
     .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_CHIKORITA,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_SECRET_POWER, MOVE_REFLECT, MOVE_LIGHT_SCREEN}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_SQUIRTLE,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_WATER_GUN, MOVE_SECRET_POWER, MOVE_ICY_WIND, MOVE_ATTRACT}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_COMBUSKEN,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_EMBER, MOVE_DOUBLE_KICK, MOVE_ROCK_TOMB, MOVE_QUICK_ATTACK}
     }
 };
 
 static const struct TrainerMon sParty_MayRustboroTorchic[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_TORKOAL,
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_FARFETCHD,
+    .heldItem = ITEM_STICK,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_CUT, MOVE_AERIAL_ACE, MOVE_MUD_SLAP}
     },
     {
-    .iv = 50,
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_NIDORINA,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_SECRET_POWER, MOVE_TOXIC, MOVE_PROTECT, MOVE_DRILL_RUN}
+    },
+    {
+    .iv = 252,
+    .lvl = 14,
+    .species = SPECIES_MINUN,
+    .heldItem = ITEM_MAGNET,
+    .moves = {MOVE_THUNDER_SHOCK, MOVE_QUICK_ATTACK, MOVE_SEISMIC_TOSS, MOVE_THUNDER_WAVE}
+    },
+    {
+    .iv = 252,
     .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .species = SPECIES_BULBASAUR,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_MEGA_DRAIN, MOVE_SECRET_POWER, MOVE_ATTRACT, MOVE_TOXIC}
+    },
+    {
+    .iv = 252,
+    .lvl = 15,
+    .species = SPECIES_QUILAVA,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_SECRET_POWER, MOVE_ATTRACT}
+    },
+    {
+    .iv = 252,
+    .lvl = 16,
+    .species = SPECIES_MARSHTOMP,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_ROCK_TOMB, MOVE_SECRET_POWER}
     }
 };
 
